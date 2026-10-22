@@ -1,0 +1,2801 @@
+{
+ "questions": [
+  {
+   "id": "e001",
+   "area": "ai-basics",
+   "q": "why does chatgpt make stuff up",
+   "expect": [
+    "hallucination"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e002",
+   "area": "ai-basics",
+   "q": "what is an llm",
+   "expect": [
+    "language model"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e003",
+   "area": "ai-basics",
+   "q": "whats a token",
+   "expect": [
+    "token"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e004",
+   "area": "ai-basics",
+   "q": "context window?",
+   "expect": [
+    "context window",
+    "context"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e005",
+   "area": "ai-basics",
+   "q": "how does an llm actually come up with the next word",
+   "expect": [
+    "token",
+    "predict"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e006",
+   "area": "ai-basics",
+   "q": "what is rag",
+   "expect": [
+    "retrieval"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e007",
+   "area": "ai-basics",
+   "q": "whats the diff between rag and fine tuning",
+   "expect": [
+    "retrieval",
+    "fine-tuning",
+    "fine tuning"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e008",
+   "area": "ai-basics",
+   "q": "prompt engineering tips",
+   "expect": [
+    "prompt"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e009",
+   "area": "ai-basics",
+   "q": "what does temperature do in llms",
+   "expect": [
+    "temperature"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e010",
+   "area": "ai-basics",
+   "q": "what is an ai agent",
+   "expect": [
+    "agent"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e011",
+   "area": "ai-basics",
+   "q": "function calling in llms how does it work",
+   "expect": [
+    "tool",
+    "function"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e012",
+   "area": "ai-basics",
+   "q": "mcp?",
+   "expect": [
+    "model context protocol"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e013",
+   "area": "ai-basics",
+   "q": "embeddings what are they",
+   "expect": [
+    "embedding",
+    "vector"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e014",
+   "area": "ai-basics",
+   "q": "how do i stop the model hallucinating",
+   "expect": [
+    "grounding",
+    "retrieval",
+    "source"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e015",
+   "area": "ai-basics",
+   "q": "zero shot vs few shot prompting",
+   "expect": [
+    "few-shot",
+    "few shot",
+    "example"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e016",
+   "area": "ai-basics",
+   "q": "what is llm as a judge",
+   "expect": [
+    "judge"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e017",
+   "area": "ai-basics",
+   "q": "why is my llm app so slow and expensive",
+   "expect": [
+    "token",
+    "latency"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e018",
+   "area": "ai-basics",
+   "q": "is it ok to paste patient data into chatgpt",
+   "expect": [
+    "privacy",
+    "personal data",
+    "phi"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e019",
+   "area": "ai-basics",
+   "q": "ai vs machine learning vs deep learning whats the difference",
+   "expect": [
+    "machine learning"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e020",
+   "area": "ai-basics",
+   "q": "what is a system prompt",
+   "expect": [
+    "system prompt",
+    "instruction"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e021",
+   "area": "ai-basics",
+   "q": "how do i get json back from an llm reliably",
+   "expect": [
+    "json",
+    "schema"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e022",
+   "area": "ai-basics",
+   "q": "what is an eval set for an ai app",
+   "expect": [
+    "evaluation",
+    "eval"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e023",
+   "area": "ai-basics",
+   "q": "human in the loop meaning",
+   "expect": [
+    "human"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e024",
+   "area": "ai-basics",
+   "q": "what is generative ai",
+   "expect": [
+    "generative"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e025",
+   "area": "ai-basics",
+   "q": "copilot vs claude code vs cursor which one",
+   "expect": [
+    "assistant",
+    "coding"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e026",
+   "area": "languages",
+   "q": "what is python used for",
+   "expect": [
+    "python"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e027",
+   "area": "languages",
+   "q": "how do i install a python package",
+   "expect": [
+    "pip"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e028",
+   "area": "languages",
+   "q": "whats the diff between list and tuple in python",
+   "expect": [
+    "tuple",
+    "immutable"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e029",
+   "area": "languages",
+   "q": "javascript vs typescript",
+   "expect": [
+    "type"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e030",
+   "area": "languages",
+   "q": "what is json",
+   "expect": [
+    "javascript object notation",
+    "json"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e031",
+   "area": "languages",
+   "q": "how do i read a csv file in pyhton",
+   "expect": [
+    "csv",
+    "pandas"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e032",
+   "area": "languages",
+   "q": "what is a virtual env and why do i need one",
+   "expect": [
+    "venv",
+    "virtual environment"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e033",
+   "area": "languages",
+   "q": "java or python which should i learn first",
+   "expect": [
+    "java",
+    "python"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e034",
+   "area": "languages",
+   "q": "what is a rest api",
+   "expect": [
+    "rest",
+    "http"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e035",
+   "area": "languages",
+   "q": "how do i call an api from python",
+   "expect": [
+    "requests",
+    "http"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e036",
+   "area": "languages",
+   "q": "async await in javascript explain like im 5",
+   "expect": [
+    "async",
+    "promise"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e037",
+   "area": "languages",
+   "q": "what is sql",
+   "expect": [
+    "query",
+    "structured query"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e038",
+   "area": "languages",
+   "q": "what is git",
+   "expect": [
+    "version control"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e039",
+   "area": "languages",
+   "q": "git merge vs rebase",
+   "expect": [
+    "rebase"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e040",
+   "area": "languages",
+   "q": "how to undo my last commit in git",
+   "expect": [
+    "reset",
+    "revert"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e041",
+   "area": "languages",
+   "q": "whats a pull request",
+   "expect": [
+    "pull request"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e042",
+   "area": "languages",
+   "q": "what is node js",
+   "expect": [
+    "node",
+    "javascript"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e043",
+   "area": "languages",
+   "q": "python decorators?",
+   "expect": [
+    "decorator"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e044",
+   "area": "languages",
+   "q": "what is object oriented programming",
+   "expect": [
+    "class",
+    "object"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e045",
+   "area": "languages",
+   "q": "how do i handle errors in python",
+   "expect": [
+    "try",
+    "except"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e046",
+   "area": "languages",
+   "q": "what is html and css",
+   "expect": [
+    "html"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e047",
+   "area": "languages",
+   "q": "what is golang good for",
+   "expect": [
+    "go",
+    "concurrency"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e048",
+   "area": "languages",
+   "q": "regex basics",
+   "expect": [
+    "regular expression",
+    "regex"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e049",
+   "area": "languages",
+   "q": "what does http 404 mean",
+   "expect": [
+    "not found"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e050",
+   "area": "languages",
+   "q": "c# vs java",
+   "expect": [
+    "c#",
+    ".net",
+    "java"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e051",
+   "area": "devops-cloud",
+   "q": "what is devops",
+   "expect": [
+    "devops"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e052",
+   "area": "devops-cloud",
+   "q": "ci cd?",
+   "expect": [
+    "continuous integration",
+    "continuous"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e053",
+   "area": "devops-cloud",
+   "q": "what is docker",
+   "expect": [
+    "container"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e054",
+   "area": "devops-cloud",
+   "q": "docker vs vm",
+   "expect": [
+    "container",
+    "virtual machine"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e055",
+   "area": "devops-cloud",
+   "q": "what is kubernetes",
+   "expect": [
+    "kubernetes",
+    "orchestration"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e056",
+   "area": "devops-cloud",
+   "q": "how do i keep api keys out of my pipeline code",
+   "expect": [
+    "secret"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e057",
+   "area": "devops-cloud",
+   "q": "what is serverless",
+   "expect": [
+    "serverless"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e058",
+   "area": "devops-cloud",
+   "q": "aws vs azure vs gcp",
+   "expect": [
+    "cloud"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e059",
+   "area": "devops-cloud",
+   "q": "what is infrastructure as code",
+   "expect": [
+    "infrastructure as code",
+    "terraform"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e060",
+   "area": "devops-cloud",
+   "q": "terraform what is it",
+   "expect": [
+    "terraform",
+    "infrastructure as code"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e061",
+   "area": "devops-cloud",
+   "q": "blue green deployment",
+   "expect": [
+    "blue-green",
+    "blue green"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e062",
+   "area": "devops-cloud",
+   "q": "what is a canary release",
+   "expect": [
+    "canary"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e063",
+   "area": "devops-cloud",
+   "q": "whats observability",
+   "expect": [
+    "logs",
+    "metrics",
+    "traces"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e064",
+   "area": "devops-cloud",
+   "q": "how do i roll back a bad deploy",
+   "expect": [
+    "rollback",
+    "roll back"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e065",
+   "area": "devops-cloud",
+   "q": "why do we need dev qa and prod environments",
+   "expect": [
+    "environment"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e066",
+   "area": "devops-cloud",
+   "q": "iaas paas saas difference",
+   "expect": [
+    "iaas",
+    "paas",
+    "saas"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e067",
+   "area": "devops-cloud",
+   "q": "what is a load balancer",
+   "expect": [
+    "load balanc"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e068",
+   "area": "devops-cloud",
+   "q": "cheapest way to host a static website",
+   "expect": [
+    "static"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e069",
+   "area": "devops-cloud",
+   "q": "how do i set up github actions",
+   "expect": [
+    "github actions",
+    "workflow"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e070",
+   "area": "devops-cloud",
+   "q": "what is a container registry",
+   "expect": [
+    "registry",
+    "image"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e071",
+   "area": "devops-cloud",
+   "q": "autoscaling meaning",
+   "expect": [
+    "scaling",
+    "autoscal"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e072",
+   "area": "devops-cloud",
+   "q": "what is sre",
+   "expect": [
+    "site reliability"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e073",
+   "area": "devops-cloud",
+   "q": "monitoring vs logging",
+   "expect": [
+    "monitoring",
+    "log"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e074",
+   "area": "devops-cloud",
+   "q": "what is gitops",
+   "expect": [
+    "git"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e075",
+   "area": "devops-cloud",
+   "q": "can we even do ci cd in a gxp regulated environment or does validation kill it",
+   "expect": [
+    "validation",
+    "validat"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e076",
+   "area": "networks-security",
+   "q": "what is tcp/ip",
+   "expect": [
+    "tcp"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e077",
+   "area": "networks-security",
+   "q": "tcp vs udp",
+   "expect": [
+    "udp"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e078",
+   "area": "networks-security",
+   "q": "what is dns",
+   "expect": [
+    "domain name"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e079",
+   "area": "networks-security",
+   "q": "how does https work",
+   "expect": [
+    "tls",
+    "encrypt"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e080",
+   "area": "networks-security",
+   "q": "what does a firewall do",
+   "expect": [
+    "firewall"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e081",
+   "area": "networks-security",
+   "q": "how does a vpn work",
+   "expect": [
+    "vpn",
+    "tunnel",
+    "encrypt"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e082",
+   "area": "networks-security",
+   "q": "what is zero trust",
+   "expect": [
+    "zero trust"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e083",
+   "area": "networks-security",
+   "q": "principle of least privilage",
+   "expect": [
+    "least privilege"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e084",
+   "area": "networks-security",
+   "q": "what is mfa",
+   "expect": [
+    "multi-factor",
+    "mfa"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e085",
+   "area": "networks-security",
+   "q": "owasp top 10",
+   "expect": [
+    "owasp"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e086",
+   "area": "networks-security",
+   "q": "what is sql injection",
+   "expect": [
+    "injection"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e087",
+   "area": "networks-security",
+   "q": "prompt injection what is it and how do i defend",
+   "expect": [
+    "prompt injection"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e088",
+   "area": "networks-security",
+   "q": "xss?",
+   "expect": [
+    "cross-site scripting",
+    "xss"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e089",
+   "area": "networks-security",
+   "q": "encryption at rest vs in transit",
+   "expect": [
+    "at rest",
+    "in transit"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e090",
+   "area": "networks-security",
+   "q": "oauth vs saml vs oidc",
+   "expect": [
+    "oauth",
+    "openid",
+    "saml"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e091",
+   "area": "networks-security",
+   "q": "what is a subnet",
+   "expect": [
+    "subnet"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e092",
+   "area": "networks-security",
+   "q": "what is an ip address",
+   "expect": [
+    "ip address"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e093",
+   "area": "networks-security",
+   "q": "what is a port number",
+   "expect": [
+    "port"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e094",
+   "area": "networks-security",
+   "q": "how do i spot a phishing email",
+   "expect": [
+    "phishing"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e095",
+   "area": "networks-security",
+   "q": "hashing vs encryption",
+   "expect": [
+    "hash"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e096",
+   "area": "networks-security",
+   "q": "how should an app store passwords",
+   "expect": [
+    "hash"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e097",
+   "area": "networks-security",
+   "q": "what is a ddos attack",
+   "expect": [
+    "denial of service",
+    "ddos"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e098",
+   "area": "networks-security",
+   "q": "whats rbac",
+   "expect": [
+    "role-based",
+    "role based",
+    "rbac"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e099",
+   "area": "networks-security",
+   "q": "pen test vs vuln scan",
+   "expect": [
+    "penetration",
+    "pen test"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e100",
+   "area": "networks-security",
+   "q": "what does fda want for medical device cybersecurity",
+   "expect": [
+    "cybersecurity",
+    "sbom"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e101",
+   "area": "data",
+   "q": "what is a database",
+   "expect": [
+    "database"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e102",
+   "area": "data",
+   "q": "sql vs nosql",
+   "expect": [
+    "nosql"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e103",
+   "area": "data",
+   "q": "whats a primary key",
+   "expect": [
+    "primary key"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e104",
+   "area": "data",
+   "q": "inner join vs left join",
+   "expect": [
+    "join"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e105",
+   "area": "data",
+   "q": "what is etl",
+   "expect": [
+    "extract"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e106",
+   "area": "data",
+   "q": "data warehouse vs data lake",
+   "expect": [
+    "data lake",
+    "warehouse"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e107",
+   "area": "data",
+   "q": "database normalization explained",
+   "expect": [
+    "normalization",
+    "normal form"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e108",
+   "area": "data",
+   "q": "what is an index in a db and why is my query slow",
+   "expect": [
+    "index"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e109",
+   "area": "data",
+   "q": "what is pandas",
+   "expect": [
+    "pandas",
+    "dataframe"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e110",
+   "area": "data",
+   "q": "csv vs json vs parquet",
+   "expect": [
+    "parquet",
+    "csv"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e111",
+   "area": "data",
+   "q": "what is data quality",
+   "expect": [
+    "quality"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e112",
+   "area": "data",
+   "q": "what is a data pipeline",
+   "expect": [
+    "pipeline"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e113",
+   "area": "data",
+   "q": "what is master data",
+   "expect": [
+    "master data"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e114",
+   "area": "data",
+   "q": "what is metadata",
+   "expect": [
+    "metadata"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e115",
+   "area": "data",
+   "q": "group by in sql how",
+   "expect": [
+    "group by"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e116",
+   "area": "data",
+   "q": "what is big data",
+   "expect": [
+    "big data",
+    "volume"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e117",
+   "area": "data",
+   "q": "how do i clean messy excel data before using it",
+   "expect": [
+    "clean"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e118",
+   "area": "data",
+   "q": "api vs database whats the diff",
+   "expect": [
+    "api"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e119",
+   "area": "data",
+   "q": "what is data governance",
+   "expect": [
+    "governance"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e120",
+   "area": "data",
+   "q": "what is a bi dashboard",
+   "expect": [
+    "dashboard",
+    "business intelligence",
+    "power bi"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e121",
+   "area": "data",
+   "q": "what is pii",
+   "expect": [
+    "personal",
+    "pii"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e122",
+   "area": "data",
+   "q": "what is a schema",
+   "expect": [
+    "schema"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e123",
+   "area": "data",
+   "q": "what is postgres",
+   "expect": [
+    "postgres"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e124",
+   "area": "data",
+   "q": "how does vector search work",
+   "expect": [
+    "vector",
+    "similarity"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e125",
+   "area": "fde-work",
+   "q": "what is a forward deployed engineer",
+   "expect": [
+    "forward deployed"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e126",
+   "area": "fde-work",
+   "q": "fde vs consultant diff",
+   "expect": [
+    "consultant"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e127",
+   "area": "fde-work",
+   "q": "fde vs solutions engineer",
+   "expect": [
+    "solutions engineer"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e128",
+   "area": "fde-work",
+   "q": "what does an fde do day to day",
+   "expect": [
+    "customer",
+    "client"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e129",
+   "area": "fde-work",
+   "q": "why do ai pilots never make it to production",
+   "expect": [
+    "pilot",
+    "production"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e130",
+   "area": "fde-work",
+   "q": "how do i run a discovery interview with a client",
+   "expect": [
+    "discovery",
+    "interview"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e131",
+   "area": "fde-work",
+   "q": "what is a raci",
+   "expect": [
+    "responsible",
+    "accountable"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e132",
+   "area": "fde-work",
+   "q": "swimlane process map how to draw",
+   "expect": [
+    "swimlane"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e133",
+   "area": "fde-work",
+   "q": "what is bpmn",
+   "expect": [
+    "business process"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e134",
+   "area": "fde-work",
+   "q": "how to write acceptance criteria",
+   "expect": [
+    "acceptance criteria"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e135",
+   "area": "fde-work",
+   "q": "one page brief what goes in it",
+   "expect": [
+    "brief",
+    "problem"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e136",
+   "area": "fde-work",
+   "q": "build vs buy how do i decide",
+   "expect": [
+    "build",
+    "buy"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e137",
+   "area": "fde-work",
+   "q": "what is the c4 model",
+   "expect": [
+    "c4",
+    "context"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e138",
+   "area": "fde-work",
+   "q": "what is a poc",
+   "expect": [
+    "proof of concept"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e139",
+   "area": "fde-work",
+   "q": "poc to pilot to production what changes",
+   "expect": [
+    "pilot"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e140",
+   "area": "fde-work",
+   "q": "how do i demo my poc to the client",
+   "expect": [
+    "demo"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e141",
+   "area": "fde-work",
+   "q": "what goes in a handover pack",
+   "expect": [
+    "runbook",
+    "hand-over",
+    "handover"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e142",
+   "area": "fde-work",
+   "q": "how do i build an eval set from real cases",
+   "expect": [
+    "evaluation",
+    "real"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e143",
+   "area": "fde-work",
+   "q": "how do i make a business case for an ai project",
+   "expect": [
+    "business case",
+    "roi",
+    "cost"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e144",
+   "area": "fde-work",
+   "q": "value proposition canvas",
+   "expect": [
+    "value proposition"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e145",
+   "area": "fde-work",
+   "q": "ok so im new and my lead says ill be an fde on a pharma client next month, what am i actually supposed to do first when i land there",
+   "expect": [
+    "discovery",
+    "stakeholder"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e146",
+   "area": "fde-work",
+   "q": "fde interview prep tips",
+   "expect": [
+    "interview"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e147",
+   "area": "fde-work",
+   "q": "how do i handle a stakeholder who keeps changing the ask",
+   "expect": [
+    "stakeholder"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e148",
+   "area": "fde-work",
+   "q": "assistive vs semi automated vs automated options",
+   "expect": [
+    "assistive",
+    "automat"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e149",
+   "area": "fde-work",
+   "q": "what should be in a runbook",
+   "expect": [
+    "runbook"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e150",
+   "area": "program-lms",
+   "q": "how long is the fde training program",
+   "expect": [
+    "week"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e151",
+   "area": "program-lms",
+   "q": "what modules are in the fde course",
+   "expect": [
+    "module"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e152",
+   "area": "program-lms",
+   "q": "what is the capstone / final project",
+   "expect": [
+    "capstone",
+    "final project"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e153",
+   "area": "program-lms",
+   "q": "what do i need to install before day 1",
+   "expect": [
+    "vs code",
+    "github"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e154",
+   "area": "program-lms",
+   "q": "as a manager how do i assign a course",
+   "expect": [
+    "assign"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e155",
+   "area": "program-lms",
+   "q": "how do i assign training to everyone with a job role",
+   "expect": [
+    "role"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e156",
+   "area": "program-lms",
+   "q": "as a mentor what do i do when someone fails 3 times",
+   "expect": [
+    "reset",
+    "mentor"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e157",
+   "area": "program-lms",
+   "q": "i failed the check 3 times what now",
+   "expect": [
+    "mentor"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e158",
+   "area": "program-lms",
+   "q": "whats the pass mark for the section check",
+   "expect": [
+    "80"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e159",
+   "area": "program-lms",
+   "q": "how many attempts do i get on a check",
+   "expect": [
+    "three",
+    "3 attempts",
+    "attempt"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e160",
+   "area": "program-lms",
+   "q": "how long do i have to wait before retrying",
+   "expect": [
+    "24 hours"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e161",
+   "area": "program-lms",
+   "q": "how do i get my certificate",
+   "expect": [
+    "certificate"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e162",
+   "area": "program-lms",
+   "q": "how can someone verify my certificate",
+   "expect": [
+    "verify"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e163",
+   "area": "program-lms",
+   "q": "my cert says retraining due why",
+   "expect": [
+    "retraining",
+    "version"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e164",
+   "area": "program-lms",
+   "q": "as admin how do i load a new course",
+   "expect": [
+    "package",
+    "admin"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e165",
+   "area": "program-lms",
+   "q": "what is a learning path",
+   "expect": [
+    "learning path",
+    "path"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e166",
+   "area": "program-lms",
+   "q": "as a manager where do i see whos overdue",
+   "expect": [
+    "overdue"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e167",
+   "area": "program-lms",
+   "q": "can i skip a section",
+   "expect": [
+    "order",
+    "check"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e168",
+   "area": "program-lms",
+   "q": "what courses are in the lms catalogue",
+   "expect": [
+    "course"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e169",
+   "area": "program-lms",
+   "q": "is there an audit trail in the lms",
+   "expect": [
+    "audit"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e170",
+   "area": "program-lms",
+   "q": "can we log in with our company microsoft account",
+   "expect": [
+    "entra",
+    "microsoft",
+    "login"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e171",
+   "area": "program-lms",
+   "q": "why cant i see the right answers after failing",
+   "expect": [
+    "review",
+    "lesson"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e172",
+   "area": "program-lms",
+   "q": "where do i keep my learning journal",
+   "expect": [
+    "journal",
+    "github"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e173",
+   "area": "program-lms",
+   "q": "learner vs manager vs mentor vs admin what can each do",
+   "expect": [
+    "learner",
+    "mentor"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e174",
+   "area": "program-lms",
+   "q": "do new joiners get training assigned automatically",
+   "expect": [
+    "role rule",
+    "automatic"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e175",
+   "area": "medtech",
+   "q": "what are design controls",
+   "expect": [
+    "design control"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e176",
+   "area": "medtech",
+   "q": "design inputs vs design outputs",
+   "expect": [
+    "design input"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e177",
+   "area": "medtech",
+   "q": "verification vs validation for a medical device",
+   "expect": [
+    "verification",
+    "validation"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e178",
+   "area": "medtech",
+   "q": "what is a dhf",
+   "expect": [
+    "design history file"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e179",
+   "area": "medtech",
+   "q": "dmr vs dhr",
+   "expect": [
+    "device master record",
+    "device history record"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e180",
+   "area": "medtech",
+   "q": "iso 14971",
+   "expect": [
+    "risk management"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e181",
+   "area": "medtech",
+   "q": "what is fmea",
+   "expect": [
+    "failure mode"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e182",
+   "area": "medtech",
+   "q": "samd?",
+   "expect": [
+    "software as a medical device"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e183",
+   "area": "medtech",
+   "q": "iec 62304 software safety classes",
+   "expect": [
+    "62304",
+    "class"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e184",
+   "area": "medtech",
+   "q": "510k vs pma",
+   "expect": [
+    "510(k)",
+    "510k",
+    "premarket"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e185",
+   "area": "medtech",
+   "q": "what is eu mdr",
+   "expect": [
+    "medical device regulation",
+    "mdr"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e186",
+   "area": "medtech",
+   "q": "medical device class i ii iii how do i know which",
+   "expect": [
+    "class"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e187",
+   "area": "medtech",
+   "q": "what happens in a design review",
+   "expect": [
+    "design review"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e188",
+   "area": "medtech",
+   "q": "usability engineering iec 62366",
+   "expect": [
+    "usability"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e189",
+   "area": "medtech",
+   "q": "risk benefit analysis medical device",
+   "expect": [
+    "benefit"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e190",
+   "area": "medtech",
+   "q": "hazard vs harm",
+   "expect": [
+    "hazard",
+    "harm"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e191",
+   "area": "medtech",
+   "q": "traceability matrix for a medical device",
+   "expect": [
+    "traceability"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e192",
+   "area": "medtech",
+   "q": "21 cfr 820",
+   "expect": [
+    "820",
+    "quality system",
+    "qmsr"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e193",
+   "area": "medtech",
+   "q": "what is udi",
+   "expect": [
+    "unique device",
+    "udi"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e194",
+   "area": "medtech",
+   "q": "post market surveillance",
+   "expect": [
+    "post-market",
+    "postmarket",
+    "post market"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e195",
+   "area": "medtech",
+   "q": "what is design transfer",
+   "expect": [
+    "design transfer"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e196",
+   "area": "medtech",
+   "q": "does our ai software count as a medical device or not",
+   "expect": [
+    "samd",
+    "software as a medical device",
+    "intended use"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e197",
+   "area": "medtech",
+   "q": "how do i decide residual risk is acceptable",
+   "expect": [
+    "residual risk"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e198",
+   "area": "medtech",
+   "q": "what is a notified body",
+   "expect": [
+    "notified body"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e199",
+   "area": "medtech",
+   "q": "complaint handling for medical devices",
+   "expect": [
+    "complaint"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e200",
+   "area": "pharma",
+   "q": "what is gmp",
+   "expect": [
+    "good manufacturing practice"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e201",
+   "area": "pharma",
+   "q": "cgmp what does the c stand for",
+   "expect": [
+    "current"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e202",
+   "area": "pharma",
+   "q": "iq oq pq",
+   "expect": [
+    "installation qualification",
+    "iq"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e203",
+   "area": "pharma",
+   "q": "process validation stages",
+   "expect": [
+    "process validation",
+    "stage"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e204",
+   "area": "pharma",
+   "q": "what is csv in pharma",
+   "expect": [
+    "computer system validation",
+    "computerized system validation",
+    "computerised system validation"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e205",
+   "area": "pharma",
+   "q": "csa vs csv",
+   "expect": [
+    "computer software assurance"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e206",
+   "area": "pharma",
+   "q": "gamp 5 categories",
+   "expect": [
+    "gamp"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e207",
+   "area": "pharma",
+   "q": "21 cfr part 11",
+   "expect": [
+    "electronic record",
+    "electronic signature"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e208",
+   "area": "pharma",
+   "q": "what is data integrity",
+   "expect": [
+    "alcoa",
+    "data integrity"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e209",
+   "area": "pharma",
+   "q": "alcoa+ meaning",
+   "expect": [
+    "attributable"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e210",
+   "area": "pharma",
+   "q": "what is a deviation",
+   "expect": [
+    "deviation"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e211",
+   "area": "pharma",
+   "q": "we had a temp excursion in the warehouse last night and qa wants a deviation raised, what even is that and who writes it",
+   "expect": [
+    "deviation"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e212",
+   "area": "pharma",
+   "q": "capa?",
+   "expect": [
+    "corrective and preventive",
+    "corrective"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e213",
+   "area": "pharma",
+   "q": "root cause analysis tools in pharma",
+   "expect": [
+    "root cause"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e214",
+   "area": "pharma",
+   "q": "what is change control",
+   "expect": [
+    "change control"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e215",
+   "area": "pharma",
+   "q": "tech transfer pharma steps",
+   "expect": [
+    "technology transfer",
+    "tech transfer"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e216",
+   "area": "pharma",
+   "q": "what is a batch record",
+   "expect": [
+    "batch record"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e217",
+   "area": "pharma",
+   "q": "cleaning validation",
+   "expect": [
+    "cleaning validation"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e218",
+   "area": "pharma",
+   "q": "gcp in clinical trials",
+   "expect": [
+    "good clinical practice"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e219",
+   "area": "pharma",
+   "q": "what is a tmf",
+   "expect": [
+    "trial master file"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e220",
+   "area": "pharma",
+   "q": "audit trail review in a lims",
+   "expect": [
+    "audit trail"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e221",
+   "area": "pharma",
+   "q": "oos result what do i do",
+   "expect": [
+    "out of specification",
+    "oos"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e222",
+   "area": "pharma",
+   "q": "annex 11",
+   "expect": [
+    "annex 11",
+    "computerised"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e223",
+   "area": "pharma",
+   "q": "what is a validation master plan",
+   "expect": [
+    "validation master plan"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e224",
+   "area": "pharma",
+   "q": "urs what is it",
+   "expect": [
+    "user requirement"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e225",
+   "area": "pharma",
+   "q": "ich q9 vs q10",
+   "expect": [
+    "quality risk management",
+    "pharmaceutical quality system"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e226",
+   "area": "pharma",
+   "q": "what is an sop",
+   "expect": [
+    "standard operating procedure"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e227",
+   "area": "pharma",
+   "q": "who releases a batch, whats a qp",
+   "expect": [
+    "qualified person",
+    "release"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e228",
+   "area": "qms-iso",
+   "q": "what is a qms",
+   "expect": [
+    "quality management system"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e229",
+   "area": "qms-iso",
+   "q": "iso 9001 what is it",
+   "expect": [
+    "9001",
+    "quality management"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e230",
+   "area": "qms-iso",
+   "q": "iso 13485",
+   "expect": [
+    "13485",
+    "medical device"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e231",
+   "area": "qms-iso",
+   "q": "iso 13485 vs iso 9001",
+   "expect": [
+    "13485"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e232",
+   "area": "qms-iso",
+   "q": "what is iso 27001",
+   "expect": [
+    "information security"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e233",
+   "area": "qms-iso",
+   "q": "how do i prepare for an internal audit",
+   "expect": [
+    "audit"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e234",
+   "area": "qms-iso",
+   "q": "document control in a qms",
+   "expect": [
+    "document control"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e235",
+   "area": "qms-iso",
+   "q": "what is a quality manual",
+   "expect": [
+    "quality manual"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e236",
+   "area": "qms-iso",
+   "q": "management review",
+   "expect": [
+    "management review"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e237",
+   "area": "qms-iso",
+   "q": "what is a nonconformance",
+   "expect": [
+    "nonconform"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e238",
+   "area": "qms-iso",
+   "q": "pdca cycle",
+   "expect": [
+    "plan-do-check-act",
+    "plan do check act",
+    "pdca"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e239",
+   "area": "qms-iso",
+   "q": "risk based thinking iso",
+   "expect": [
+    "risk"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e240",
+   "area": "qms-iso",
+   "q": "iso 17025",
+   "expect": [
+    "17025",
+    "laborator"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e241",
+   "area": "qms-iso",
+   "q": "how do we qualify a supplier",
+   "expect": [
+    "supplier"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e242",
+   "area": "qms-iso",
+   "q": "why do training records matter in a qms",
+   "expect": [
+    "training record"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e243",
+   "area": "qms-iso",
+   "q": "what does iso stand for",
+   "expect": [
+    "international organization"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e244",
+   "area": "qms-iso",
+   "q": "iso 14001",
+   "expect": [
+    "environmental"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e245",
+   "area": "qms-iso",
+   "q": "what is a quality policy",
+   "expect": [
+    "quality policy"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e246",
+   "area": "qms-iso",
+   "q": "qa vs qc",
+   "expect": [
+    "quality assurance",
+    "quality control"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e247",
+   "area": "qms-iso",
+   "q": "external audit vs certification audit",
+   "expect": [
+    "certification"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e248",
+   "area": "qms-iso",
+   "q": "major vs minor nonconformity",
+   "expect": [
+    "major",
+    "minor"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e249",
+   "area": "qms-iso",
+   "q": "continual improvement iso",
+   "expect": [
+    "improvement"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e250",
+   "area": "six-sigma",
+   "q": "what is six sigma",
+   "expect": [
+    "six sigma"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e251",
+   "area": "six-sigma",
+   "q": "dmaic",
+   "expect": [
+    "dmaic",
+    "define"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e252",
+   "area": "six-sigma",
+   "q": "dmadv vs dmaic",
+   "expect": [
+    "dmadv"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e253",
+   "area": "six-sigma",
+   "q": "green belt vs black belt",
+   "expect": [
+    "green belt",
+    "black belt"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e254",
+   "area": "six-sigma",
+   "q": "what is dpmo",
+   "expect": [
+    "defects per million"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e255",
+   "area": "six-sigma",
+   "q": "why 3.4 defects per million",
+   "expect": [
+    "3.4"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e256",
+   "area": "six-sigma",
+   "q": "lean vs six sigma",
+   "expect": [
+    "lean",
+    "waste"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e257",
+   "area": "six-sigma",
+   "q": "what is a control chart",
+   "expect": [
+    "control chart"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e258",
+   "area": "six-sigma",
+   "q": "cp vs cpk",
+   "expect": [
+    "cpk",
+    "capability"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e259",
+   "area": "six-sigma",
+   "q": "pareto chart",
+   "expect": [
+    "pareto",
+    "80/20"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e260",
+   "area": "six-sigma",
+   "q": "fishbone diagram",
+   "expect": [
+    "ishikawa",
+    "fishbone"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e261",
+   "area": "six-sigma",
+   "q": "5 whys",
+   "expect": [
+    "5 whys",
+    "why"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e262",
+   "area": "six-sigma",
+   "q": "what is a sipoc",
+   "expect": [
+    "sipoc",
+    "supplier"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e263",
+   "area": "six-sigma",
+   "q": "voice of the customer",
+   "expect": [
+    "voice of the customer",
+    "voc"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e264",
+   "area": "six-sigma",
+   "q": "gage r&r",
+   "expect": [
+    "gage r&r",
+    "measurement system"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e265",
+   "area": "six-sigma",
+   "q": "hypothesis testing in six sigma",
+   "expect": [
+    "hypothesis",
+    "p-value"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e266",
+   "area": "six-sigma",
+   "q": "what goes in a project charter",
+   "expect": [
+    "charter"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e267",
+   "area": "six-sigma",
+   "q": "8 wastes of lean",
+   "expect": [
+    "waste",
+    "muda"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e268",
+   "area": "six-sigma",
+   "q": "spc meaning",
+   "expect": [
+    "statistical process control"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e269",
+   "area": "six-sigma",
+   "q": "what is kaizen",
+   "expect": [
+    "kaizen",
+    "continuous improvement"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e270",
+   "area": "six-sigma",
+   "q": "ctq?",
+   "expect": [
+    "critical to quality"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e271",
+   "area": "six-sigma",
+   "q": "what do you do in the control phase",
+   "expect": [
+    "control plan",
+    "control"
+   ],
+   "kind": "in"
+  },
+  {
+   "id": "e272",
+   "area": "out-of-scope",
+   "q": "what is the weather in Paris",
+   "expect": [],
+   "kind": "out"
+  },
+  {
+   "id": "e273",
+   "area": "out-of-scope",
+   "q": "who won the world cup",
+   "expect": [],
+   "kind": "out"
+  },
+  {
+   "id": "e274",
+   "area": "out-of-scope",
+   "q": "best carbonara recipe",
+   "expect": [],
+   "kind": "out"
+  },
+  {
+   "id": "e275",
+   "area": "out-of-scope",
+   "q": "is taylor swift dating anyone",
+   "expect": [],
+   "kind": "out"
+  },
+  {
+   "id": "e276",
+   "area": "out-of-scope",
+   "q": "should i buy nvidia stock now",
+   "expect": [],
+   "kind": "out"
+  },
+  {
+   "id": "e277",
+   "area": "out-of-scope",
+   "q": "i have chest pain what should i take",
+   "expect": [],
+   "kind": "out"
+  },
+  {
+   "id": "e278",
+   "area": "out-of-scope",
+   "q": "my landlord wont return my deposit can i sue him",
+   "expect": [],
+   "kind": "out"
+  },
+  {
+   "id": "e279",
+   "area": "out-of-scope",
+   "q": "give me some tesla stock tips",
+   "expect": [],
+   "kind": "out"
+  },
+  {
+   "id": "e280",
+   "area": "out-of-scope",
+   "q": "how many calories in a banana",
+   "expect": [],
+   "kind": "out"
+  },
+  {
+   "id": "e281",
+   "area": "out-of-scope",
+   "q": "what was the lakers score last night",
+   "expect": [],
+   "kind": "out"
+  },
+  {
+   "id": "e282",
+   "area": "out-of-scope",
+   "q": "best diet to lose 10 kg fast",
+   "expect": [],
+   "kind": "out"
+  },
+  {
+   "id": "e283",
+   "area": "out-of-scope",
+   "q": "book me a flight to london",
+   "expect": [],
+   "kind": "out"
+  },
+  {
+   "id": "e284",
+   "area": "out-of-scope",
+   "q": "who will win the next election",
+   "expect": [],
+   "kind": "out"
+  },
+  {
+   "id": "e285",
+   "area": "out-of-scope",
+   "q": "how do i bake sourdough",
+   "expect": [],
+   "kind": "out"
+  },
+  {
+   "id": "e286",
+   "area": "out-of-scope",
+   "q": "my kid has 102 fever how much tylenol",
+   "expect": [],
+   "kind": "out"
+  },
+  {
+   "id": "e287",
+   "area": "out-of-scope",
+   "q": "can i break my lease legally in texas",
+   "expect": [],
+   "kind": "out"
+  },
+  {
+   "id": "e288",
+   "area": "out-of-scope",
+   "q": "write me a love poem",
+   "expect": [],
+   "kind": "out"
+  },
+  {
+   "id": "e289",
+   "area": "out-of-scope",
+   "q": "whats the bitcoin price today",
+   "expect": [],
+   "kind": "out"
+  },
+  {
+   "id": "e290",
+   "area": "out-of-scope",
+   "q": "good restaurants near me",
+   "expect": [],
+   "kind": "out"
+  },
+  {
+   "id": "e291",
+   "area": "out-of-scope",
+   "q": "kim kardashian latest news",
+   "expect": [],
+   "kind": "out"
+  },
+  {
+   "id": "e292",
+   "area": "out-of-scope",
+   "q": "recommend some netflix shows",
+   "expect": [],
+   "kind": "out"
+  },
+  {
+   "id": "e293",
+   "area": "out-of-scope",
+   "q": "how do i fix my car brakes",
+   "expect": [],
+   "kind": "out"
+  },
+  {
+   "id": "e294",
+   "area": "out-of-scope",
+   "q": "horoscope for leo today",
+   "expect": [],
+   "kind": "out"
+  },
+  {
+   "id": "e295",
+   "area": "out-of-scope",
+   "q": "is this mole on my arm cancer",
+   "expect": [],
+   "kind": "out"
+  },
+  {
+   "id": "e296",
+   "area": "out-of-scope",
+   "q": "my employer fired me can i sue them",
+   "expect": [],
+   "kind": "out"
+  },
+  {
+   "id": "e297",
+   "area": "out-of-scope",
+   "q": "which crypto should i invest in",
+   "expect": [],
+   "kind": "out"
+  },
+  {
+   "id": "e298",
+   "area": "out-of-scope",
+   "q": "premier league table",
+   "expect": [],
+   "kind": "out"
+  },
+  {
+   "id": "e299",
+   "area": "out-of-scope",
+   "q": "how much ibuprofen can i take with my blood pressure meds",
+   "expect": [],
+   "kind": "out"
+  },
+  {
+   "id": "e300",
+   "area": "out-of-scope",
+   "q": "tell me a joke",
+   "expect": [],
+   "kind": "out"
+  },
+  {
+   "id": "e301",
+   "area": "out-of-scope",
+   "q": "how do i get custody of my kids in my divorce",
+   "expect": [],
+   "kind": "out"
+  }
+ ]
+}

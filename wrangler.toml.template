@@ -1,0 +1,18 @@
+# Template for wrangler.toml, which ./setup.sh renders from .env (see .env.example). wrangler.toml itself is not committed.
+# Read-only knowledge graph API (functions/api over D1) plus the Ask widget and Needle 2 files (public/).
+name = "${PAGES_PROJECT}"
+pages_build_output_dir = "public"
+compatibility_date = "2026-06-01"
+
+[vars]
+ALLOWED_ORIGINS = "${ALLOWED_ORIGINS}"
+
+[[d1_databases]]
+binding = "KB"
+database_name = "${D1_DATABASE_NAME}"
+database_id = "${D1_DATABASE_ID}"
+migrations_dir = "migrations"
+
+# Workers AI composes a short answer from the closest graph entries when no single entry clearly answers (free daily allowance).
+[ai]
+binding = "AI"

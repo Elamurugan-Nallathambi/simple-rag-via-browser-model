@@ -1,0 +1,46 @@
+/* Ask widget. Uses the host page's colour tokens when it has them (both the FDE site and the LMS do), so light and dark follow the host. */
+.kb-panel,.kb-btn{--kb-bg:var(--panel,#FFFFFF);--kb-ink:var(--ink,#13202E);--kb-ink-2:var(--ink-2,#3E4B59);--kb-muted:var(--muted,#647282);--kb-line:var(--line,#D9DFE6);
+  --kb-line-2:var(--line-2,#E8ECF0);--kb-soft:var(--bg,#F3F5F7);--kb-focus:var(--focus,#2F55C8);--kb-accent:#12695d;
+  font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;color:var(--kb-ink);font-size:14px;line-height:1.5}
+.kb-btn{position:fixed;right:20px;bottom:20px;z-index:40;display:inline-flex;align-items:center;gap:8px;height:40px;padding:0 16px;border:1px solid var(--kb-accent);border-radius:6px;
+  background:var(--kb-accent);color:#fff;font-weight:600;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.14)}
+.kb-btn:hover{filter:brightness(.96)}
+.kb-btn[aria-expanded="true"]{display:none}
+.kb-panel{position:fixed;right:20px;bottom:20px;z-index:41;width:min(420px,calc(100vw - 32px));height:min(620px,calc(100vh - 40px));display:flex;flex-direction:column;
+  background:var(--kb-bg);border:1px solid var(--kb-line);border-radius:9px;box-shadow:0 12px 32px rgba(0,0,0,.16);overflow:hidden}
+.kb-panel[hidden]{display:none}
+.kb-inline{position:static;width:auto;height:auto;box-shadow:none}
+.kb-inline .kb-log{min-height:260px;max-height:none}
+.kb-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;padding:14px 16px;border-bottom:1px solid var(--kb-line)}
+.kb-title{margin:0;font-size:15px;font-weight:600;letter-spacing:-.01em}
+.kb-sub{margin:2px 0 0;font-size:12px;color:var(--kb-muted)}
+.kb-close{display:grid;place-items:center;width:32px;height:32px;flex:none;border:1px solid var(--kb-line);border-radius:6px;background:var(--kb-bg);color:var(--kb-muted);cursor:pointer}
+.kb-close:hover{color:var(--kb-ink);border-color:var(--kb-ink-2)}
+.kb-log{flex:1;overflow:auto;padding:16px;display:flex;flex-direction:column;gap:12px;background:var(--kb-soft)}
+.kb-msg p{margin:0}
+.kb-me{align-self:flex-end;max-width:85%;background:var(--kb-bg);border:1px solid var(--kb-line);border-radius:8px 8px 2px 8px;padding:8px 12px;font-weight:500}
+.kb-bot{align-self:stretch;background:var(--kb-bg);border:1px solid var(--kb-line);border-radius:8px;padding:14px 16px;box-shadow:0 1px 2px rgba(0,0,0,.02)}
+.kb-answer{display:grid;gap:8px}
+.kb-kind{font-size:12px;font-weight:500;color:var(--kb-muted);letter-spacing:.02em}
+.kb-answer h4{margin:0;font-family:inherit;font-size:16px;font-weight:600;letter-spacing:-.01em;line-height:1.35}
+.kb-text{color:var(--kb-ink)}
+.kb-muted{color:var(--kb-muted);font-size:12.5px}
+.kb-read{justify-self:start;font-weight:600;font-size:13px;color:var(--kb-accent);text-decoration:none}
+.kb-read:hover{text-decoration:underline}
+.kb-rel{margin:4px 0 0;font-size:12px;font-weight:600;color:var(--kb-ink-2)}
+.kb-chips{display:flex;flex-wrap:wrap;gap:6px}
+.kb-chip{font:inherit;font-size:12px;line-height:1.4;border:1px solid var(--kb-line);background:var(--kb-bg);color:var(--kb-ink-2);border-radius:6px;padding:4px 9px;cursor:pointer;text-align:left}
+.kb-chip:hover{border-color:var(--kb-accent);color:var(--kb-accent)}
+.kb-sources{margin:0;padding-left:20px;display:grid;gap:3px;font-size:13px;color:var(--kb-muted)}
+.kb-link{font:inherit;background:none;border:0;padding:0;color:var(--kb-accent);text-align:left;cursor:pointer}
+.kb-link:hover{text-decoration:underline}
+.kb-form{display:flex;gap:8px;padding:12px 16px;border-top:1px solid var(--kb-line);background:var(--kb-bg)}
+.kb-form input{flex:1;min-width:0;height:40px;font:inherit;padding:8px 12px;border:1px solid var(--kb-line);border-radius:6px;background:var(--kb-bg);color:var(--kb-ink)}
+.kb-form input::placeholder{color:var(--kb-muted)}
+.kb-form input:focus{outline:2px solid var(--kb-focus);outline-offset:1px;border-color:transparent}
+.kb-send{height:40px;padding:0 16px;border:1px solid var(--kb-accent);border-radius:6px;background:var(--kb-accent);color:#fff;font:inherit;font-weight:600;cursor:pointer}
+.kb-send:hover{filter:brightness(.96)}
+.kb-foot{margin:0;padding:0 16px 12px;background:var(--kb-bg);font-size:11.5px;color:var(--kb-muted)}
+@media (max-width:520px){.kb-panel{right:8px;bottom:8px;width:calc(100vw - 16px);height:calc(100vh - 16px)}}
+@media print{.kb-btn,.kb-panel{display:none}}
+.kb-sources .kb-link{display:inline}

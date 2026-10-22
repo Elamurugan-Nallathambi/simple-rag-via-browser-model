@@ -1,0 +1,10 @@
+.wrangler/
+node_modules/
+.DS_Store
+out/
+public/needle/needle2.cact
+.env
+.dev.vars
+wrangler.toml
+public/vectors.json
+eval/report.json

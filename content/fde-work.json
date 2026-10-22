@@ -1,0 +1,585 @@
+{"entries": [
+  {"id": "fde-first-week", "q": "What should I do in my first week on a client?", "alts": ["first week at a client", "how do I start an engagement", "day one on a new client", "what to do when I join a client team"],
+   "a": "Embed first: get access to systems, meet the process owner and the people who do the work, and learn their words for things. Ask one plain question for each of the five gaps (data, integration, validation, ownership, adoption) and write down the answer, or the fact that nobody knew. Ask for an org chart, a systems landscape and what happened to earlier pilots. Send security and compliance a short note on what you plan to build and which data it will read.",
+   "concepts": [], "link": "learn/m01.html#l-why-ai-projects-stall"},
+
+  {"id": "fde-first-meeting", "q": "What do I tell the client in the first meeting?", "alts": ["how do I introduce myself to a client", "setting expectations on day one", "what should I say I am here to do", "first client meeting"],
+   "a": "Say plainly what you are there to do, for example: 'I am here to build a working version of this with your team, test it on your real cases, and make sure someone here can run it when I leave.' That tells them you are not only advising, not selling, and not collecting feature requests for a product. During the engagement, name the mode you are in, such as 'today I am only listening' or 'this is a rough build, please try to break it'.",
+   "concepts": [], "link": "learn/m01.html#l-fde-vs-other-roles"},
+
+  {"id": "fde-gap-questions", "q": "Which questions show early why a project might stall?", "alts": ["questions to spot project risks", "how do I find the five gaps", "risk questions for week one", "how to avoid pilot purgatory"],
+   "a": "Ask one plain question per gap. For data, ask to see the real source system today and who approves access; for integration, ask where people would see the output during their normal day. For validation, ask who decides whether an answer is correct and whether they can give you twenty past examples; for ownership and adoption, ask who will run it after you leave and what would make the users trust or refuse a new tool. A missing answer is not bad news; it is your work plan, so share the list with the sponsor.",
+   "concepts": [], "link": "learn/m01.html#l-why-ai-projects-stall"},
+
+  {"id": "fde-where-results-go", "q": "Should my solution write results into a new tool or the existing system?", "alts": ["where should AI output be stored", "second source of truth", "write back to the system of record", "should I build a new app for results"],
+   "a": "Plan from day one for results to go back into the system of record, the one system finance or audit treats as the official truth. Writing results somewhere new creates a second truth that someone will have to reconcile by hand. Put the output where people already work; a draft reply in the existing ticket tool beats a beautiful new app nobody opens.",
+   "concepts": [], "link": "learn/m04.html#l-value-chains"},
+
+  {"id": "fde-what-to-automate", "q": "How do I spot which part of a process is worth automating?", "alts": ["where to apply AI in a process", "find automation candidates", "which step to automate first", "where is the manual work"],
+   "a": "Look at handoffs, where work moves between teams or systems. Four signs point to cost and delay: the same data re-keyed into two systems, work waiting in a queue or inbox, rework after a wrong entry, and exceptions that fall out of the standard flow to a person. Exceptions are often a small share of volume but a large share of effort, which makes them good candidates for an assistant that reads the documents and drafts a decision for a person to approve.",
+   "concepts": [], "link": "learn/m04.html#l-value-chains"},
+
+  {"id": "fde-interview-plan", "q": "How long should a discovery interview be, and how do I split the time?", "alts": ["interview structure", "discovery interview agenda", "how long is an interview", "interview timing"],
+   "a": "About forty minutes is enough, but book an hour so you never rush the close. A simple split: open (2 minutes), their role and systems (5), the last real case step by step (15), dig into pain (10), workarounds and numbers (5), and close (3). The close is where you ask for documents, a chance to shadow and who else to talk to.",
+   "concepts": [], "link": "learn/m05.html#l-discovery-interviews"},
+
+  {"id": "fde-leading-questions", "q": "What is a leading question, and how do I avoid it?", "alts": ["leading question example", "how not to bias an interview", "neutral interview questions", "avoid suggesting answers"],
+   "a": "A leading question hints at the answer you want, such as 'Isn't it frustrating to chase buyers by email?'. Ask what happened instead: 'What happens after you email the buyer?'. Avoid naming your solution until the end, and when you hear something interesting, say 'Tell me more about that' and then stay quiet.",
+   "concepts": [], "link": "learn/m05.html#l-discovery-interviews"},
+
+  {"id": "fde-would-you-use", "q": "Why shouldn't I ask users if they would use my tool?", "alts": ["would you use this question", "the Mom Test", "asking about the future in interviews", "users say yes to everything"],
+   "a": "Questions about the future ask people to predict their own behaviour, and most say yes to be helpful. Compliments such as 'that sounds really useful' feel like progress but carry no information. Ask about specific past cases instead, such as 'How many exceptions did you handle yesterday, and which took longest?', because those facts can be checked against system data.",
+   "concepts": [], "link": "learn/m05.html#l-discovery-interviews"},
+
+  {"id": "fde-real-pain", "q": "How can I tell if a pain is real or just a minor annoyance?", "alts": ["is this problem worth solving", "test if a pain is real", "how serious is the problem", "validate a pain in discovery"],
+   "a": "Ask 'Have you tried to fix this before?'. If someone built a spreadsheet or asked IT for help, the pain is real. If they never did anything about it, it may be a minor annoyance. Also ask 'If this problem disappeared tomorrow, what would you do with the time?'.",
+   "concepts": [], "link": "learn/m05.html#l-discovery-interviews"},
+
+  {"id": "fde-shadowing-how", "q": "How do I shadow someone doing their work?", "alts": ["how to shadow a user", "watching real work", "contextual inquiry", "gemba walk for software"],
+   "a": "Ask for a normal day with real cases, not a demo, sit where you can see the screen and ask them to think aloud. Note every system and screen, every copy and paste, every lookup in email or a spreadsheet, and every point where they wait or ask someone else. Shadow at least two people, because methods differ, and at least one busy period such as month end if the work is seasonal.",
+   "concepts": [], "link": "learn/m05.html#l-shadowing-evidence"},
+
+  {"id": "fde-timing-cases", "q": "How many cases should I time, and what do I write down?", "alts": ["timing sheet", "time real cases", "measure the current process", "baseline timing"],
+   "a": "Time 20 to 30 cases if you can, across more than one person, so one unusual case does not dominate. Use a sheet with case ID, start and end time, steps, systems used, and whether it was standard or an exception, plus the reason for each exception. Keep touch time and elapsed time separate, because one saves effort and the other removes waiting.",
+   "concepts": [], "link": "learn/m05.html#l-shadowing-evidence"},
+
+  {"id": "fde-map-detail", "q": "How detailed should my process map be?", "alts": ["process map levels", "level 1 2 3 process map", "how many steps in a process map", "as is and to be maps"],
+   "a": "Keep it at the level of the conversation. A level one map shows a whole stream such as procure to pay on one line, a level two map shows one process in eight to twenty steps, and a level three map details the one step where your assistant will work. Map the current state first, draw the happy path before the exceptions, and draw the future state only after the client agrees the current one is right.",
+   "concepts": [], "link": "learn/m05.html#l-process-mapping"},
+
+  {"id": "fde-stakeholders", "q": "Who are the usual stakeholders on an FDE engagement?", "alts": ["stakeholder list", "who do I need on my side", "key people on a project", "who can block my work"],
+   "a": "The executive sponsor funds the work and removes blockers. The process owner runs the process day to day and is your most important ally, and the users decide in practice whether the tool gets used. IT and data owners control access, security reviews data flows and vendors, and compliance, legal and privacy check rules, contracts and personal data. Ask in every interview 'Who else should I talk to?' and 'Who could stop this?'.",
+   "concepts": [], "link": "learn/m05.html#l-stakeholders-raci"},
+
+  {"id": "fde-security-early", "q": "When should I bring in security and compliance?", "alts": ["involve security team", "security review timing", "talk to compliance early", "data protection approval"],
+   "a": "In the first two weeks, not the week before a pilot. Send a short note: what the POC does, which data it reads, where that data goes (for example an LLM provider's API), who sees the results and how long anything is kept. Ask how their review works and how long it takes, and treat their questions as design input, such as masking fields or logging every AI suggestion from the first version.",
+   "concepts": ["DPA and security review"], "link": "learn/m05.html#l-stakeholders-raci"},
+
+  {"id": "fde-brief-signoff", "q": "How do I get the one-page brief signed off?", "alts": ["brief approval", "client sign off on scope", "agree the brief", "how to get agreement on a POC"],
+   "a": "Send it as a draft with the open questions marked, and ask the process owner to correct it rather than approve it; people find mistakes faster than they give approval. Then walk it through in a short meeting and read the out-of-scope list out loud, since it prevents the most arguments. A reply saying 'Agreed' from the process owner and sponsor, saved with the brief, is enough.",
+   "concepts": [], "link": "learn/m05.html#l-one-page-brief"},
+
+  {"id": "fde-fair-eval", "q": "When and how should the evaluation cases be chosen?", "alts": ["who picks the test cases", "fair evaluation set", "choose eval cases before building", "avoid cherry picking test cases"],
+   "a": "Agree how the evaluation set is built before you build the solution; if the team picks cases after seeing results, the test is no longer fair. A simple rule works: take every case from a chosen recent week, remove the ones out of scope, and keep the rest, including the messy ones. Ideally the process owner's team labels them.",
+   "concepts": ["Evaluation (eval)"], "link": "learn/m05.html#l-one-page-brief"},
+
+  {"id": "fde-scope-creep", "q": "What do I do when the client asks for something new halfway through the build?", "alts": ["scope creep", "new request during the POC", "how to say no to a client", "change of scope"],
+   "a": "Point to the agreed brief: it is a good idea, it is outside what we agreed, let us put it on the list for the pilot. If the change really is needed, update the brief, mark what changed and why, and get it agreed again rather than letting scope drift by email. In the capstone, silent scope changes count against you.",
+   "concepts": [], "link": "learn/m11.html#l-brief-and-options"},
+
+  {"id": "fde-hidden-rules", "q": "What do I do with rules that live only in one expert's head?", "alts": ["undocumented business rules", "tribal knowledge", "expert exceptions", "rules nobody wrote down"],
+   "a": "Before handing them to a model, capture them as explicit rules in a small table the client can edit. A rule in a table is visible, testable and cheap, while a rule buried in a prompt is invisible to the client and can stop working when the model changes. Keep a list of exceptions you could not turn into rules; those are the real candidates for model judgment and good evaluation cases.",
+   "concepts": [], "link": "learn/m08.html#l-where-ai-belongs"},
+
+  {"id": "fde-one-big-prompt", "q": "Why not just send the whole process to one big prompt?", "alts": ["one prompt for everything", "send every email to the model", "why split AI work into steps", "monolithic prompt"],
+   "a": "It demos well on five friendly examples but fails at real volume in three ways. Cost grows with every token, including steps a line of code could do for free. Errors grow because each model step has some chance of being wrong, and chaining them multiplies the chances. Debugging becomes almost impossible because you cannot tell which part of the prompt caused a bad decision.",
+   "concepts": ["Token"], "link": "learn/m08.html#l-where-ai-belongs"},
+
+  {"id": "fde-not-ai", "q": "When should I not use AI at all?", "alts": ["when is AI the wrong answer", "do I need an LLM for this", "rules instead of AI", "skip the model"],
+   "a": "When the step follows a rule you can write as if/else, a lookup or an API call, it is code, even if a person does it by hand today. Arithmetic, date maths and lookups should never be left to a model. Sometimes the best fix is not AI at all, such as changing how invoices reach the mailbox, so include a non-AI option in your options paper when one is plausible.",
+   "concepts": [], "link": "learn/m08.html#l-where-ai-belongs"},
+
+  {"id": "fde-case-inputs", "q": "Where do I get the numbers for a business case?", "alts": ["business case inputs", "sources for volume and time", "defend business case numbers", "where do numbers come from"],
+   "a": "Take volume from system data, current time from timing real cases while shadowing, time with the solution from POC results (until then a cautious estimate you label as such), and loaded cost from finance. Write each input with its source next to it. When a number is challenged, you point to where it came from, and the discussion becomes about the input rather than your credibility.",
+   "concepts": [], "link": "learn/m04.html#l-business-case"},
+
+  {"id": "fde-payback", "q": "How do I work out payback for an AI project?", "alts": ["payback period", "when does it pay for itself", "ROI of a POC", "months to break even"],
+   "a": "Payback is how many months until the cumulative net benefit covers the upfront cost. In the course's invented example, a 60,000 dollar build with 8,000 dollars a month net benefit pays back in 7.5 months without a ramp, but in month 10 once half the benefit is assumed for the first three months. Always include an adoption ramp and run costs such as API usage, hosting and staff time to maintain prompts.",
+   "concepts": [], "link": "learn/m04.html#l-business-case"},
+
+  {"id": "fde-key-assumption", "q": "How do I find the assumption that matters most in my business case?", "alts": ["sensitivity analysis", "which input moves the result", "test business case assumptions", "low base high case"],
+   "a": "Change one input at a time by a fair amount, for example minutes saved from 7 to 4, and see how far the payback month moves. The input that moves it most is what the sponsor is really betting on, so say that out loud and make it the first thing your POC measures. Present a low, base and high case rather than one number.",
+   "concepts": [], "link": "learn/m04.html#l-business-case"},
+
+  {"id": "fde-headcount", "q": "Should I tell the team the AI will replace people?", "alts": ["AI and job cuts", "will this replace staff", "users afraid for their jobs", "talking about headcount"],
+   "a": "Never imply headcount cuts the sponsor has not discussed; it damages trust with the users you need for adoption. Ask the sponsor what they would do with the freed hours, such as clearing a backlog or absorbing growth without hiring, and state that as the benefit. With users, be honest within what the sponsor has agreed; if the sponsor has said there are no cuts, say so clearly.",
+   "concepts": [], "link": "learn/m05.html#l-change-adoption"},
+
+  {"id": "fde-why-not-buy", "q": "Someone asks 'why don't we just buy a tool for this?'. What do I say?", "alts": ["buy instead of build", "is there a product for this", "market scan answer", "competitor tools"],
+   "a": "Answer from a short market scan that covers five groups: dedicated products, features in systems the client already owns, people-based options such as outsourcing, general tools, and doing nothing. Score each against the client's criteria, with one line of evidence, and ask IT and procurement what was evaluated before. If a product fits better, say so; that honesty pays back on the next decision.",
+   "concepts": [], "link": "learn/m04.html#l-market-scan"},
+
+  {"id": "fde-hidden-costs", "q": "What hidden costs come with configure, buy and build?", "alts": ["total cost of ownership", "TCO of AI solution", "costs after the first quote", "maintenance cost of a build"],
+   "a": "Heavy configuration can make platform upgrades slow and often needs a specialist administrator. Buying brings licence increases at renewal, integration work, a security review that can take weeks and the risk the vendor changes direction. Building needs ongoing maintenance: prompt and model updates, quality monitoring, access management, a person who answers when it breaks, and an evaluation set rerun whenever a prompt or model changes.",
+   "concepts": [], "link": "learn/m04.html#l-build-buy-configure"},
+
+  {"id": "fde-move-up-level", "q": "When can we move from human review to full automation?", "alts": ["move to automated", "remove the human from the loop", "earn more autonomy", "automation level rule"],
+   "a": "Write the rule for moving up before the pilot starts, so the later decision is based on data, not mood. A common pattern is to start semi-automated, measure how often reviewers change the output, and move low-risk categories to automated once that correction rate is low and stable. Keep a way back: a switch that sends items to manual review if quality drops.",
+   "concepts": [], "link": "learn/m06.html#l-automation-levels"},
+
+  {"id": "fde-rubber-stamping", "q": "How do I know reviewers are actually checking the AI output?", "alts": ["rubber stamping", "review fatigue", "are reviewers reading", "check human reviewers"],
+   "a": "Watch the reviewers, not only the model. If approval time drops to about a second per item, people may be clicking through without reading. Some teams add an occasional known-wrong item to the queue to check that reviewers catch it. Place review gates by risk, because a person on every step leads to rubber-stamping.",
+   "concepts": [], "link": "learn/m06.html#l-automation-levels"},
+
+  {"id": "fde-which-diagrams", "q": "Which architecture diagrams do I need for a POC?", "alts": ["C4 diagrams for a POC", "context and container diagram", "architecture diagram for security", "how much architecture to draw"],
+   "a": "Usually the first two C4 levels. The context diagram shows your system as one box with its users and the external systems it touches, including the model API, because client data goes there. The container diagram shows the separately running parts, with every arrow labelled with what flows and how. Draw the trust boundary and mark arrows that carry personal or confidential data.",
+   "concepts": [], "link": "learn/m06.html#l-c4-architecture"},
+
+  {"id": "fde-poc-data-fast", "q": "What is the quickest way to get client data for a POC?", "alts": ["get data access for a POC", "file export or API", "batch file integration", "start without API access"],
+   "a": "If the client can export last month's tickets or invoices as a file, start there. You can build and evaluate without waiting for API access, and nothing in production is touched. Move to an API or webhook once the value is proven, and ask for sandbox and API access during discovery, because it can take weeks.",
+   "concepts": [], "link": "learn/m06.html#l-data-integration"},
+
+  {"id": "fde-write-back", "q": "How do I safely write results back into a client system?", "alts": ["write back to ERP", "update a ticket from AI", "safe integration writes", "post results to the system of record"],
+   "a": "Start read-only, then write to a draft or review state rather than straight to posted. Make writes idempotent with a unique id the target checks, log every write with what changed and why, and agree with the system owner which fields you may touch. Test against a sandbox of the target system first.",
+   "concepts": [], "link": "learn/m06.html#l-data-integration"},
+
+  {"id": "fde-data-map", "q": "How do I show where the client's data goes?", "alts": ["data flow table", "where does client data travel", "document data hops", "data residency in design"],
+   "a": "Mark every place data is sent or stored: your servers, logs, the model provider, any vector database and any monitoring tool. For each, note what data goes there and how long it is kept, then check the client's rules on region, cloud account and special data such as health or payment cards. Send less where you can: often the model only needs the relevant paragraph, with identifiers removed.",
+   "concepts": ["Data residency", "Data retention"], "link": "learn/m06.html#l-data-integration"},
+
+  {"id": "fde-switch-model", "q": "How do I switch to a cheaper or newer model safely?", "alts": ["change model", "try a smaller model", "model upgrade", "model retirement"],
+   "a": "Keep the model id in configuration, not scattered through the code, and keep the evaluation set and its runner in the repository. Then a switch is a measured change: run the set on the new model, compare scores, cost and latency, and decide. Providers release new versions and retire old ones on published schedules, so expect to do this during the solution's life.",
+   "concepts": ["Model family and version", "Evaluation (eval)"], "link": "learn/m06.html#l-model-choice-cost"},
+
+  {"id": "fde-cost-too-low", "q": "Why did my cost estimate turn out too low?", "alts": ["cost estimate wrong", "underestimated tokens", "API bill higher than expected", "hidden token costs"],
+   "a": "The usual cause is counting only the user's question as input. System prompts, retrieved documents and tool definitions are often most of the input tokens, so measure them on 10 to 20 real requests; the API returns exact counts in the usage field. Also remember output tokens usually cost more than input, and add a margin for retries and growth.",
+   "concepts": ["Token"], "link": "learn/m06.html#l-model-choice-cost"},
+
+  {"id": "fde-lower-cost", "q": "How can I lower the model bill?", "alts": ["reduce LLM cost", "cheaper AI calls", "save tokens", "cut API spend"],
+   "a": "Send less: retrieve only the relevant sections instead of whole documents, and ask for shorter output. Use batch processing for work that does not need an instant answer, and prompt caching when many calls start with the same long prefix. Use a smaller model for simple steps such as classification, but only if it passes the same evaluation set.",
+   "concepts": ["Prompt caching", "Token"], "link": "learn/m06.html#l-model-choice-cost"},
+
+  {"id": "fde-prompts-as-code", "q": "Where should my prompts live?", "alts": ["version prompts", "prompt management", "store prompts in Git", "prompt history"],
+   "a": "Treat prompts like code: keep them in files under version control, not only in a chat window or a vendor UI. Write a short note with each change saying which failure it fixes, change one thing at a time, and rerun your test cases after each change. When an expert says an answer is wrong, you can then show the exact rule the model followed and agree the fix together.",
+   "concepts": ["Prompt and system prompt"], "link": "learn/m02.html#l-prompting-fundamentals"},
+
+  {"id": "fde-valid-but-wrong", "q": "My JSON output parsed fine, but some values are wrong. Why?", "alts": ["structured output wrong values", "schema passed but answer wrong", "validate model output", "business rules on JSON"],
+   "a": "A schema guarantees shape, not truth. The model can still return a total of 0, a made-up supplier or a currency code that does not exist. After parsing, apply business rules: totals positive, currency in an allowed list, invoice number in the client's format and present in the source text. That last check alone catches a whole class of invented values.",
+   "concepts": ["JSON", "Hallucination"], "link": "learn/m07.html#l-prompts-in-code"},
+
+  {"id": "fde-batch-run", "q": "How do I run my prompt over a whole folder of documents?", "alts": ["process many documents", "batch run script", "loop over files with an LLM", "run a POC on real items"],
+   "a": "Wrap the call in a function that takes one item and returns either a validated object or an error record. Loop over the items and write each result to a CSV or SQLite table with the item id, output, finish reason, validation result and token usage. Catch exceptions per item so one bad file does not stop the run, set a timeout, and use a provider's batch API for large runs that can wait.",
+   "concepts": [], "link": "learn/m07.html#l-prompts-in-code"},
+
+  {"id": "fde-tool-description", "q": "How do I write a good tool description?", "alts": ["tool definition tips", "function calling description", "name and schema for a tool", "model picks the wrong tool"],
+   "a": "The model decides whether and how to call a tool mostly from its description. 'Gets order' is weak; 'Look up the delivery status of one customer order by its id, for example A-1001' is clear. Say what the tool does not do if confusion is likely, and keep tools small: one tool per clear action is easier to use correctly, secure and test.",
+   "concepts": ["Tool use (function calling)"], "link": "learn/m07.html#l-tool-use"},
+
+  {"id": "fde-tool-permission", "q": "If the model calls a tool, does that mean the user is allowed to use it?", "alts": ["validate tool inputs", "tool call permissions", "model chose a tool", "check user rights in tools"],
+   "a": "No. The model choosing a tool is not the same as the user being allowed to use it. Your function should check the input format and the current user's rights before running anything, and run with the user's permissions where possible. If a tool fails, still return a clear error result so the model can ask for a correct value instead of inventing one.",
+   "concepts": ["Tool use (function calling)", "Access control and least privilege"], "link": "learn/m07.html#l-tool-use"},
+
+  {"id": "fde-chunking", "q": "How should I split documents for RAG?", "alts": ["chunk size", "chunking strategy", "split documents for retrieval", "RAG preparation"],
+   "a": "Make each chunk small enough to cover one idea and large enough to make sense alone; a few hundred words, or one section or clause, is a common start. Structure-aware splitting usually beats a fixed word count, and a small overlap stops sentences being lost at boundaries. Keep metadata with every chunk: source file, heading, page, date and who may see it, for citations and permission filtering.",
+   "concepts": ["RAG (retrieval-augmented generation)"], "link": "learn/m07.html#l-rag-in-practice"},
+
+  {"id": "fde-rag-permissions", "q": "How do I stop RAG from showing documents a user should not see?", "alts": ["RAG access control", "document permissions in retrieval", "RAG data leak", "filter search results by user"],
+   "a": "Apply each user's document permissions at search time, before any chunk goes into the prompt, not after the answer is written. That means storing who may see each chunk in its metadata. A RAG system that returns a confidential board paper to anyone who asks the right question is a data leak with a friendly interface.",
+   "concepts": ["RAG (retrieval-augmented generation)", "Access control and least privilege"], "link": "learn/m07.html#l-rag-in-practice"},
+
+  {"id": "fde-agent-guardrails", "q": "What guardrails does an agent need?", "alts": ["agent safety", "limit an agent", "agent controls", "bounded agent"],
+   "a": "Put them in code, not only in the prompt: a maximum number of turns and cost per task, a small set of tools that are read-only by default, and human approval for anything that sends, pays, deletes or changes access. Add clear error results so it can recover, an audit log of every tool call, and a defined hand-over to a person when it is stuck.",
+   "concepts": ["Agent", "Access control and least privilege"], "link": "learn/m07.html#l-agents"},
+
+  {"id": "fde-agent-middle", "q": "Is there a middle ground between a fixed workflow and an agent?", "alts": ["workflow with an agent step", "hybrid agent design", "partial agent", "agent inside a workflow"],
+   "a": "Yes: a workflow with one agent step inside it. The fixed parts, such as fetching the case and writing the result, stay predictable, and only the investigation in the middle is left to the agent, with its own turn limit. Build the fixed workflow first, collect the cases it cannot handle, and add the agent only if those cases matter.",
+   "concepts": ["Agent"], "link": "learn/m07.html#l-agents"},
+
+  {"id": "fde-mcp-parts", "q": "What are hosts, clients and servers in MCP?", "alts": ["MCP architecture", "MCP host client server", "how MCP connects", "stdio or HTTP MCP"],
+   "a": "The host is the AI application the user works in, such as Claude Desktop, Claude Code or your own app. Inside it, an MCP client manages the connection to one MCP server, a separate program that provides capabilities such as access to a database or an API. Local servers talk over standard input and output, which suits development; remote servers are reached over HTTP and suit shared company connectors.",
+   "concepts": ["MCP (Model Context Protocol)"], "link": "learn/m07.html#l-mcp"},
+
+  {"id": "fde-injection-controls", "q": "There is no complete fix for prompt injection. So how do I defend against it?", "alts": ["prompt injection defence", "layered controls for injection", "stop hidden instructions in emails", "indirect prompt injection"],
+   "a": "Layer controls. Mark outside content clearly as data, for example in tags, and tell the model never to follow instructions found inside it. Limit what tools can do, require a person to approve any action with real effect, and check the output against rules before acting. Design so that a fooled model cannot cause serious harm on its own.",
+   "concepts": ["Prompt injection"], "link": "learn/m06.html#l-llm-security"},
+
+  {"id": "fde-excessive-agency", "q": "What is excessive agency?", "alts": ["too many permissions for AI", "agent with too much access", "OWASP excessive agency", "scope tool access"],
+   "a": "It means the system can do more than it should: too many tools, tools with too much power, or no human check on risky actions. A ticket assistant that only reads tickets should not hold a key that can delete them. Split tools into read and write, grant write only where needed with approval, and avoid one powerful service account for everything.",
+   "concepts": ["Access control and least privilege"], "link": "learn/m06.html#l-llm-security"},
+
+  {"id": "fde-security-proof", "q": "How do I show the security team my controls actually work?", "alts": ["test security controls", "security review evidence", "pass the security review", "red team a POC"],
+   "a": "Test them yourself and write down what you tried. Try a few injection attempts from the OWASP examples against the POC, check that a user cannot retrieve another team's documents, and confirm no secret appears in logs. Share that record with the container diagram and the data-flow table; it often turns a nervous review into an approval.",
+   "concepts": ["Prompt injection", "DPA and security review"], "link": "learn/m06.html#l-llm-security"},
+
+  {"id": "fde-client-data-chat", "q": "Can I paste client data into a chat tool to get work done faster?", "alts": ["use ChatGPT with client data", "personal AI account at work", "is it ok to paste data into AI", "approved AI tools"],
+   "a": "No, not unless the client's policy allows that tool for that data. Learn the client's data levels on day one and which AI tools are approved for each; a free consumer app, an enterprise chat tool and an API account under contract have different terms. Never use personal devices or personal AI accounts for client data, and never paste secrets into a prompt.",
+   "concepts": ["Sensitive data", "Training on your data"], "link": "learn/m02.html#l-responsible-use"},
+
+  {"id": "fde-bias-test", "q": "How do I test an AI solution for bias?", "alts": ["fairness testing", "check AI for bias", "name swap test", "bias in decisions about people"],
+   "a": "Create pairs of cases that differ only in a sensitive detail, such as the name, and check whether the output changes. Test on purpose wherever output affects people, such as hiring, lending, insurance, pricing or discipline. Keep a human decision maker for decisions about people, and record what the AI recommended and what the person decided.",
+   "concepts": [], "link": "learn/m02.html#l-responsible-use"},
+
+  {"id": "fde-mvp-shape", "q": "What should my MVP look like?", "alts": ["minimum viable product for AI", "smallest useful POC", "first version scope", "what to build first"],
+   "a": "The smallest thing that proves value on real data with a person in control. In the course's hospital example, that is a tool that drafts discharge summaries from existing notes for one ward, which a doctor edits and signs. No autonomous actions and no new systems, one integration to read data, and a clear list of what is out of scope.",
+   "concepts": [], "link": "learn/m08.html#l-agentic-system-design"},
+
+  {"id": "fde-three-buckets", "q": "How should I report results to a sponsor?", "alts": ["business results of AI", "report value to sponsor", "cost saved risk reduced revenue gained", "translate accuracy to business terms"],
+   "a": "Put every result in one of three buckets: cost saved, risk reduced or revenue gained. Measure a baseline before you start, use the same measure after, and state assumptions in plain words. Do not report model accuracy to a sponsor who asked about money and risk.",
+   "concepts": [], "link": "learn/m08.html#l-integrate-and-roll-out"},
+
+  {"id": "fde-eval-sources", "q": "Where do I find cases for an evaluation set?", "alts": ["eval case sources", "get test cases from the client", "build a golden set", "where do test cases come from"],
+   "a": "Start where the work leaves a trail: historical records with what a person decided, and exception and error logs for edge cases. Add cases you watched while shadowing, a few expert-written cases for rules that rarely appear in history, and, once a pilot runs, real requests sampled each week. Ask for these in discovery.",
+   "concepts": ["Evaluation (eval)"], "link": "learn/m09.html#l-eval-sets"},
+
+  {"id": "fde-by-case-type", "q": "Why split my pass rate by case type?", "alts": ["pass rate per category", "overall accuracy is misleading", "edge case accuracy", "segment eval results"],
+   "a": "One overall number hides where the solution fails. A 90 percent overall rate can hide 40 percent on the edge cases that matter most. List the case types first, make sure each has several cases, and report the rate for each.",
+   "concepts": ["Evaluation (eval)"], "link": "learn/m09.html#l-measuring-quality"},
+
+  {"id": "fde-dangerous-errors", "q": "Are all errors equally bad?", "alts": ["cost of errors", "dangerous mistakes", "false approve versus false review", "error severity"],
+   "a": "No. Approving a duplicate invoice costs money, while sending a clean one to review only costs time. Count the dangerous kind separately and report it next to the pass rate. In the course's example, a needs_review case wrongly marked approve is the one failure that matters most.",
+   "concepts": [], "link": "learn/m09.html#l-measuring-quality"},
+
+  {"id": "fde-small-set-claim", "q": "Can I say my POC is 90 percent accurate from a 30-case test?", "alts": ["accuracy from small sample", "how precise is my pass rate", "report pass rate honestly", "30 cases enough"],
+   "a": "Not as a precise figure. Thirty cases is enough to find the main failure types, not to claim exact accuracy. Report the pass rate with the number of cases behind it, the dangerous errors and the main failure causes, and say plainly what it can and cannot tell you. Put that in the written follow-up, so 'about 90 percent' does not grow in the retelling.",
+   "concepts": ["Evaluation (eval)"], "link": "learn/m11.html#l-evaluation-sheet"},
+
+  {"id": "fde-review-screen", "q": "How do I design a review step people will actually use?", "alts": ["review UI", "approval screen", "make human review fast", "human in the loop design"],
+   "a": "Show the AI output next to the source and highlight what the AI relied on. Make approve, edit and reject one click each, with a required reason for edits and rejections; that reason is the data you learn from. If review is slow or confusing, people click approve on everything and the gate becomes theatre.",
+   "concepts": [], "link": "learn/m09.html#l-human-review-audit"},
+
+  {"id": "fde-edit-rate", "q": "What is the edit rate, and why should I watch it?", "alts": ["reviewer edit rate", "quality after go-live", "approval rate", "early warning of quality drop"],
+   "a": "It is the share of AI suggestions that reviewers edit or reject. After go-live it is one of the best quality signals you will get, and a rising edit rate is an early warning that something has changed. Log it from the audit table and review it weekly.",
+   "concepts": ["Audit log"], "link": "learn/m09.html#l-human-review-audit"},
+
+  {"id": "fde-rules-in-code", "q": "Should the model or my code decide which cases a person reviews?", "alts": ["routing rule for review", "who decides human review", "model confidence for review", "review threshold"],
+   "a": "Your code. The model returns its decision and the evidence it used, and code applies the client's rules: amounts above a limit, new suppliers, mismatches, or cases the model marks needs_review go to a person. Because the rule is in code, the client can read it, change it and show it to an auditor. Do not rely on the model's own statement of confidence.",
+   "concepts": [], "link": "learn/m09.html#l-human-review-audit"},
+
+  {"id": "fde-static-key", "q": "Can I put my LLM API key in a static web page?", "alts": ["API key in frontend", "key in JavaScript", "static site secrets", "hide API key"],
+   "a": "No. Everything in a static page or front-end JavaScript is visible to anyone who opens it. Keep the key on a server or serverless function that takes the request, calls the model and returns the answer. A common POC shape is a static front end plus one serverless or container API that holds the secrets.",
+   "concepts": ["API key", "Secrets management", "Frontend", "Backend"], "link": "learn/m09.html#l-deployment-options"},
+
+  {"id": "fde-it-questions", "q": "What will the client's IT team ask about my deployment?", "alts": ["deployment questions from IT", "security review of hosting", "where does it run", "one page deployment summary"],
+   "a": "Expect the same questions whatever you choose: which cloud account it runs in and who owns it, where data is stored and processed, how users sign in, which outside services receive data (including the LLM provider), and how it is backed up and patched. Write the answers on one page early; it shortens the review and becomes part of the hand-over.",
+   "concepts": ["Deployment", "DPA and security review"], "link": "learn/m09.html#l-deployment-options"},
+
+  {"id": "fde-config-env", "q": "Where should settings like the model name live?", "alts": ["configuration in environment variables", "twelve factor config", "settings per environment", "promote the same build"],
+   "a": "In environment variables, not edited code, along with database addresses and feature flags. Then the exact same build moves from test to prod with only its settings changed. Use a different API key per environment, so a leaked dev key cannot touch production.",
+   "concepts": ["Environment", "Secrets management"], "link": "learn/m09.html#l-cicd-secrets"},
+
+  {"id": "fde-rollback", "q": "How do I roll back a bad release, including a prompt change?", "alts": ["undo a release", "revert prompt change", "rollback plan", "tagged releases"],
+   "a": "Make every release a tagged build that was tested, so rolling back is just deploying the previous tag. Keep prompts in Git with the code, so a prompt change goes through the same pull request, eval gate and review, and rolls back the same way. Write the release and rollback steps in the runbook.",
+   "concepts": ["CI/CD", "Git and repository"], "link": "learn/m09.html#l-cicd-secrets"},
+
+  {"id": "fde-what-to-log", "q": "What should I record for each request in an LLM app?", "alts": ["LLM tracing", "what to log", "observability fields", "trace an AI request"],
+   "a": "A trace id shared by every step, the user or case id, the prompt version and model name, and the input and output (masked if they hold personal data). Add retrieved documents or tool calls and results, token counts, latency per step and any error. Record the outcome too: accepted, edited or rejected, and any feedback.",
+   "concepts": ["Audit log", "Token", "Latency"], "link": "learn/m09.html#l-observability"},
+
+  {"id": "fde-drift", "q": "How do I notice quality slowly getting worse after go-live?", "alts": ["model drift", "quality drop over time", "monitor AI quality", "silent failures"],
+   "a": "Watch signals that move when quality moves: the reviewer edit or reject rate, user feedback, the share of cases sent to needs_review, and the pass rate when you rerun the eval set each week on fresh sampled cases. New document layouts, a new product line or a model update can lower quality without any error appearing. Add the surprising cases to the eval set.",
+   "concepts": ["Evaluation (eval)"], "link": "learn/m09.html#l-observability"},
+
+  {"id": "fde-alerts", "q": "Which alerts should an AI solution have?", "alts": ["monitoring alerts", "what to alert on", "alert fatigue", "LLM app alerts"],
+   "a": "A few that a person will act on: error rate above a limit, latency above a limit, daily cost above budget, and edit rate rising week on week. Each alert needs an owner and a first step written in the runbook. Too many alerts get muted and ignored.",
+   "concepts": [], "link": "learn/m09.html#l-observability"},
+
+  {"id": "fde-demo-audience", "q": "How do I adapt a demo to who is in the room?", "alts": ["demo for executives", "demo audience", "know your audience", "demo for users and IT"],
+   "a": "Find out who is coming. A sponsor wants to know whether it saves time, money or risk, the people doing the work want to know whether it makes their day easier or threatens their job, and IT and security want to know where data goes. Make sure each group hears its question answered in the first ten minutes, and use the client's words, such as 'exceptions' rather than 'edge cases'.",
+   "concepts": [], "link": "learn/m10.html#l-demo-craft"},
+
+  {"id": "fde-demo-follow-up", "q": "What should I send after a demo?", "alts": ["demo follow-up email", "after the demo", "demo summary note", "next steps after demo"],
+   "a": "A short written note the same day: the decision asked for, what was shown, the limits you stated, the open questions with the date you will answer them, and the agreed next step with its owner. People who were not in the room will read it, and it stops the story growing in the retelling.",
+   "concepts": [], "link": "learn/m10.html#l-demo-craft"},
+
+  {"id": "fde-pilot-to-production", "q": "What has to change to go from pilot to production?", "alts": ["production readiness", "pilot to production checklist", "go-live requirements", "what production needs"],
+   "a": "Usually deployment into the client's own cloud or platform, CI/CD with an eval gate, alerts with named owners, a runbook, a support model and agreed service levels. Also backup and recovery, a signed-off security and privacy review, and training for every user. Above all, a business owner accountable for the outcome after the FDE leaves.",
+   "concepts": ["POC, pilot and production"], "link": "learn/m10.html#l-poc-pilot-production"},
+
+  {"id": "fde-poc-to-pilot", "q": "What has to change to go from POC to pilot?", "alts": ["POC to pilot checklist", "start a pilot", "pilot readiness", "what a pilot needs"],
+   "a": "Real sign-in instead of a shared link, data access approved by the client's security team, a review screen and audit log, basic monitoring and cost tracking, and a test environment separate from your dev setup. Agree the pilot's start, end, user group and success measure in writing before it starts.",
+   "concepts": ["POC, pilot and production", "Audit log"], "link": "learn/m10.html#l-poc-pilot-production"},
+
+  {"id": "fde-support-model", "q": "How should support work after I leave?", "alts": ["support tiers", "who fixes it after hand-over", "first line second line support", "support model AI"],
+   "a": "Agree tiers: first line, usually the business team or service desk, handles how-to questions and known issues from the runbook; second line, the technical owner, investigates errors, wrong answers and alerts; third line, if any, is the vendor or original builders. Write down how problems are reported and how fast each tier responds. Then run a shadow period where the client's team handles every issue while you only watch.",
+   "concepts": [], "link": "learn/m10.html#l-handover-pack"},
+
+  {"id": "fde-adoption-signs", "q": "How can I tell if people are really using the tool?", "alts": ["adoption metrics", "is the tool being used", "usage after training", "signs of failing adoption"],
+   "a": "Working: usage grows week by week without reminders, users ask for features, the team describes cases in the tool's terms and the process owner presents results. Failing: usage spikes after training then falls, people use it only when you are there, the old spreadsheet stays in use and feedback stops. When you see failing signs, find the missing ADKAR stage and talk to two users about their last real case with the tool.",
+   "concepts": [], "link": "learn/m05.html#l-change-adoption"},
+
+  {"id": "fde-experts-resist", "q": "Experienced staff refuse to use the tool. What now?", "alts": ["senior users resist AI", "experts do not want the tool", "win over skeptical users", "champions for adoption"],
+   "a": "Listen for the reason; resistance is information, not stubbornness. Experienced people often say they already know the answers and the tool slows them down, which is a missing Desire stage. In the course's example, they were asked to review the assistant's drafts on hard cases and write the rules it missed, and they became the champions who trained new staff.",
+   "concepts": [], "link": "learn/m05.html#l-change-adoption"},
+
+  {"id": "fde-success-measures", "q": "Which success measures should I track?", "alts": ["KPIs for AI project", "how to measure success", "leading and lagging measures", "adoption measures"],
+   "a": "Mix three kinds: business measures such as time per case or error rate, quality measures such as eval pass rate and edit rate, and adoption measures such as weekly active users. Measure a baseline before you change anything, and keep it to three to five measures the business owner understands. Agree who collects each number and where it is shown, and put that in the hand-over pack.",
+   "concepts": [], "link": "learn/m10.html#l-roadmap-backlog"},
+
+  {"id": "fde-skills", "q": "What skills does an FDE need?", "alts": ["FDE skill set", "what makes a good FDE", "abilities of a forward deployed engineer", "skills for FDE role"],
+   "a": "The program builds five abilities: understand the end-to-end process and spot where AI or software helps, turn problems into requirements and a business case, design the solution, build and prove a POC on realistic data, and present, get approval and hand over. Day to day that means a mix of listening, writing, building, testing and asking. Software people often underrate the listening, and domain people often underrate the testing.",
+   "concepts": [], "link": "learn/m01.html#l-fde-loop"},
+
+  {"id": "fde-from-developer", "q": "I am a developer. How do I become an FDE?", "alts": ["software engineer to FDE", "developer career change to FDE", "what developers need to learn for FDE", "Track A"],
+   "a": "You can already build, so the program's Track A adds domain and business analysis, discovery, product ownership and communication. You can fast-track module 3 after a skills check, and your week 4 checkpoint is an industry brief. Practise the listening: interviews about real past cases, process maps and writing a business case.",
+   "concepts": [], "link": "index.html#tracks"},
+
+  {"id": "fde-from-domain", "q": "I come from quality, finance or operations. Can I become an FDE?", "alts": ["domain expert to FDE", "non-developer FDE", "business person to FDE", "Track B"],
+   "a": "Yes. Track B is for domain people such as R&D, quality, regulatory, clinical, supply chain, manufacturing or operations; you know the work, and the program adds code basics, APIs, data, AI-assisted building and deployment. You can fast-track module 4 after a skills check, and your week 4 checkpoint is a small coding task. Pairing with a software person helps you learn the other half quickly.",
+   "concepts": [], "link": "index.html#tracks"},
+
+  {"id": "fde-certs-software", "q": "Which certifications suit someone from a software background?", "alts": ["certifications for Track A", "certs for developers moving to FDE", "product owner certification", "business analysis certification"],
+   "a": "The program lists Professional Scrum Product Owner I (PSPO I) or Certified Scrum Product Owner (CSPO) for product ownership, and IIBA's Entry Certificate in Business Analysis (ECBA) for requirements basics. The Databricks Certified Generative AI Engineer Associate is listed as an advanced option. All are optional and never replace the final project.",
+   "concepts": [], "link": "index.html#certs"},
+
+  {"id": "fde-certs-domain", "q": "Which certifications suit someone from a domain background?", "alts": ["certifications for Track B", "certs for non-developers", "AWS AI Practitioner", "GitHub certification"],
+   "a": "The program lists AWS Certified AI Practitioner and AWS Certified Cloud Practitioner for AI and cloud basics, and GitHub certifications (Foundations, Copilot) for version control and AI-assisted coding. Azure AI Fundamentals and Google Cloud Generative AI Leader suit either track. Start with the free Anthropic Academy course certificates, and remember all of these are optional.",
+   "concepts": [], "link": "index.html#certs"},
+
+  {"id": "fde-cert-ai-delivery", "q": "Is there a certification for leading AI delivery?", "alts": ["AI project management certification", "PMI CPMAI", "lead AI projects certificate", "certification for AI delivery lead"],
+   "a": "The program lists the PMI Certified Professional in Managing AI (PMI-CPMAI) from the Project Management Institute, for either track, for people who will lead AI delivery. It is a paid, proctored exam and, like every certificate in the list, optional.",
+   "concepts": [], "link": "index.html#certs"},
+
+  {"id": "fde-portfolio-data", "q": "Where can I find data for a portfolio project?", "alts": ["datasets for FDE portfolio", "public data for AI project", "synthetic data for portfolio", "Faker data"],
+   "a": "Use well-known public sources and read the licence: Data.gov, Hugging Face Datasets and the UCI Machine Learning Repository. Some fit specific briefs, such as the CFPB Consumer Complaint Database, the CUAD contract clause dataset and ClinicalTrials.gov records. Add synthetic data, for example with the Python library Faker, where real data is private; it also lets you plant known edge cases.",
+   "concepts": [], "link": "learn/m08.html#l-portfolio-projects"},
+
+  {"id": "fde-portfolio-plan", "q": "How do I plan a portfolio project in 30 days?", "alts": ["30 day build plan", "portfolio project schedule", "four week project plan", "build a portfolio project"],
+   "a": "Plan about an hour or two a day. Week 1: one real loop end to end with a few tools, guardrails, simple memory and an audit table. Week 2: schemas, validation, a failure catalogue and a review queue. Week 3: retries, a golden set with a pass rate, cheaper models where evals allow and cost per case. Week 4: deploy it and rehearse two talks, one as the engineer and one as the sponsor.",
+   "concepts": [], "link": "learn/m08.html#l-portfolio-projects"},
+
+  {"id": "fde-portfolio-ideas", "q": "What are good portfolio project ideas?", "alts": ["portfolio project examples", "FDE project ideas", "what should I build for my portfolio", "industry project briefs"],
+   "a": "The course gives briefs such as accounts payable invoice exception triage, insurance claims intake, contract clause review on the CUAD dataset, complaint routing with the CFPB data, an HR policy assistant, and sales call notes to CRM updates. Each names one bottleneck, the data, what the agent does, where a person approves and how it is measured. Pick one and narrow it further if you can.",
+   "concepts": [], "link": "learn/m08.html#l-portfolio-projects"},
+
+  {"id": "fde-portfolio-writeup", "q": "What should my portfolio write-up include?", "alts": ["portfolio write-up", "case study for interviews", "document a portfolio project", "project write-up template"],
+   "a": "A one-page scoping document and a system diagram, a table of trade-offs, and a 'what broke' section with two or three real failures and fixes. Add eval results with the pass rate and main failure reasons, and a section on running it for ten customers: what you would make configurable, monitor and onboard. List decisions and failures, not features.",
+   "concepts": [], "link": "learn/m08.html#l-portfolio-projects"},
+
+  {"id": "fde-journal-hiring", "q": "How does my learning journal help me get hired?", "alts": ["journal as portfolio", "show my learning to employers", "GitHub journal for interviews", "proof of skills"],
+   "a": "After a few weeks it shows a dated history of commits, labs that run and short videos of you explaining them. In interviews you can open an entry and walk through a real problem you solved; 'what broke and how I fixed it' is the most valuable part. Module 8 shows how to turn your best labs into portfolio projects.",
+   "concepts": ["Git and repository"], "link": "learn/m00.html#l-learning-journal"},
+
+  {"id": "fde-live-coding", "q": "How do I prepare for live coding without an IDE?", "alts": ["coding interview in plain editor", "write Python without autocomplete", "live coding tips", "no IDE interview"],
+   "a": "Know your imports exactly, such as from dataclasses import dataclass, field and import heapq, and write real code rather than pseudocode. Trace through it by hand with a small input before saying you are done, and talk while you write about what each class is for and which case you are handling.",
+   "concepts": [], "link": "learn/m08.html#l-fde-interviews"},
+
+  {"id": "fde-oop-questions", "q": "What kind of Python design questions come up in FDE interviews?", "alts": ["object oriented interview question", "class design interview", "Python OOP for FDE", "design a ticket queue"],
+   "a": "Rarely definitions; more often 30 to 50 lines of clean classes that hold state and enforce rules, such as a rate limiter, a priority ticket queue, an inventory that cannot go negative or a bank account with history. Interviewers look for clear names, small methods, state that cannot become invalid, sensible errors and a short demo. Know dataclasses, heapq, collections.deque, enum and type hints.",
+   "concepts": [], "link": "learn/m08.html#l-fde-interviews"},
+
+  {"id": "fde-take-home", "q": "How are take-home assignments judged?", "alts": ["take home test FDE", "interview assignment", "fix issues and record video", "take-home tips"],
+   "a": "A typical form is: clone a repository, fix a few issues, and record a short video explaining what you changed and why. They are judged on production readiness, meaning tests, error handling, clear commits and no secrets in code, and on communication. A clear five-minute video that explains trade-offs often matters as much as the code.",
+   "concepts": [], "link": "learn/m08.html#l-fde-interviews"},
+
+  {"id": "fde-interview-security", "q": "What AI security questions should I expect in interviews?", "alts": ["AI security interview questions", "prompt injection interview", "PII question interview", "jailbreak question"],
+   "a": "Be ready to explain prompt injection, jailbreaks, PII protection and how the system behaves when the model fails or is unavailable. Good answers name the threat and a concrete control: treat retrieved content as data, narrow tool permissions, validate outputs, require human approval for risky actions and keep a manual fallback.",
+   "concepts": ["Prompt injection", "Personal data (PII)"], "link": "learn/m08.html#l-fde-interviews"},
+
+  {"id": "fde-soft-skills", "q": "Which soft skills do FDE interviewers look for?", "alts": ["behavioral interview FDE", "soft skills for FDE", "stories for interviews", "customer empathy"],
+   "a": "Customer empathy, ownership of the outcome rather than the task, breaking a vague problem into parts, product sense, comfort with ambiguity, and explaining a technical decision to a non-engineer in plain words. These are tested in every round, not only the behavioral one. Prepare five short stories from your own experience, each with the situation, what you did and the result.",
+   "concepts": [], "link": "learn/m08.html#l-fde-interviews"},
+
+  {"id": "fde-after-graduation", "q": "What happens after I graduate from the program?", "alts": ["after the program", "first real engagement", "graduate next steps", "shadow co-lead lead"],
+   "a": "Read the panel's written feedback with your mentor and pick two things to improve on your first real engagement. As a graduate you first shadow a live engagement, then co-lead one, then lead. Bring your capstone templates; most engagements need the same brief, options paper, evaluation sheet, demo script and hand-over pack.",
+   "concepts": [], "link": "learn/m11.html#l-demo-and-handover"},
+
+  {"id": "fde-week-rhythm", "q": "What does a normal week in the program look like?", "alts": ["weekly schedule", "how each week runs", "program weekly rhythm", "what happens on each day"],
+   "a": "Monday is self-study with videos and reading, Tuesday a live session with a worked example from a mentor, and Wednesday the pair builds the week's hand-in, with office hours on Wednesday and Thursday. On Thursday a mock client answers questions in client weeks and you commit evidence to your journal. Friday is show and tell to the group, and a reviewer scores against the rubric and gives feedback.",
+   "concepts": [], "link": "index.html#how"},
+
+  {"id": "fde-who-supports", "q": "Who supports me during the program?", "alts": ["mentors and reviewers", "program lead", "mock clients", "who helps learners"],
+   "a": "The program lead owns cohorts, the plan and graduation decisions. Mentors are experienced engineers and consultants, one per four to six learners. Mock clients are domain experts who play the client in discovery, demos and the final project, and reviewers score hand-ins and the final project against the rubric.",
+   "concepts": [], "link": "index.html#how"},
+
+  {"id": "fde-four-stages", "q": "What are the four stages of the 12 weeks?", "alts": ["program stages", "learn build prove", "program phases", "how the 12 weeks are split"],
+   "a": "Foundations (weeks 1 to 4): the FDE role, how LLMs work, and enough code, APIs, data and Git to build. Understand the client (weeks 3 to 6): business, discovery, process maps and requirements. Design and build (weeks 6 to 9): options, security, cost, the POC and making it dependable. Prove and hand over (weeks 9 to 12): evaluation, deployment, demo, hand-over and the final project.",
+   "concepts": [], "link": "index.html#map"},
+
+  {"id": "fde-module-hours", "q": "How many hours does each module take?", "alts": ["module workload", "hours per module", "time per week program", "how heavy is each module"],
+   "a": "The program page lists hours per module, for example 18 to 24 hours for module 1, 42 to 54 hours for module 7 (building the POC) and 60 to 75 hours for the final project. Overall the program expects about 24 to 32 hours a week. Open the module cards on the program page for each one.",
+   "concepts": [], "link": "index.html#map"},
+
+  {"id": "fde-fast-track", "q": "Can I skip a module I already know?", "alts": ["skip module", "fast track", "skills check", "exempt from a module"],
+   "a": "Partly. After a short skills check, Track A (software background) can fast-track module 3 on code, APIs, data and Git, and Track B (domain background) can fast-track module 4 on business analysis. Domain learners in module 4 focus on the business case part.",
+   "concepts": [], "link": "index.html#tracks"},
+
+  {"id": "fde-hand-ins", "q": "What does every final project hand in?", "alts": ["capstone deliverables", "final project checklist", "what do I submit at the end", "project hand-in list"],
+   "a": "Discovery notes and a process map reviewed by the mock client, a one-page brief with the success measure and a sized business case, and an options paper with a recommendation. A working POC in a repository with a README, and an evaluation set of 30 or more cases with results and the top failures explained. A deployed URL behind access control, a ten-minute demo and a hand-over pack with runbook, owner and next step.",
+   "concepts": [], "link": "index.html#cases"},
+
+  {"id": "fde-project-ideas", "q": "Where do I find project ideas for practice or the final project?", "alts": ["use cases to practise", "assessment use cases", "project list", "choose a use case"],
+   "a": "The program page has a list of use cases you can filter by industry, such as invoice exception handling, each with the client, the pain and the data. Your learning path on the Practice page has 86 more ideas. Pick one from the industry you know or want to work in.",
+   "concepts": [], "link": "index.html#cases"},
+
+  {"id": "fde-two-accounts", "q": "Which accounts do I need before starting the learning path?", "alts": ["GitHub and Cloudflare accounts", "accounts to create", "setup accounts for practice", "Cloudflare account why"],
+   "a": "Two: GitHub, where your learning journal, project, evidence and progress live, and Cloudflare, a place to host the pages and small apps you build and to run AI models on Workers AI while you practise. Set both up once before step 1.",
+   "concepts": [], "link": "tldr.html#accounts"},
+
+  {"id": "fde-step-a-b", "q": "What do steps A and B ask for?", "alts": ["step A basics", "step B setup", "first two steps", "before week 1 steps"],
+   "a": "Step A, before week 1: watch a short video and read a glossary, then explain in your own words model versus app versus API, what context is, and privacy versus security. Step B: install Git, VS Code, Python and one AI coding assistant, copy your journal repository to your laptop and push one small change. Step B is done when a commit made from your own machine is in your journal.",
+   "concepts": [], "link": "tldr.html"},
+
+  {"id": "fde-step-02", "q": "What does step 02 on LLM foundations ask for?", "alts": ["step 02 prompt log", "AI Fluency certificate step", "LLM foundations evidence", "prompt three ways task"],
+   "a": "Pick one real task from your project and ask an AI model to do it three times: plainly, with examples, and with an exact output format, writing down what changed each time. The step is done when your prompt log is saved and you hold the Anthropic Academy AI Fluency certificate, with its link in your evidence.",
+   "concepts": [], "link": "tldr.html"},
+
+  {"id": "fde-step-03-04", "q": "What do steps 03 and 04 ask for?", "alts": ["step 03 building blocks", "step 04 business case", "SQLite script step", "value of my project step"],
+   "a": "Step 03: make sample data for your project, write a small script that loads it into SQLite and answers one useful question with SQL; done when someone else can run it from its README. Step 04: work out what your project is worth from cases a month, minutes saved per case and cost per hour, plus any quality or risk benefit. Step 04 is done when every number points to where it came from.",
+   "concepts": [], "link": "tldr.html"},
+
+  {"id": "fde-step-05-06", "q": "What do steps 05 and 06 ask for?", "alts": ["step 05 discovery", "step 06 design options", "interview and map step", "three options step"],
+   "a": "Step 05: talk to one person who does the work, draw their process, and write a one-page brief with the problem, today's numbers, the goal and what done looks like; done when that person agrees the map is how the work really happens. Step 06: write three ways to build it, including one without AI, compare cost, risk and effort, estimate the monthly cost and pick one. You should be able to defend the choice in two minutes.",
+   "concepts": [], "link": "tldr.html"},
+
+  {"id": "fde-step-07-08", "q": "What do steps 07 and 08 ask for?", "alts": ["step 07 build POC", "step 08 dependable", "POC recording step", "failure modes step"],
+   "a": "Step 07: build a first working version on your sample data that gives the result your brief asks for; done when it runs end to end from the README and a two-minute screen recording exists. Step 08: mark each step of your project as plain code, AI or a person, and list the five most likely failures with how each is handled. Step 08 also needs a one-page portfolio write-up.",
+   "concepts": [], "link": "tldr.html"},
+
+  {"id": "fde-step-09-11", "q": "What do steps 09, 10 and 11 ask for?", "alts": ["step 09 evaluate", "step 10 demo", "step 11 final project", "last steps of the path"],
+   "a": "Step 09: make a test set of 30 real-looking cases, run your project, fix the biggest problem and put it online behind a login; you need a before and after pass rate and a live URL. Step 10: give a ten-minute demo to someone acting as the client and have someone outside your pair run the POC from your README alone. Step 11 runs the whole loop with a mentor as client and ends at the review panel.",
+   "concepts": [], "link": "tldr.html"},
+
+  {"id": "fde-progress-bar", "q": "What does the progress bar on the program page count?", "alts": ["program progress", "where is my progress saved", "progress tracker program page", "checks that count toward progress"],
+   "a": "It counts the checks you pass: the basics quick check, the machine setup check and the 12 module tests. It is saved in your browser, separate from the evidence in your GitHub journal.",
+   "concepts": [], "link": "index.html#main"},
+
+  {"id": "fde-crash-area", "q": "Which crash course area should I use with each step?", "alts": ["crash course for a step", "go deeper on a step", "crash course areas", "extra resources per step"],
+   "a": "Each step points to one area: AI, ML and LLMs for the basics, LLM foundations, building and the final project; Programming for setup and building blocks; and FDE role and business skills for the role, business, discovery and demo steps. Design links to Security and privacy, and the dependable and evaluate steps link to Cloud and DevOps. In each area do the Must do items first.",
+   "concepts": [], "link": "tldr.html"},
+
+  {"id": "fde-pair-capstone", "q": "How should my partner and I split the final project?", "alts": ["capstone pair work", "split work in capstone", "who builds in the final project", "pair roles capstone"],
+   "a": "Both of you should touch every stage. A common pattern is that the domain person leads discovery and the evaluation set while the software person leads the build, then you swap halfway so each can explain the other's part. Each partner presents part of the demo and answers questions on any part, so one person doing all the building counts against you.",
+   "concepts": [], "link": "learn/m11.html#l-capstone-plan"},
+
+  {"id": "fde-panel-day", "q": "What can the panel ask me to do on the final day?", "alts": ["panel questions", "final review panel", "capstone panel day", "prepare for the panel"],
+   "a": "Besides your ten-minute demo and questions, the panel may ask you to run a case they pick, open the code and explain a function, or show where a secret is stored. Practise those with your partner the day before. Afterwards you get written feedback against each rubric dimension.",
+   "concepts": [], "link": "learn/m11.html#l-demo-and-handover"},
+
+  {"id": "fde-advanced-tech", "q": "Will I score higher for using advanced technology?", "alts": ["does complexity score points", "use agents to impress", "rubric technology", "simple or advanced solution"],
+   "a": "No. The rubric has no score for how advanced the technology is. A simple solution that is measured and trusted beats a complex one that is not, and choosing the most advanced option to impress the panel is listed as a common mistake.",
+   "concepts": [], "link": "learn/m11.html#l-capstone-plan"},
+
+  {"id": "fde-capstone-week-11", "q": "What happens day by day in week 11 of the capstone?", "alts": ["capstone week 11 plan", "first capstone week", "capstone discovery week", "days 1 to 5 capstone"],
+   "a": "Day 1: kick-off with the mock client, asking for the last three real cases. Day 2: a swimlane map sent to the client for correction. Day 3: the one-page brief with a baseline and success measure, agreed in writing. Day 4: the options paper and the start of the evaluation set. Day 5: options review with the mentor, ending with a decision and a scope you can build in five days.",
+   "concepts": [], "link": "learn/m11.html#l-capstone-plan"},
+
+  {"id": "fde-capstone-week-12", "q": "What happens day by day in week 12 of the capstone?", "alts": ["capstone week 12 plan", "second capstone week", "build week capstone", "days 6 to 10 capstone"],
+   "a": "Days 6 and 7: build the smallest version that handles the main path end to end. Day 8: run the evaluation set, read every failure, fix the top causes and run it again. Day 9: deploy behind access control, write the README and runbook, and rehearse the demo twice. Day 10: the panel, with a ten-minute demo, questions and the hand-over pack.",
+   "concepts": [], "link": "learn/m11.html#l-capstone-plan"},
+
+  {"id": "fde-lms-flow", "q": "How does the LMS work?", "alts": ["learning management system overview", "how does the learning platform work", "LMS flow", "how training is tracked"],
+   "a": "An admin loads each course as a package, and a manager assigns a learning path or a single course to people or to a job role, with a due date. Learners work through sections in order, and each section ends with a check that opens the next one. Managers see progress and overdue work, mentors help anyone stuck after three failed attempts, and passing every check issues a certificate.",
+   "concepts": [], "link": null},
+
+  {"id": "fde-lms-roles", "q": "What are the roles in the LMS?", "alts": ["LMS roles", "learner manager mentor admin", "who can do what in the LMS", "LMS permissions"],
+   "a": "There are four: learner, manager, mentor and admin. Learners take courses and checks, managers assign training and watch their own team's progress, and mentors review people who are stuck and reset their attempts. Admins load courses, manage paths, people and role rules, and read the audit trail; an admin can also do everything the other roles can.",
+   "concepts": [], "link": null},
+
+  {"id": "fde-lms-how-assigned", "q": "How do courses end up on my list?", "alts": ["why do I have this course", "how was I enrolled", "assigned training", "where my courses come from"],
+   "a": "A course can reach you in four ways: your manager assigned it, it is part of a learning path you were given, a role rule gave it to everyone with your job role, or you enrolled yourself from the catalogue. Assigned courses usually carry a due date.",
+   "concepts": [], "link": null},
+
+  {"id": "fde-lms-self-enroll", "q": "Can I enroll myself in a course?", "alts": ["self enroll", "join a course myself", "take an extra course", "enroll in a path"],
+   "a": "Yes. You can enroll yourself in a single course or a whole learning path from the catalogue. If a manager later assigns the same course, your progress stays and the assignment only adds the due date.",
+   "concepts": [], "link": null},
+
+  {"id": "fde-lms-locked", "q": "Why is the next section locked?", "alts": ["section locked", "cannot open next section", "sections in order", "unlock next section"],
+   "a": "Sections open in order. You need to pass the check at the end of a section before the next one opens. Pass the current check and the next section unlocks straight away.",
+   "concepts": [], "link": null},
+
+  {"id": "fde-lms-check", "q": "How does a section check work?", "alts": ["section quiz", "how are checks marked", "LMS test rules", "pass mark section check"],
+   "a": "Each section ends with a check of questions picked at random from that section's question bank, with the answer options shuffled. Your answers are marked on the server, and you pass at 80 percent. Courses can set their own rules, but the default is 80 percent, 3 attempts and 24 hours between attempts.",
+   "concepts": [], "link": null},
+
+  {"id": "fde-lms-result", "q": "What do I see after I submit a check?", "alts": ["check results", "see correct answers", "after a failed check", "check feedback"],
+   "a": "If you pass, you see every question with the right answer and the reason for it. If you fail, you see which questions were wrong and which lessons to review, but not the answers, so the next attempt still tests you.",
+   "concepts": [], "link": null},
+
+  {"id": "fde-lms-wait", "q": "I failed a check. Why can't I try again straight away?", "alts": ["24 hour wait", "retry check", "when can I retake", "attempt wait time"],
+   "a": "After a failed attempt, the next one opens 24 hours later. Use that time to review the lessons listed in your result. The LMS shows how many attempts you have left and when the next one opens.",
+   "concepts": [], "link": null},
+
+  {"id": "fde-lms-three-fails", "q": "What happens if I fail a check three times?", "alts": ["three failed attempts", "used all attempts", "waiting for mentor", "locked out of check"],
+   "a": "Your attempts on that section are used up, and your mentor is flagged automatically. Your course shows 'Waiting for mentor' until a mentor reviews the section with you and resets your attempts. After the reset you can take the check again without waiting.",
+   "concepts": [], "link": null},
+
+  {"id": "fde-lms-progress", "q": "How is my course percentage worked out?", "alts": ["course progress percent", "what counts as complete", "does reading count", "practice ticks"],
+   "a": "The percentage is the share of sections with a check that you have passed. Opening a section and ticking practice items are recorded, but only passed checks move the percentage. The course is complete when every check is passed.",
+   "concepts": [], "link": null},
+
+  {"id": "fde-lms-certificate", "q": "How do I get a certificate from the LMS?", "alts": ["LMS certificate", "earn a certificate", "course completion certificate", "certificate ID"],
+   "a": "Pass every section check in the course and the certificate is issued automatically. It has an ID, the course version you trained on, a validity date if the course sets one, and a public verify page.",
+   "concepts": [], "link": null},
+
+  {"id": "fde-lms-verify", "q": "How can someone check my certificate is real?", "alts": ["verify certificate", "certificate verification page", "is this certificate valid", "share my certificate"],
+   "a": "Share the certificate's verify link or ID. Anyone with it can open the public verify page, which shows your name, the course, the version and the issue date. It also shows whether the certificate is valid, expired, or superseded by a newer course version.",
+   "concepts": [], "link": null},
+
+  {"id": "fde-lms-retraining", "q": "Why does my certificate say retraining is due?", "alts": ["retraining due", "new course version", "certificate out of date", "superseded certificate"],
+   "a": "The course was updated to a new version after you were certified. Only the sections whose content changed need a new pass; sections that did not change keep your earlier pass. A changed section starts with fresh attempts, and passing all checks again issues a certificate on the current version.",
+   "concepts": [], "link": null},
+
+  {"id": "fde-lms-overdue-learner", "q": "What does 'Overdue' mean on my learning page?", "alts": ["overdue course", "due date passed", "late training", "missed due date"],
+   "a": "The due date set when the course was assigned has passed and you have not completed it. Your manager sees the same flag on the team view. Finishing the remaining checks clears it.",
+   "concepts": [], "link": null},
+
+  {"id": "fde-lms-coming-soon", "q": "Why do some sections say 'coming soon'?", "alts": ["coming soon sections", "outline only course", "incomplete course", "course not finished"],
+   "a": "In the current catalogue, FDE General and FDE Advanced are complete. The other topics have their first section complete and the rest as outlines, shown as coming soon. All industry content needs a regulatory review before it is used for real training.",
+   "concepts": [], "link": null},
+
+  {"id": "fde-lms-catalogue", "q": "Which courses are in the LMS?", "alts": ["LMS course list", "catalogue", "what training is available", "LMS topics"],
+   "a": "AI: FDE General (all industries, MedTech and Pharma versions) and FDE Advanced, a guided project. MedTech: design controls, risk management (ISO 14971) and software as a medical device (IEC 62304). Pharma: Quality and Compliance, Engineering and Validation, Technical Operations and Digital, and Clinical Quality; Process: QMS fundamentals, ISO standards, and Six Sigma Green Belt and Black Belt.",
+   "concepts": [], "link": null},
+
+  {"id": "fde-lms-paths", "q": "What is a learning path?", "alts": ["learning path LMS", "job role path", "group of courses", "FDE trainee path"],
+   "a": "A learning path is an ordered set of courses for a job role, for example 'FDE trainee: MedTech' or 'Validation engineer: Pharma'. Assigning a path enrolls the person in every course in it, and role rules can give the path to everyone with that job role automatically.",
+   "concepts": [], "link": null},
+
+  {"id": "fde-lms-assign", "q": "As a manager, how do I assign a course or path?", "alts": ["assign training", "give a course to my team", "manager assign path", "set due date"],
+   "a": "Pick a single course or a learning path, choose the people, or everyone with a given job role, and set a due date. You can only assign to people who report to you. Each assignment is recorded in the audit trail with who assigned it and the due date.",
+   "concepts": [], "link": null},
+
+  {"id": "fde-lms-team-view", "q": "What can I see about my team as a manager?", "alts": ["team progress", "manager dashboard", "who has finished training", "track team training"],
+   "a": "For each person who reports to you: every course they are on, how it got there, the due date, their percentage, whether it is complete, and their certificate status. Flags show who is overdue and who is waiting for a mentor. Managers see only their own reports; admins see everyone.",
+   "concepts": [], "link": null},
+
+  {"id": "fde-lms-overdue-manager", "q": "How do I find who on my team is overdue?", "alts": ["overdue report", "late training team", "who missed the deadline", "overdue flag"],
+   "a": "The team view shows a count of overdue courses and marks each one with an Overdue badge. A course is overdue when its due date has passed and it is not complete. It also counts courses that are with a mentor, so you can tell stuck people from late ones.",
+   "concepts": [], "link": null},
+
+  {"id": "fde-lms-new-joiners", "q": "Do I need to assign training to every new joiner?", "alts": ["onboarding training", "new hire training", "automatic assignment", "role based assignment"],
+   "a": "No. Role rules link a job role to a learning path, so a new person with that role gets the path with a due date straight away. That way new people get the right training without a manager having to remember it.",
+   "concepts": [], "link": null},
+
+  {"id": "fde-lms-reminders", "q": "Will the LMS email people about due dates?", "alts": ["email reminders", "due date notifications", "LMS alerts", "remind learners"],
+   "a": "Not yet. Email reminders for due dates are on the list of things not built yet, along with reports export. For now, check the team view for overdue and waiting-for-mentor flags.",
+   "concepts": [], "link": null},
+
+  {"id": "fde-lms-mentor-queue", "q": "What is in the mentor queue?", "alts": ["mentor review queue", "who needs a mentor", "stuck learners", "mentor list"],
+   "a": "Everyone who has used all their attempts on a section check without passing. Each row shows the person, their job role, the course, the section, how many attempts failed and their best score.",
+   "concepts": [], "link": null},
+
+  {"id": "fde-lms-mentor-reset", "q": "As a mentor, how do I reset someone's attempts?", "alts": ["reset attempts", "mentor reset", "unlock a learner", "give more attempts"],
+   "a": "Go through the section with the learner first, then use reset on their row in the mentor queue and add a short note. The reset is recorded in the audit trail with your name and the note. The learner can take the check again straight away with a fresh set of attempts.",
+   "concepts": [], "link": null},
+
+  {"id": "fde-lms-load-package", "q": "As an admin, how do I load or update a course?", "alts": ["load course package", "upload course", "update course content", "course package format"],
+   "a": "Load the course as a topic package, one JSON file per course, with an id, title, version and sections; each section carries its content and check questions. Loading a package with an existing id updates that course and records a new version. In the fde-training project, tools/export_lms.py shows how a site's content becomes a package.",
+   "concepts": [], "link": null},
+
+  {"id": "fde-lms-versions", "q": "What happens when I load a new version of a course?", "alts": ["course versioning", "content hash", "retraining after update", "version history"],
+   "a": "Each section gets a content hash, so the LMS knows exactly which sections changed. Only those sections need a new pass, and certificates on the old version show 'retraining due'. The load result tells you how many sections changed and how many people need retraining, and the course keeps a version history.",
+   "concepts": [], "link": null},
+
+  {"id": "fde-lms-course-rules", "q": "Can different courses have different pass rules?", "alts": ["custom pass mark", "change attempts", "course rules", "QMS course rules"],
+   "a": "Yes. The pass mark, number of attempts and hours between attempts are set in each course's package, so a QMS course can use different rules from FDE. If a package sets nothing, the defaults are 80 percent, 3 attempts and 24 hours. A course can also set how many months its certificate stays valid.",
+   "concepts": [], "link": null},
+
+  {"id": "fde-lms-role-rules", "q": "How do role rules work?", "alts": ["role rule", "job role automatic assignment", "auto assign path", "role based training"],
+   "a": "A role rule links a job role to a learning path with a number of days until it is due. When you save the rule, everyone who already has that job role is enrolled, and anyone added later with that role gets the path straight away. Saving a rule is recorded in the audit trail.",
+   "concepts": [], "link": null},
+
+  {"id": "fde-lms-audit", "q": "What does the LMS audit trail record?", "alts": ["LMS audit log", "training records audit", "who did what in the LMS", "audit trail events"],
+   "a": "Sign-ins, assignments, check results, mentor resets, course loads and certificates, each with who did it and when. Changes to paths, role rules and people are recorded too. Admins can read the trail, which is how the LMS shows proof of training.",
+   "concepts": ["Audit log"], "link": null},
+
+  {"id": "fde-lms-regulated", "q": "Why does the LMS suit a regulated company?", "alts": ["GxP training records", "LMS for pharma", "compliant training system", "regulated training"],
+   "a": "Courses are versioned, so people are trained on the current version with proof, the way GxP training records work. There is an audit trail, checks are marked on the server, rules are fixed per course, and job-role paths make sure new people get the right training.",
+   "concepts": ["Audit log"], "link": null},
+
+  {"id": "fde-lms-server-marking", "q": "Why are checks marked on the server?", "alts": ["answer key security", "cheating in checks", "server side marking", "why not mark in the browser"],
+   "a": "Questions and option order are picked on the server and answers are marked there, so the browser never holds the answer key. That keeps the results trustworthy as training records. It is also why a failed attempt shows only which lessons to review, not the answers.",
+   "concepts": [], "link": null},
+
+  {"id": "fde-lms-login", "q": "How do people sign in to the LMS?", "alts": ["LMS login", "single sign on LMS", "Microsoft login", "Entra ID"],
+   "a": "In the current prototype the username and password login is simulated and not real security. The plan is to replace it with the company Microsoft login (Entra ID with OpenID Connect), with roles coming from HRMS groups.",
+   "concepts": [], "link": null},
+
+  {"id": "fde-lms-hrms", "q": "How will the LMS connect to the company HRMS?", "alts": ["HRMS integration", "sync employees", "LMS inside HR system", "people data sync"],
+   "a": "People, job roles and managers would sync from the HRMS employee records instead of the People screen, and login would move to the company Microsoft account. The LMS could stay its own service embedded as the Learning module, or its tables could move into the HRMS database. Which one depends on the HRMS stack, which is not confirmed yet.",
+   "concepts": [], "link": null},
+
+  {"id": "fde-lms-not-built", "q": "What is not built in the LMS yet?", "alts": ["LMS roadmap", "missing LMS features", "LMS limitations", "what is still to come"],
+   "a": "Real login, HRMS sync, email reminders for due dates, Level 2 project evidence review inside the LMS, reports export, and content for the outline sections. The LMS itself is a working prototype that runs locally today.",
+   "concepts": [], "link": null}
+]}

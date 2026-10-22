@@ -1,0 +1,365 @@
+{"entries": [
+  {"id": "why-ai", "q": "Why do companies need AI?", "alts": ["what is the point of AI", "why use AI at work", "why is AI important", "what can AI do for a business"],
+   "a": "Much business work is reading, writing and judging: emails, invoices, tickets, contracts, reports. AI can now do a useful share of that work, or draft it for a person to check. Companies rarely ask for AI itself; they ask for a slow or costly problem to go away. AI is worth it only when it fixes a named problem and the result is measured on real cases.",
+   "concepts": ["Artificial intelligence (AI)"], "link": "learn/basics.html#g-models"},
+
+  {"id": "what-is-ai", "q": "What is artificial intelligence (AI)?", "alts": ["what is AI", "define artificial intelligence", "what does AI mean", "AI meaning"],
+   "a": "AI is software that does tasks we used to think needed human judgment: reading, writing, recognizing images and making predictions. It is an umbrella word. When a client says AI, ask what they actually mean: a chatbot, a prediction, document reading or automation.",
+   "concepts": ["Artificial intelligence (AI)"], "link": "learn/basics.html#g-models"},
+
+  {"id": "what-is-ml", "q": "What is machine learning?", "alts": ["what is ML", "machine learning meaning", "how does machine learning work", "ML in simple words"],
+   "a": "Machine learning builds software by letting it learn patterns from examples, instead of a person writing every rule. Think of showing a new clerk a thousand past invoices instead of handing them a rulebook for every supplier. Because it learns from examples, the quality of the data decides the quality of the result.",
+   "concepts": ["Machine learning"], "link": "learn/basics.html#g-models"},
+
+  {"id": "ai-ml-llm", "q": "How do AI, machine learning and LLMs fit together?", "alts": ["AI vs ML vs LLM", "difference between AI and machine learning", "is an LLM the same as AI", "AI ML LLM relationship"],
+   "a": "AI is the umbrella for software that does tasks needing judgment. Machine learning is one way to build AI: learn patterns from examples. A language model is a machine learning model trained to predict the next piece of text. An LLM (large language model) is a very large one, such as Claude, GPT or Gemini.",
+   "concepts": ["Artificial intelligence (AI)", "Machine learning", "Language model", "Large language model (LLM)"], "link": "learn/basics.html#g-models"},
+
+  {"id": "what-is-model", "q": "What is a model?", "alts": ["what is an AI model", "what does model mean in AI", "model meaning", "what is a trained model"],
+   "a": "A model is the product of training: a very large set of numbers that turns an input into an output. It does not look answers up in a stored table. It computes a likely answer from patterns it learned, a bit like a well-read person's trained intuition rather than a filing cabinet.",
+   "concepts": ["Model"], "link": "learn/basics.html#g-models"},
+
+  {"id": "model-vs-database", "q": "How is a model different from a database?", "alts": ["model vs database", "does the model look things up", "why can't the model just store facts", "is an LLM a database"],
+   "a": "A database stores records and returns exactly what was saved. A model stores patterns and generates new text. That is why a model can sound fluent and still be wrong. When exact facts matter, such as a price or a policy clause, give the model the source text or fetch the value from the database with code.",
+   "concepts": ["Model", "Database"], "link": "learn/basics.html#g-models"},
+
+  {"id": "what-are-weights", "q": "What are weights or parameters?", "alts": ["what are parameters in a model", "what does 70B mean", "model weights meaning", "what are model weights"],
+   "a": "Weights, also called parameters, are the numbers inside a model that training adjusts. Model size is often quoted in billions of parameters, for example a 70B model. Bigger usually means more capable but slower and more expensive to run, which matters most when you host a model yourself.",
+   "concepts": ["Weights (parameters)"], "link": "learn/basics.html#g-models"},
+
+  {"id": "training-vs-inference", "q": "What is the difference between training and inference?", "alts": ["training vs inference", "what is inference", "what is model training", "do I train the model on a project"],
+   "a": "Training is how a model is made: it reads huge amounts of text and adjusts its parameters to predict the next token better. AI labs do this at great cost. Inference is using the trained model: you send a prompt and get a response. On a client project you do inference, and that is what you pay for per use. The parameters do not change during inference.",
+   "concepts": ["Pre-training", "Inference"], "link": "learn/m02.html#l-how-llms-work"},
+
+  {"id": "what-is-fine-tuning", "q": "What is fine-tuning, and should I start with it?", "alts": ["what is fine tuning", "should I fine-tune a model", "post-training meaning", "train the model on our data"],
+   "a": "Fine-tuning is extra training that adapts a model to a narrow task with your own examples. Post-training is the step the provider does to turn a raw text predictor into a helpful assistant. Fine-tuning is rarely the first step on a project. Good prompts and retrieval are cheaper, faster and easier to change.",
+   "concepts": ["Post-training and fine-tuning", "RAG (retrieval-augmented generation)"], "link": "learn/basics.html#g-models"},
+
+  {"id": "how-llm-writes", "q": "How does an LLM produce text?", "alts": ["how does an LLM work", "how does ChatGPT or Claude write answers", "what is next-token prediction", "how do LLMs generate text"],
+   "a": "The prompt is split into tokens and turned into numbers. The model scores every possible next token, one is picked, and it is added to the text. Then the whole step repeats until the model produces an end token or hits the length limit. There is no finished answer waiting inside, so clear instructions at the start shape every step that follows.",
+   "concepts": ["Next-token prediction", "Token"], "link": "learn/m02.html#l-how-llms-work"},
+
+  {"id": "why-tokens-matter", "q": "Why is everything measured in tokens?", "alts": ["why do tokens matter", "why are prices in tokens", "tokens and cost", "why count tokens"],
+   "a": "Tokens are the unit an LLM reads and writes, so providers measure price, limits and speed in them. More tokens in and out means more cost and a slower answer. Different model families split text differently, so use the provider's token counting tool rather than guessing.",
+   "concepts": ["Token", "Context window"], "link": "learn/m02.html#l-how-llms-work"},
+
+  {"id": "why-hallucinate", "q": "Why do models hallucinate?", "alts": ["why does AI make things up", "why does the model invent facts", "cause of hallucination", "why is the AI confidently wrong"],
+   "a": "A model writes by predicting likely text, not by checking facts. If the fact it needs is not in its training or in the context, it can still produce something that sounds right, such as an invented citation. That is why you ground answers in real sources, let the model say it does not know, and measure results on real cases.",
+   "concepts": ["Hallucination", "Next-token prediction", "Context"], "link": "learn/m02.html#l-hallucination-grounding"},
+
+  {"id": "what-is-temperature", "q": "What is temperature?", "alts": ["temperature setting meaning", "what does temperature do in an LLM", "how to make answers more consistent", "randomness setting"],
+   "a": "Temperature controls how much randomness goes into choosing each next token. Lower values make the model stick to the most likely tokens, so answers are more repeatable. Higher values give more varied answers. For extraction and classification keep it low, and still test the output.",
+   "concepts": ["Temperature"], "link": "learn/m02.html#l-how-llms-work"},
+
+  {"id": "agent-vs-chatbot", "q": "How is an agent different from a chatbot?", "alts": ["agent vs chatbot", "what makes something an agent", "chat app vs AI agent", "is ChatGPT an agent"],
+   "a": "A chatbot answers each message a person types. An agent works in a loop on its own: it plans, asks to use a tool, looks at the result and continues until the task is done. That makes agents powerful but harder to predict and test. Use a simple fixed workflow when that is enough.",
+   "concepts": ["Agent", "Chat app", "Tool use (function calling)"], "link": "learn/m07.html#l-agents"},
+
+  {"id": "why-context-matters", "q": "Why does context matter so much?", "alts": ["why is context important", "what does the model actually see", "why does the model not know our data", "context engineering meaning"],
+   "a": "Context is everything the model can see for one request: the system prompt, history, documents, tool results and your message. If a fact is not in its training and not in the context, the model can only guess. More is not always better either, because irrelevant text raises cost and can lower quality. Your job is to put the right facts in front of it.",
+   "concepts": ["Context", "Context engineering"], "link": "learn/basics.html#g-context"},
+
+  {"id": "why-model-forgets", "q": "Why does my API call not remember the last message?", "alts": ["is the model stateless", "why does the model forget", "how do chat apps remember", "what does stateless mean"],
+   "a": "The model itself is stateless: it does not remember earlier requests. Chat apps seem to remember because the harness resends the conversation each time. In your own code you must send the history, or a summary of it, with every request.",
+   "concepts": ["Stateless", "Harness", "Memory"], "link": "learn/basics.html#g-context"},
+
+  {"id": "knowledge-cutoff", "q": "What is a knowledge cutoff?", "alts": ["training cutoff meaning", "why does the model not know recent news", "model out of date", "cutoff date"],
+   "a": "It is the date after which the model saw no training data. It does not know about later events, prices or policy changes unless you put them in the context. For anything that changes, such as current rates or policies, pass the latest version in the prompt.",
+   "concepts": ["Knowledge cutoff", "Context"], "link": "learn/basics.html#g-context"},
+
+  {"id": "system-prompt", "q": "What is a system prompt?", "alts": ["prompt vs system prompt", "what is a prompt", "system message meaning", "standing instructions for the model"],
+   "a": "The prompt is everything you send: instructions, data, examples and the question. The system prompt is the builder's standing instructions for the whole conversation: role, rules and output format. Most quality gains on a POC come from clearer prompts, not from a different model.",
+   "concepts": ["Prompt and system prompt"], "link": "learn/m02.html#l-prompting-fundamentals"},
+
+  {"id": "reasoning-models", "q": "What is a reasoning model?", "alts": ["what is a thinking model", "extended thinking meaning", "reasoning mode", "when to use reasoning models"],
+   "a": "A reasoning model works through intermediate steps before giving its final answer. It is better on multi-step problems, but it uses more tokens and takes longer. Turn it on where it earns its cost, not by default for every simple task.",
+   "concepts": ["Reasoning (thinking) models"], "link": "learn/basics.html#g-models"},
+
+  {"id": "what-multimodal", "q": "What does multimodal mean?", "alts": ["can the model read images", "can AI read PDFs and scans", "multimodal model meaning", "image input"],
+   "a": "A multimodal model accepts more than text: images, PDFs and sometimes audio. Many client documents are scans, photos and screenshots, and a multimodal model can read them directly. Still test it on the client's real documents, since scan quality varies.",
+   "concepts": ["Multimodal"], "link": "learn/basics.html#g-models"},
+
+  {"id": "self-host-when", "q": "When does it make sense to run a model ourselves?", "alts": ["should we self-host a model", "why use an open model", "local model vs API", "run the model on our own servers"],
+   "a": "Self-hosting an open-weight model makes sense when data must not leave the client's network, or a license or rule requires it. The cost is that you own the GPUs, hosting, scaling, updates and safety testing. Local models on a laptop are good for learning, offline demos and very sensitive tests, but are usually less capable than frontier models.",
+   "concepts": ["Self-hosting", "Open-weight model", "Local model", "Model license"], "link": "learn/basics.html#g-open"},
+
+  {"id": "frontier-model", "q": "What is a frontier model, and why start a POC with one?", "alts": ["what is a frontier model", "which model should a POC use", "best model to start with", "start with the strongest model"],
+   "a": "A frontier model is one of the most capable models available at a given time, usually from the large labs and usually closed. It is a sensible default for a POC because it shows what is possible first. Once it works, you can test cheaper or smaller models on the same eval set.",
+   "concepts": ["Frontier model", "Closed (proprietary) model"], "link": "learn/basics.html#g-open"},
+
+  {"id": "trust-benchmarks", "q": "Can I pick a model from benchmark scores?", "alts": ["are benchmarks reliable", "what is a benchmark", "how to compare models", "leaderboard scores"],
+   "a": "A benchmark is a standard test used to compare models, such as exam questions or coding tasks. Treat it as a rough guide only. What decides is your own evaluation on the client's real cases, along with cost, speed, terms and where the model can run.",
+   "concepts": ["Benchmark", "Evaluation (eval)"], "link": "learn/basics.html#g-open"},
+
+  {"id": "why-cost-matters", "q": "Why does AI cost matter so much?", "alts": ["is AI expensive", "why worry about LLM cost", "what drives AI cost", "cost of running a model"],
+   "a": "You pay for every inference, per token in and out, so cost grows with volume and prompt length. A feature that is cheap in a demo can be expensive across thousands of real cases a month. Cost also has to fit the business case, so estimate it early and measure it once the solution runs.",
+   "concepts": ["Inference", "Token", "Prompt caching"], "link": "learn/m02.html#l-context-cost-latency"},
+
+  {"id": "why-ai-security", "q": "Why does security matter more with AI?", "alts": ["is AI secure", "AI security risks", "why is AI a security risk", "LLM security basics"],
+   "a": "An AI solution reads client data and can often call tools that touch real systems. Any document or email it reads can carry instructions that try to steer it, which is prompt injection. Limit what data and tools it can reach, keep keys on the server, and keep a person in the loop for risky actions.",
+   "concepts": ["Prompt injection", "Access control and least privilege", "Tool use (function calling)"], "link": "learn/m06.html#l-llm-security"},
+
+  {"id": "why-python-ai", "q": "Why is Python used for AI?", "alts": ["why python for AI", "should I learn python for AI", "why do AI tools use python", "python and machine learning"],
+   "a": "Most LLM SDKs, agent frameworks and data tools are Python first, and most tutorials and examples start there. AI coding assistants also tend to give their most reliable help in Python because so much public code is written in it. That makes Python the default for a POC that calls models, reads documents and moves data.",
+   "concepts": ["Python", "SDK"], "link": "learn/languages.html#pl-python"},
+
+  {"id": "how-python-runs", "q": "How does Python run my code?", "alts": ["how does a python script run", "what happens when I run python", "python interpreter meaning", "run a .py file"],
+   "a": "Python is an interpreted language. When you run python3 script.py, the Python interpreter reads your file and runs it from top to bottom, one statement at a time. Extra libraries are installed with pip, ideally inside a virtual environment per project. If a line fails, Python stops and prints a traceback showing where it broke.",
+   "concepts": ["Python"], "link": "learn/m03.html#l-python-essentials"},
+
+  {"id": "what-javascript", "q": "What is JavaScript used for?", "alts": ["what is javascript", "why learn javascript", "what is node.js", "JS meaning"],
+   "a": "JavaScript runs every web page, and with Node.js it also runs many servers. You need it to build the screens and small web apps that let a client use an AI feature. It has a large ecosystem of packages on npm.",
+   "concepts": ["JavaScript", "Frontend"], "link": "learn/languages.html#pl-javascript"},
+
+  {"id": "js-vs-ts", "q": "What is the difference between JavaScript and TypeScript?", "alts": ["what is typescript", "javascript vs typescript", "why use typescript", "TS vs JS"],
+   "a": "TypeScript is JavaScript with types. You say what kind of value each variable holds, and the tooling catches mistakes before the code runs. Most modern web apps and many AI SDKs use it. Use TypeScript for a web front end or when the client's stack is Node.js.",
+   "concepts": ["TypeScript", "JavaScript"], "link": "learn/languages.html#pl-typescript"},
+
+  {"id": "what-go", "q": "What is Go used for?", "alts": ["what is golang", "why use go", "go language for backends", "when to pick go"],
+   "a": "Go is a simple, fast language for backend services, command line tools and cloud software. It compiles to one small binary that is easy to deploy. Docker, Kubernetes and Terraform are written in Go. Pick it for a service that must be fast or handle many requests at once, knowing it has fewer AI libraries than Python.",
+   "concepts": ["Go"], "link": "learn/languages.html#pl-go"},
+
+  {"id": "what-rust", "q": "What is Rust used for?", "alts": ["what is rust", "why use rust", "rust for AI", "when to pick rust"],
+   "a": "Rust is a fast systems language that prevents whole classes of memory bugs. It shows up in performance critical parts of AI tooling, such as tokenizers and inference servers. It gives top speed and low resource use, but takes longer to learn and has fewer AI libraries.",
+   "concepts": ["Rust"], "link": "learn/languages.html#pl-rust"},
+
+  {"id": "java-csharp", "q": "Why do Java and C# come up on client work?", "alts": ["do I need java", "what is C#", "what is .NET", "enterprise languages"],
+   "a": "Java runs a large share of enterprise backends, banking and ERP integrations. C# is Microsoft's main language for .NET backends and Azure services. You will often read or call services in these languages when you connect AI to existing systems, and they are the right choice when the client's team must own the code.",
+   "concepts": ["Java", "C#"], "link": "learn/languages.html#pl-java"},
+
+  {"id": "which-language", "q": "Which language should I build a POC in?", "alts": ["what language for AI project", "best programming language for a POC", "python or typescript", "choose a language"],
+   "a": "There is no single right answer. Use the one you know best, or the one the client's team already runs, because they will maintain it. For AI and data work Python is the usual default; for a web front end use TypeScript. Go or Rust fit one hot path that must be fast, connected to the rest by an API.",
+   "concepts": ["Python", "TypeScript", "Go", "Rust"], "link": "learn/languages.html"},
+
+  {"id": "why-sql", "q": "Why does SQL matter for AI work?", "alts": ["do I need SQL", "what is SQL", "why learn SQL", "SQL for AI projects"],
+   "a": "SQL is how you ask questions of a database. Almost every client keeps its business data in SQL databases, so you will query it to feed, check and measure AI features whatever language you build in. It is also how you count volumes for a business case.",
+   "concepts": ["SQL", "Database"], "link": "learn/m03.html#l-data-and-sql"},
+
+  {"id": "what-database", "q": "What is a database?", "alts": ["database meaning", "what is a relational database", "tables rows and columns", "what is postgres"],
+   "a": "A database is organized storage for records. Relational databases such as Postgres and SQL Server keep data in tables of rows and columns, linked by keys, and you query them with SQL. Most client data you need sits in a database you will query or get an export from.",
+   "concepts": ["Database", "SQL"], "link": "learn/m03.html#l-data-and-sql"},
+
+  {"id": "what-api", "q": "What is an API?", "alts": ["API meaning", "what does API stand for", "application programming interface", "what is a REST API"],
+   "a": "API stands for Application Programming Interface: an agreed way for one program to ask another for data or actions over the network. Think of a restaurant's order window. You hand in an order in the agreed format and get your food back; you never go into the kitchen. Everything you build talks to models and client systems through APIs.",
+   "concepts": ["API"], "link": "learn/basics.html#g-products"},
+
+  {"id": "how-api-request", "q": "What happens when my code calls an API?", "alts": ["how does an API request work", "API request and response", "how does curl work", "what is in an HTTP request"],
+   "a": "Your code sends an HTTP request to a URL: a method such as GET or POST, headers such as Authorization with your key, and often a JSON body. The server does the work and returns a status code, headers and a body, usually JSON. A 2xx code means success, 4xx means check what you sent, and 5xx means the other side failed.",
+   "concepts": ["API", "HTTP and HTTPS", "JSON"], "link": "learn/m03.html#l-apis-and-json"},
+
+  {"id": "what-json", "q": "What is JSON?", "alts": ["JSON meaning", "what does JSON look like", "why do APIs use JSON", "JSON format"],
+   "a": "JSON is a plain-text format for structured data, made of names and values, used by almost every API. For example {\"invoice\": \"A-102\", \"amount\": 450}. You will ask models to return JSON so your code can read and check the result reliably.",
+   "concepts": ["JSON"], "link": "learn/m03.html#l-apis-and-json"},
+
+  {"id": "what-sdk", "q": "What is an SDK?", "alts": ["SDK meaning", "software development kit", "SDK vs API", "do I need the SDK"],
+   "a": "An SDK, or Software Development Kit, is a library that makes an API easy to call from a language such as Python or TypeScript. Anthropic, OpenAI and Google all publish official SDKs. They handle details such as request formats and retries, so you write less code.",
+   "concepts": ["SDK", "API"], "link": "learn/basics.html#g-products"},
+
+  {"id": "why-common-sdk", "q": "Why use a common AI SDK instead of one provider's SDK?", "alts": ["what is LiteLLM", "switch AI providers easily", "one SDK for all models", "vercel AI SDK"],
+   "a": "A common layer such as LiteLLM in Python or the AI SDK by Vercel in TypeScript calls many providers through one interface. The provider becomes a setting, not a rewrite. Keep the model name in configuration, so you can compare providers on the client's test cases or move to a self-hosted model later. Use a provider's own SDK when you need a feature only it offers.",
+   "concepts": ["SDK", "Python", "TypeScript"], "link": "learn/languages.html"},
+
+  {"id": "why-git", "q": "Why does every project need Git?", "alts": ["what is git for", "why use version control", "what is a repository", "git meaning"],
+   "a": "Git records every change to code, so you can see what changed, when and why, and go back if something breaks. A repository is a project folder with its full history, often hosted on GitHub or GitLab. Every POC lives in a repository so others can review, run and continue it after you leave.",
+   "concepts": ["Git and repository", "Git and GitHub"], "link": "learn/m03.html#l-git-and-github"},
+
+  {"id": "frontend-backend", "q": "What is the difference between frontend and backend?", "alts": ["frontend vs backend", "what is a backend", "what is a frontend", "client side vs server side"],
+   "a": "The frontend is the part people see and click: a web page or mobile screen. The backend is server-side code that holds the logic, talks to databases and calls other APIs, including model APIs. Model calls and API keys belong in the backend, because anything sent to a browser can be read by its user.",
+   "concepts": ["Frontend", "Backend"], "link": "learn/basics.html#g-build"},
+
+  {"id": "what-shell", "q": "What is the shell, and why do I need it?", "alts": ["what is bash", "what is the terminal", "command line meaning", "why learn the command line"],
+   "a": "The shell is the text interface to a computer. You use it to run scripts, move files, check logs and drive tools like Git, Docker and cloud command line tools. Most servers and containers run Linux with no screen, so the shell is how you work on them.",
+   "concepts": ["Bash and the shell", "Linux command line"], "link": "learn/languages.html#pl-bash"},
+
+  {"id": "what-docker", "q": "What is Docker?", "alts": ["what is a container", "docker meaning", "why use docker", "container vs virtual machine"],
+   "a": "Docker packages an app with everything it needs into a container, so it runs the same on a laptop and on a server. It ends the 'works on my machine' problem. It is the usual way to hand a client something they can run inside their own cloud.",
+   "concepts": ["Container (Docker)", "Docker"], "link": "learn/languages.html#pl-docker"},
+
+  {"id": "what-kubernetes", "q": "What is Kubernetes?", "alts": ["what is k8s", "kubernetes meaning", "docker vs kubernetes", "why use kubernetes"],
+   "a": "Kubernetes runs many containers across many machines and restarts them when they fail. Docker packages one app; Kubernetes runs and manages lots of them. Larger clients run their services on it, so you may need to deploy to it and read what it is doing. A small POC rarely needs it.",
+   "concepts": ["Kubernetes", "Container (Docker)"], "link": "learn/languages.html#pl-kubernetes"},
+
+  {"id": "what-cicd", "q": "What is CI/CD?", "alts": ["CI CD meaning", "continuous integration", "what is a pipeline", "github actions"],
+   "a": "CI/CD means automated pipelines that test every change (continuous integration) and release it (continuous delivery or deployment). GitHub Actions is a common way to set this up. For AI work, the pipeline can also rerun your eval set, so a prompt change cannot quietly break quality.",
+   "concepts": ["CI/CD", "CI/CD with GitHub Actions"], "link": "learn/m09.html#l-cicd-secrets"},
+
+  {"id": "what-cloud", "q": "What is the cloud?", "alts": ["cloud computing meaning", "what is AWS", "what is Azure", "cloud vs on-premises"],
+   "a": "The cloud means renting computing, storage and services from providers such as AWS, Microsoft Azure and Google Cloud instead of owning the hardware. Most client systems and most AI services now run in a cloud. Systems still in a company's own data center are called on-premises.",
+   "concepts": ["Cloud", "On-premises", "Cloud fundamentals"], "link": "learn/languages.html#pl-cloud"},
+
+  {"id": "what-serverless", "q": "What is serverless?", "alts": ["serverless meaning", "what is AWS Lambda", "what is a serverless function", "serverless vs container"],
+   "a": "Serverless means running code without managing servers. You upload a function, the platform runs it when a request arrives and charges per use. It fits a small API that calls an LLM, because the key stays on the server side. Each run has limits on time and memory, so long jobs can be awkward.",
+   "concepts": ["Serverless"], "link": "learn/m09.html#l-deployment-options"},
+
+  {"id": "what-terraform", "q": "What is infrastructure as code, like Terraform?", "alts": ["what is terraform", "infrastructure as code meaning", "IaC", "why not click in the cloud console"],
+   "a": "Infrastructure as code describes cloud resources such as servers, networks and databases in code files. You can review, repeat and track an environment in Git instead of clicking in a console. Terraform is a common tool for it, and many clients use it to control what gets deployed.",
+   "concepts": ["Terraform (infrastructure as code)"], "link": "learn/languages.html#pl-terraform"},
+
+  {"id": "what-environments", "q": "What are development, test and production environments?", "alts": ["dev test prod meaning", "what is an environment", "what is production", "why separate environments"],
+   "a": "An environment is a separate copy of a system: development for building, test for checking, and production for real users. Separating them means a mistake while building does not hit real work. Never test on production systems or production data without explicit permission.",
+   "concepts": ["Environment", "Deployment"], "link": "learn/m09.html#l-cicd-secrets"},
+
+  {"id": "what-observability", "q": "What is observability?", "alts": ["logs metrics traces", "monitoring an AI app", "what is observability", "how do I know the app is healthy"],
+   "a": "Observability means you can tell what a running system is doing from its logs, metrics and traces. For AI features this is how you see slow calls, errors and cost after go-live. Decide what to record before launch, and set alerts that catch problems before users report them.",
+   "concepts": ["Observability (logs, metrics, traces)"], "link": "learn/m09.html#l-observability"},
+
+  {"id": "how-internet-works", "q": "How does the internet work?", "alts": ["internet basics", "what happens when I open a website", "how does the web work", "what is a network"],
+   "a": "The internet is a global network of networks. Devices find each other by IP address. When you open a site, DNS turns the name into an IP address, your browser connects, and it sends an HTTP request; the server sends back a response. Traffic crosses many organizations' equipment on the way, so anything unencrypted can be read along the path.",
+   "concepts": ["Internet", "IP address", "DNS", "HTTP and HTTPS"], "link": "learn/m03.html#l-how-the-web-works"},
+
+  {"id": "what-dns", "q": "What is DNS?", "alts": ["DNS meaning", "domain name system", "how names become IP addresses", "DNS problem"],
+   "a": "DNS, the Domain Name System, is the internet's phone book. It turns names like api.example.com into IP addresses that computers use. When something cannot connect, a DNS problem is one of the first things to rule out.",
+   "concepts": ["DNS", "IP address"], "link": "learn/basics.html#g-network"},
+
+  {"id": "http-vs-https", "q": "What is the difference between HTTP and HTTPS?", "alts": ["HTTP vs HTTPS", "what is HTTPS", "what is TLS", "why HTTPS only"],
+   "a": "HTTP is the format browsers and APIs use for requests and responses. HTTPS is HTTP sent inside an encrypted TLS connection, and the certificate check proves you reached the real server. Plain HTTP can be read by anyone on the path. Client data and credentials must only travel over HTTPS.",
+   "concepts": ["HTTP and HTTPS", "Encryption in transit and at rest"], "link": "learn/m03.html#l-how-the-web-works"},
+
+  {"id": "what-port", "q": "What is a port?", "alts": ["port meaning", "port 443", "why is the port blocked", "network port"],
+   "a": "A port is a numbered door on a computer for one kind of service. HTTPS normally uses port 443. Corporate firewalls often block every port except a few, which can stop a tool from working on the client's network even when the code is fine.",
+   "concepts": ["Port", "Firewall"], "link": "learn/basics.html#g-network"},
+
+  {"id": "what-vpn", "q": "What is a VPN?", "alts": ["VPN meaning", "virtual private network", "why do I need the client VPN", "VPN tunnel"],
+   "a": "A VPN, or Virtual Private Network, is an encrypted tunnel from your device into a private network, so you can reach internal systems as if you were in the office. You will often need the client's VPN to reach their test systems. A call that works at home can behave differently over it.",
+   "concepts": ["VPN"], "link": "learn/basics.html#g-network"},
+
+  {"id": "what-firewall", "q": "What is a firewall?", "alts": ["firewall meaning", "why can't I reach the API from the client network", "firewall rules", "allow list"],
+   "a": "A firewall is a set of rules that allow or block traffic by address, port or application. Your POC may need a firewall change to reach a model API or a client system. Those requests take time, so ask the client's IT team early which outbound addresses are allowed.",
+   "concepts": ["Firewall", "IP address"], "link": "learn/basics.html#g-network"},
+
+  {"id": "what-subnet", "q": "Why can't my laptop connect to the client's database?", "alts": ["what is a subnet", "private subnet meaning", "public vs private subnet", "database not reachable"],
+   "a": "Client data usually lives inside a VPC, a private network in the cloud, and databases sit in private subnets on purpose. A private subnet cannot be reached from the internet. To get to the data, your POC must run inside that network or connect to it securely, for example over a VPN or a private endpoint.",
+   "concepts": ["Subnet", "VPC (Virtual Private Cloud)", "Private endpoint (private link)"], "link": "learn/basics.html#g-network"},
+
+  {"id": "region-residency", "q": "What are cloud regions and data residency?", "alts": ["what is a cloud region", "data residency meaning", "must data stay in our country", "where is data stored"],
+   "a": "A region is a geographic location where a cloud runs its data centers. Data residency is where data is physically stored and processed. Some clients require data to stay in one country or region, which rules out some services and regions. Ask about this before you pick a model service.",
+   "concepts": ["Region", "Data residency"], "link": "learn/basics.html#g-network"},
+
+  {"id": "sensitive-data", "q": "What counts as sensitive data?", "alts": ["sensitive data meaning", "is health data special", "what data needs extra protection", "confidential data"],
+   "a": "Sensitive data needs extra protection: health, financial, biometric and children's data, among others defined by law. For clients, commercially sensitive data such as prices, contracts and source code also counts. It usually needs explicit approval and stronger controls, and sometimes cannot leave the client at all.",
+   "concepts": ["Sensitive data", "Personal data (PII)"], "link": "learn/basics.html#g-data"},
+
+  {"id": "data-minimization", "q": "What is data minimization?", "alts": ["use less data", "mask personal data", "only send what is needed", "data minimisation"],
+   "a": "Use only the data the task actually needs, and remove or mask the rest before it goes anywhere. For example, a model that classifies a ticket rarely needs the customer's phone number. It is the simplest privacy control an FDE can apply every day without asking anyone.",
+   "concepts": ["Data minimization", "Masking, anonymization and pseudonymization"], "link": "learn/basics.html#g-data"},
+
+  {"id": "why-least-privilege", "q": "Why use least privilege?", "alts": ["what is least privilege", "access control meaning", "why limit permissions", "minimum access"],
+   "a": "Least privilege means each person, service and AI tool gets only the access it needs, and nothing more. If something goes wrong, such as a leaked key or a prompt injection, the damage stays small. An assistant that only needs to read tickets must not be able to delete them or read payroll.",
+   "concepts": ["Access control and least privilege"], "link": "learn/basics.html#g-data"},
+
+  {"id": "why-keys-out-of-code", "q": "Why must API keys stay out of code?", "alts": ["why not hardcode keys", "secrets in code", "why use environment variables", "key in the frontend"],
+   "a": "Anyone holding a key can spend the account's money and reach whatever it can reach. Code gets shared, pushed to Git and copied, and Git keeps the key in history even after you delete it. Anything in a frontend can be read by its user. Keep keys in environment variables or a secret store, and only on the server side.",
+   "concepts": ["API key", "Secrets management", "Frontend"], "link": "learn/basics.html#g-data"},
+
+  {"id": "encryption", "q": "What do encryption in transit and at rest mean?", "alts": ["encryption at rest", "encryption in transit", "is the data encrypted", "TLS and disk encryption"],
+   "a": "In transit means data is protected while moving, through HTTPS and TLS. At rest means it is protected while stored on disk. Both are basic expectations in every client security review.",
+   "concepts": ["Encryption in transit and at rest"], "link": "learn/basics.html#g-data"},
+
+  {"id": "provider-training-data", "q": "Will the AI provider train on our data?", "alts": ["does Claude train on my data", "is our data used for training", "AI data terms", "training on client data"],
+   "a": "It depends on the product and plan. Business API and enterprise plans of the major providers generally do not train on your inputs by default; consumer apps may, depending on the plan and settings. Terms change, so check the current terms for the exact product before any client data goes in.",
+   "concepts": ["Training on your data", "Data retention"], "link": "learn/basics.html#g-data"},
+
+  {"id": "why-fde-needed", "q": "Why do companies need forward deployed engineers?", "alts": ["why do FDEs exist", "why hire an FDE", "what problem does an FDE solve", "why not just buy an AI tool"],
+   "a": "A general model does not know a client's data, rules, systems or habits. Many AI pilots look great in a demo and then stall on data, integration, validation, ownership or adoption. The FDE sits with the client, closes those gaps on purpose and leaves a working system their own people can run.",
+   "concepts": [], "link": "learn/m01.html#l-why-ai-projects-stall"},
+
+  {"id": "fde-day", "q": "What does an FDE do day to day?", "alts": ["day in the life of an FDE", "typical FDE day", "what does a forward deployed engineer do daily", "FDE daily work"],
+   "a": "There is no fixed day. In a build phase you might sit with the client's team as they handle real cases, write a short note on what you saw, then change the prompt or code and rerun your test cases. You read the new failures and ask the client the questions they raise. The mix is listening, writing, building, testing and asking.",
+   "concepts": ["Evaluation (eval)"], "link": "learn/m01.html#l-fde-loop"},
+
+  {"id": "fde-skills", "q": "Does an FDE need to be technical or know the business?", "alts": ["what skills does an FDE need", "can a non-developer become an FDE", "domain person vs software person", "why pair software and domain people"],
+   "a": "Both. Software people often underrate the listening and the business side; domain people often underrate the testing. An FDE needs both, which is why this program pairs people from each background. You learn the other side from your partner and from practice.",
+   "concepts": [], "link": "learn/m01.html#l-learning-with-ai"},
+
+  {"id": "fde-deliverables", "q": "What does the client get at the end of an FDE engagement?", "alts": ["FDE deliverables", "what is handed over", "end of engagement", "what does success look like"],
+   "a": "Four things: a working system that solves a named problem, evidence that it works from your evaluation, a person on the client side who owns it, and documents that let that person run and change it. If any one is missing, the work usually fades within months.",
+   "concepts": ["Evaluation (eval)"], "link": "learn/m01.html#l-fde-loop"},
+
+  {"id": "why-demos-mislead", "q": "Why is a good demo not enough?", "alts": ["why demos mislead", "demo worked but production failed", "is a demo proof", "why AI demos look better than reality"],
+   "a": "In a demo you choose the input, know what a good answer looks like, and can retry until it looks right. Real use has messy inputs, common edge cases and nobody to retry. That is why you test on real cases with an agreed bar before anyone relies on the result.",
+   "concepts": ["Evaluation (eval)", "POC, pilot and production"], "link": "learn/m01.html#l-why-ai-projects-stall"},
+
+  {"id": "why-evaluation", "q": "Why does evaluation matter so much?", "alts": ["why evaluate AI", "why test on real cases", "how do I know it works", "why measure AI quality"],
+   "a": "Evaluation is the difference between 'it seems to work' and 'it works on most of the client's real cases, and here are the ones it fails'. Models are probabilistic, so one good run proves little. A fixed set of real cases lets you measure quality, compare prompts and models, and catch a change that makes things worse.",
+   "concepts": ["Evaluation (eval)"], "link": "learn/m09.html#l-eval-sets"},
+
+  {"id": "size-value", "q": "How do I put a rough number on the value of an AI idea?", "alts": ["how to size business value", "what is it worth", "ROI of AI", "value of automation"],
+   "a": "Start with one line: volume per month, times time saved per case, times the loaded cost of an hour of staff time. Take volume from system data, time from timing real cases, and loaded cost from finance. Then subtract build and run costs. Saved hours are freed capacity, not cash, unless something actually changes.",
+   "concepts": [], "link": "learn/m04.html#l-business-case"},
+
+  {"id": "what-domain", "q": "What does 'domain' mean?", "alts": ["domain meaning", "what is a business domain", "domain expert", "what is domain knowledge"],
+   "a": "The domain is the area of business or industry the work belongs to, such as finance, supply chain, quality or pharma manufacturing. Domain knowledge is knowing how that area works: its processes, rules, systems and words. A domain expert, or subject matter expert, is the person who knows the work best.",
+   "concepts": [], "link": "learn/m04.html#l-value-chains"},
+
+  {"id": "why-domain-knowledge", "q": "Why does domain knowledge matter for AI work?", "alts": ["do I need to know the business", "why learn the industry", "why domain matters", "business knowledge for engineers"],
+   "a": "Clients never ask for AI; they ask for a problem to go away. To fix it you need to see where it sits in how the company makes money, which system holds the data and who owns it. Domain knowledge also tells you what a correct answer looks like, which you need to build an eval set.",
+   "concepts": [], "link": "learn/m04.html#l-value-chains"},
+
+  {"id": "value-chain", "q": "What is a value chain?", "alts": ["value chain meaning", "how does a company make money", "Porter value chain", "primary and support activities"],
+   "a": "A value chain is the sequence of activities a company performs to deliver something a customer pays for: bring in materials, make the product, ship it, sell it and service it, supported by work such as procurement, HR and IT. Cost and delay collect at the handoffs between teams and systems, which is where many AI ideas land.",
+   "concepts": [], "link": "learn/m04.html#l-value-chains"},
+
+  {"id": "erp-crm", "q": "What are ERP, CRM and the other common business systems?", "alts": ["what is ERP", "what is CRM", "what is SAP", "what is PLM or HRIS"],
+   "a": "ERP (such as SAP or Oracle) holds orders, inventory, purchasing, invoices and the ledger. CRM (such as Salesforce) holds customers, contacts and the sales pipeline. Others include PLM for product designs, QMS for quality records, HRIS for employees and ticketing tools for requests. Each is the record for its own type of data.",
+   "concepts": [], "link": "learn/m04.html#l-value-chains"},
+
+  {"id": "learn-industry-fast", "q": "How do I learn a new industry quickly?", "alts": ["learn a client's business fast", "how to understand a new domain", "first week in a new industry", "research a client"],
+   "a": "Read the client's annual report or investor presentation if it is public, especially revenue, segments and risks. Read a few of their job postings, which often name their systems. Ask for an org chart and a systems landscape in week one. Then draw the value chain yourself and ask a domain person to correct it.",
+   "concepts": [], "link": "learn/m04.html#l-value-chains"},
+
+  {"id": "what-medtech", "q": "What is MedTech?", "alts": ["medtech meaning", "what is a medical device company", "medical technology industry", "what is a medical device"],
+   "a": "MedTech means companies that design, make and sell medical devices: products that diagnose, monitor or treat a condition mainly by physical or software means rather than as a drug. Examples are infusion pumps, catheters, imaging systems and diagnostic software. The products are regulated, so the records about them are too.",
+   "concepts": ["Medical device", "Device class"], "link": null},
+
+  {"id": "what-pharma", "q": "What is the pharma industry, from an FDE point of view?", "alts": ["pharma meaning", "pharmaceutical industry", "what do pharma companies do", "drug manufacturing"],
+   "a": "Pharma covers drug manufacturers, makers of active ingredients, contract manufacturers (CDMOs) and trial sponsors. They make medicines under GMP rules, so every step that can affect quality must be written down, controlled and approved by an independent quality unit. Quality and validation teams spend much of their week on documents, which makes pharma a good but careful place for AI.",
+   "concepts": ["GMP and CGMP", "CDMO and quality agreement"], "link": null},
+
+  {"id": "what-gxp", "q": "What does GxP mean?", "alts": ["GxP meaning", "is this a GxP system", "good practice rules", "GxP validated"],
+   "a": "GxP is short for the family of good practice rules: GMP for manufacturing, GCP for clinical trials, GLP for non-clinical lab studies, and others. When a client says a tool is GxP, they mean it affects regulated records and needs validation and an audit trail.",
+   "concepts": ["GxP"], "link": null},
+
+  {"id": "what-gmp", "q": "What is GMP?", "alts": ["good manufacturing practice", "what is CGMP", "GMP meaning", "GMP rules"],
+   "a": "GMP, good manufacturing practice, is the set of rules for making medicines so they are consistently safe and of the right quality. In the US it is called current GMP (CGMP). Any tool used in manufacturing, testing or quality release falls under GMP, so it must be controlled and validated.",
+   "concepts": ["GMP and CGMP", "GxP"], "link": null},
+
+  {"id": "what-qms", "q": "What is a QMS?", "alts": ["quality management system", "what is an eQMS", "QMS meaning", "quality system software"],
+   "a": "A quality management system is the documented, controlled way a company designs, makes, checks and improves its products: deviations, CAPA, change control, SOPs, training and audits. The word also means the software that holds those records, often called an eQMS. In regulated companies it is the system of record for quality events, and QA decides whether a tool may touch it.",
+   "concepts": ["QMS", "QMS and eQMS"], "link": null},
+
+  {"id": "what-capa", "q": "What is a CAPA?", "alts": ["CAPA meaning", "corrective and preventive action", "root cause and fix", "CAPA process"],
+   "a": "CAPA stands for corrective and preventive action: find the root cause of a problem, fix it, stop it happening again, and later check that the fix worked. Evidence gathering takes much of the effort, so AI can help draft and collect. People must still own the CAPA and its decisions.",
+   "concepts": ["CAPA", "Deviation", "Nonconformance (NC)"], "link": null},
+
+  {"id": "what-validation", "q": "What does validation mean in regulated industries?", "alts": ["computer system validation", "what is CSV", "what is CSA", "validate an AI tool"],
+   "a": "Validation is documented, objective evidence that a system is fit for its intended use. Computer system validation (CSV) is the classic approach, and FDA Computer Software Assurance (CSA) is a risk-based way to do it. For an AI tool, your evaluation set, written up as a protocol with agreed pass criteria, becomes core validation evidence.",
+   "concepts": ["CSA and validation", "CSV, CSA and GAMP 5", "Qualification and validation (IQ, OQ, PQ)"], "link": null},
+
+  {"id": "what-part-11", "q": "What is 21 CFR Part 11?", "alts": ["part 11 meaning", "electronic records and signatures", "FDA part 11", "annex 11"],
+   "a": "21 CFR Part 11 is the US FDA rule for electronic records and electronic signatures. It expects secure, time-stamped audit trails and signatures linked to a person and to what they meant by signing. The EU has a similar annex, Annex 11. In practice every AI draft, human edit and approval in a regulated process must be recorded and attributable.",
+   "concepts": ["21 CFR Part 11", "21 CFR Part 11 and EU Annex 11"], "link": null},
+
+  {"id": "what-design-controls", "q": "What are design controls?", "alts": ["design controls meaning", "what is a DHF", "design history file", "medical device design process"],
+   "a": "Design controls are the required, documented way of designing a medical device: inputs, outputs, verification, validation, reviews and transfer to manufacturing. The design history file (DHF) holds the evidence. These records often sit across PLM and shared folders, so gathering them is a common AI use case.",
+   "concepts": ["Design controls and DHF"], "link": null},
+
+  {"id": "what-iso-13485", "q": "What is ISO 13485?", "alts": ["ISO 13485 meaning", "medical device quality standard", "what is QMSR", "21 CFR 820"],
+   "a": "ISO 13485 is the international quality management system standard for medical devices. In the US, the FDA's Quality Management System Regulation (21 CFR Part 820) now incorporates it. Under these rules, software used in production or in the quality system must be shown to work for its intended use.",
+   "concepts": ["QMSR and ISO 13485", "QMS"], "link": null},
+
+  {"id": "what-alcoa", "q": "What is ALCOA+ or data integrity?", "alts": ["ALCOA meaning", "data integrity in pharma", "attributable legible contemporaneous", "ALCOA plus"],
+   "a": "ALCOA+ is a set of data integrity principles: records must be attributable, legible, contemporaneous, original and accurate, plus complete, consistent, enduring and available. For AI this means the record must show who wrote what, so AI drafts and human edits are kept apart and no uncontrolled copies are made.",
+   "concepts": ["ALCOA+", "ALCOA+ (data integrity)"], "link": null},
+
+  {"id": "change-control-ai", "q": "Why does a prompt edit need change control?", "alts": ["what is change control", "change control for AI", "can I just change the prompt", "model upgrade in a regulated system"],
+   "a": "Change control is the formal process to propose, assess, approve and record any change to a process, document, equipment or system. In a regulated company, your AI tool is part of a controlled system, so a prompt edit or a model upgrade counts as a change. Plan for it, and rerun your eval set as evidence each time.",
+   "concepts": ["Change control", "Evaluation (eval)"], "link": null},
+
+  {"id": "what-audit-trail", "q": "What is an audit trail and why is it needed?", "alts": ["audit log meaning", "what should I log", "who approved the AI output", "audit trail for AI"],
+   "a": "An audit log is a record of who did what and when, including what the AI suggested and what a person approved. It is required in regulated work, and it is the first thing anyone asks for when something goes wrong. Design it in from the start rather than adding it later.",
+   "concepts": ["Audit log", "21 CFR Part 11"], "link": "learn/m09.html#l-human-review-audit"},
+
+  {"id": "regulated-careful", "q": "Why do regulated industries move carefully with AI?", "alts": ["why is pharma slow with AI", "AI in medtech challenges", "why so much validation", "regulated industry AI adoption"],
+   "a": "In pharma and MedTech, a tool that drafts or changes quality records becomes part of the regulated quality system. It must be validated for its intended use, keep an attributable audit trail, go through change control and leave decisions to qualified people. Mistakes can affect patient safety and lead to inspection findings, so the quality unit will not sign off on a tool it cannot audit.",
+   "concepts": ["GxP", "CSA and validation", "21 CFR Part 11", "Change control"], "link": null}
+]}

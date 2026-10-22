@@ -1,0 +1,2487 @@
+{
+ "entries": [
+  {
+   "id": "tech-python-what-for",
+   "q": "What is Python good for?",
+   "alts": [
+    "python use cases",
+    "why learn python",
+    "what do people build with python",
+    "is python worth learning"
+   ],
+   "a": "Python is a general purpose language that reads almost like plain English. It is the main language for data work, scripts, automation and AI. Most model provider SDKs, agent frameworks and data tools such as pandas are Python first, so it is the language an FDE uses most.",
+   "concepts": [
+    "Python"
+   ],
+   "link": "learn/languages.html#pl-python"
+  },
+  {
+   "id": "tech-python-install",
+   "q": "How do I install Python and run my first script?",
+   "alts": [
+    "install python",
+    "how to start with python",
+    "set up python on my laptop",
+    "run a .py file",
+    "python getting started"
+   ],
+   "a": "Install Python 3 from python.org or your system package manager, then check it with python3 --version in a terminal. Save a file such as hello.py with print('hello') and run python3 hello.py. For each project, create a virtual environment with python3 -m venv .venv and install packages into it with pip.",
+   "concepts": [
+    "Python",
+    "Bash and the shell"
+   ],
+   "link": "learn/languages.html#pl-python"
+  },
+  {
+   "id": "tech-python-how-runs",
+   "q": "Is Python compiled or interpreted?",
+   "alts": [
+    "does python compile",
+    "why is python slow",
+    "python interpreter meaning",
+    "how does python execute code"
+   ],
+   "a": "The usual Python, called CPython, first turns your file into bytecode and then an interpreter runs that bytecode line by line. There is no separate build step, which makes trying things fast. The cost is speed in heavy loops, which is why libraries like NumPy do the heavy maths in compiled code underneath.",
+   "concepts": [
+    "Python"
+   ],
+   "link": "learn/m03.html#l-python-essentials"
+  },
+  {
+   "id": "tech-python-mistakes",
+   "q": "What mistakes do Python beginners make most?",
+   "alts": [
+    "common python errors",
+    "python gotchas",
+    "python beginner pitfalls",
+    "why does my python code break"
+   ],
+   "a": "Installing packages globally instead of in a virtual environment, so projects clash. Mixing tabs and spaces, since indentation is part of the syntax in Python. Reading numbers from a CSV or input as text and then adding them as strings. Using a mutable default argument such as def f(items=[]), which keeps its value between calls.",
+   "concepts": [
+    "Python"
+   ],
+   "link": "learn/m03.html#l-python-essentials"
+  },
+  {
+   "id": "tech-python-when",
+   "q": "When should I choose Python?",
+   "alts": [
+    "is python right for my project",
+    "python or something else",
+    "best use of python",
+    "should my poc be in python"
+   ],
+   "a": "Choose Python for AI POCs, data cleaning, scripts and backend APIs where developer speed matters more than raw performance. It has the most AI libraries and examples, and coding assistants give their most reliable help in it. Pick something else when the client's team runs a different stack and must own the code, or when one part needs very high speed.",
+   "concepts": [
+    "Python"
+   ],
+   "link": "learn/languages.html#l-languages-and-sdks"
+  },
+  {
+   "id": "tech-python-ai",
+   "q": "How is Python used with AI?",
+   "alts": [
+    "python for llm apps",
+    "python ai libraries",
+    "calling a model from python",
+    "python llm sdk"
+   ],
+   "a": "You call a model with a provider SDK such as anthropic or openai, or with a common layer like LiteLLM so the provider is a setting. Python also holds the data side: pandas for tables, readers for PDFs and documents, and libraries for embeddings and evaluation. A typical POC is one Python service that loads data, calls the model, checks the output and stores the result.",
+   "concepts": [
+    "Python",
+    "SDK"
+   ],
+   "link": "learn/languages.html#l-languages-and-sdks"
+  },
+  {
+   "id": "tech-python-venv-vs-global",
+   "q": "pip install says permission denied or breaks my system. Why?",
+   "alts": [
+    "externally managed environment error",
+    "pip permission error",
+    "should I use sudo pip",
+    "pip install fails on mac"
+   ],
+   "a": "Your operating system has its own Python and protects it from changes. Do not use sudo pip. Create a virtual environment in the project with python3 -m venv .venv, activate it, and install there, so each project keeps its own packages.",
+   "concepts": [
+    "Python"
+   ],
+   "link": "learn/m03.html#l-python-essentials"
+  },
+  {
+   "id": "tech-js-what-for",
+   "q": "What is JavaScript for?",
+   "alts": [
+    "javascript use cases",
+    "why learn javascript",
+    "where does javascript run",
+    "what can javascript do"
+   ],
+   "a": "JavaScript is the language every web browser runs, so it powers the interactive part of web pages. With Node.js it also runs on servers and in command line tools. For an FDE it is how you build the screen that lets a client actually use an AI feature.",
+   "concepts": [
+    "JavaScript",
+    "Frontend"
+   ],
+   "link": "learn/languages.html#pl-javascript"
+  },
+  {
+   "id": "tech-js-how-runs",
+   "q": "How does JavaScript run?",
+   "alts": [
+    "what is node.js",
+    "javascript engine",
+    "browser vs node",
+    "is javascript compiled"
+   ],
+   "a": "A JavaScript engine reads your code and compiles it on the fly while it runs; Chrome and Node.js use the V8 engine. In the browser it can change the page and call APIs. In Node.js it can read files, run web servers and call other services. It runs one task at a time and uses an event loop so it does not block while waiting for network calls.",
+   "concepts": [
+    "JavaScript"
+   ],
+   "link": "learn/languages.html#pl-javascript"
+  },
+  {
+   "id": "tech-js-install",
+   "q": "How do I start with JavaScript?",
+   "alts": [
+    "install node",
+    "run javascript on my computer",
+    "javascript getting started",
+    "where do I write javascript"
+   ],
+   "a": "You can start with no install: open the browser developer tools (F12) and type in the Console tab. For real projects install Node.js from nodejs.org, which also gives you npm, the package manager. Save app.js and run node app.js, or create a project with npm init.",
+   "concepts": [
+    "JavaScript"
+   ],
+   "link": "learn/languages.html#pl-javascript"
+  },
+  {
+   "id": "tech-js-mistakes",
+   "q": "What mistakes do JavaScript beginners make?",
+   "alts": [
+    "javascript gotchas",
+    "javascript common errors",
+    "== vs === in javascript",
+    "why is my promise pending"
+   ],
+   "a": "Using == instead of ===, so values of different types compare as equal by surprise. Forgetting await on an async call, so you get a Promise instead of the data. Treating numbers from a form or URL as numbers when they are strings. Putting an API key in browser code, where anyone can read it.",
+   "concepts": [
+    "JavaScript"
+   ],
+   "link": "learn/languages.html#pl-javascript"
+  },
+  {
+   "id": "tech-js-when",
+   "q": "When should I choose JavaScript?",
+   "alts": [
+    "javascript or typescript for a project",
+    "is javascript enough for a backend",
+    "should I use node",
+    "javascript or python"
+   ],
+   "a": "Choose JavaScript when you need a web front end, or when the client's backend already runs on Node.js. For anything bigger than a small script or page, use TypeScript instead, since it is JavaScript with types. For data heavy or AI heavy back ends, Python usually has more ready-made libraries.",
+   "concepts": [
+    "JavaScript",
+    "TypeScript"
+   ],
+   "link": "learn/languages.html#l-languages-and-sdks"
+  },
+  {
+   "id": "tech-js-ai",
+   "q": "How is JavaScript used with AI?",
+   "alts": [
+    "call an llm from javascript",
+    "javascript ai sdk",
+    "ai chat ui in javascript",
+    "streaming llm response to browser"
+   ],
+   "a": "Most often JavaScript builds the chat or review screen and streams the model's answer to the user as it is written. The model call itself should happen on a server, such as a Node.js route, so the API key never reaches the browser. Provider SDKs and the AI SDK by Vercel both work in JavaScript and TypeScript.",
+   "concepts": [
+    "JavaScript",
+    "SDK",
+    "API key"
+   ],
+   "link": "learn/languages.html#l-languages-and-sdks"
+  },
+  {
+   "id": "tech-ts-what",
+   "q": "Why use TypeScript instead of plain JavaScript?",
+   "alts": [
+    "typescript benefits",
+    "is typescript worth it",
+    "what does typescript add",
+    "typescript meaning"
+   ],
+   "a": "TypeScript is JavaScript plus type annotations, such as saying a field is a number or a string. The checker catches mistakes like a misspelled field or a missing argument before the code runs. Editors and AI assistants also give better suggestions because they know the shape of your data.",
+   "concepts": [
+    "TypeScript",
+    "JavaScript"
+   ],
+   "link": "learn/languages.html#pl-typescript"
+  },
+  {
+   "id": "tech-ts-how-runs",
+   "q": "How does TypeScript run?",
+   "alts": [
+    "does the browser run typescript",
+    "what is tsc",
+    "typescript compile to javascript",
+    "run a .ts file"
+   ],
+   "a": "Browsers and Node.js run JavaScript, so TypeScript is checked and then turned into JavaScript first. The compiler tsc does both jobs, while tools such as Vite, tsx or recent Node.js versions can strip the types and run the file directly. The types are removed at runtime, so they do not check data that arrives from outside.",
+   "concepts": [
+    "TypeScript"
+   ],
+   "link": "learn/languages.html#pl-typescript"
+  },
+  {
+   "id": "tech-ts-start",
+   "q": "How do I start a TypeScript project?",
+   "alts": [
+    "install typescript",
+    "typescript setup",
+    "tsconfig what is it",
+    "typescript getting started"
+   ],
+   "a": "Install Node.js, then in a new folder run npm init -y and npm install -D typescript. Run npx tsc --init to create tsconfig.json, which holds the compiler settings; keep strict mode on. Most web frameworks, such as Next.js or Vite templates, can also create a TypeScript project for you in one command.",
+   "concepts": [
+    "TypeScript"
+   ],
+   "link": "learn/languages.html#pl-typescript"
+  },
+  {
+   "id": "tech-ts-mistakes",
+   "q": "What mistakes do TypeScript beginners make?",
+   "alts": [
+    "typescript any everywhere",
+    "typescript gotchas",
+    "types are wrong at runtime",
+    "typescript common errors"
+   ],
+   "a": "Using the type any to silence errors, which switches the checking off. Turning strict mode off for the same reason. Trusting types for data from an API or a model: TypeScript does not check that at runtime, so validate it with a library such as Zod. Writing very clever types that nobody on the team can read.",
+   "concepts": [
+    "TypeScript"
+   ],
+   "link": "learn/languages.html#pl-typescript"
+  },
+  {
+   "id": "tech-ts-when",
+   "q": "When should I choose TypeScript?",
+   "alts": [
+    "typescript or python for poc",
+    "should I use typescript",
+    "typescript for backend",
+    "best use of typescript"
+   ],
+   "a": "Choose TypeScript for web apps, front ends, and back ends where the client already runs Node.js. It is a strong fit when the same team owns both screen and server, since they share one language and shared types. For a data or AI heavy POC with no web stack constraint, Python is still the usual default.",
+   "concepts": [
+    "TypeScript"
+   ],
+   "link": "learn/languages.html#l-languages-and-sdks"
+  },
+  {
+   "id": "tech-ts-ai",
+   "q": "How is TypeScript used with AI?",
+   "alts": [
+    "typescript llm sdk",
+    "ai sdk vercel",
+    "structured output in typescript",
+    "typescript agents"
+   ],
+   "a": "The AI SDK by Vercel gives one interface over many model providers, much like LiteLLM in Python, and the main providers ship official TypeScript SDKs. A common pattern is to define the expected output shape with Zod, ask the model for JSON, and validate the reply against that schema. Many MCP servers are also written in TypeScript.",
+   "concepts": [
+    "TypeScript",
+    "SDK",
+    "MCP (Model Context Protocol)"
+   ],
+   "link": "learn/languages.html#l-languages-and-sdks"
+  },
+  {
+   "id": "tech-go-what-for",
+   "q": "What is Go good for?",
+   "alts": [
+    "golang use cases",
+    "why learn go",
+    "what is golang",
+    "go language meaning"
+   ],
+   "a": "Go is a simple, fast language made at Google for backend services, command line tools and cloud software. Docker, Kubernetes and Terraform are written in it. It builds into one small binary, which makes services easy to deploy.",
+   "concepts": [
+    "Go"
+   ],
+   "link": "learn/languages.html#pl-go"
+  },
+  {
+   "id": "tech-go-how-runs",
+   "q": "How does Go run?",
+   "alts": [
+    "is go compiled",
+    "go binary",
+    "go runtime",
+    "goroutines meaning"
+   ],
+   "a": "Go is compiled ahead of time into a native binary for one operating system and processor. The binary carries a small runtime with garbage collection, so there is no separate interpreter to install. Goroutines, very cheap lightweight threads, let one program handle many requests at the same time.",
+   "concepts": [
+    "Go"
+   ],
+   "link": "learn/languages.html#pl-go"
+  },
+  {
+   "id": "tech-go-start",
+   "q": "How do I start with Go?",
+   "alts": [
+    "install go",
+    "go hello world",
+    "go mod init",
+    "golang getting started"
+   ],
+   "a": "Install Go from go.dev and check it with go version. In a new folder run go mod init example.com/hello, write main.go with a main function, and run go run . to try it. go build produces the binary you deploy, and A Tour of Go is a good first walk through.",
+   "concepts": [
+    "Go"
+   ],
+   "link": "learn/languages.html#pl-go"
+  },
+  {
+   "id": "tech-go-mistakes",
+   "q": "What mistakes do Go beginners make?",
+   "alts": [
+    "go error handling",
+    "golang gotchas",
+    "go common errors",
+    "ignoring err in go"
+   ],
+   "a": "Ignoring the error value that most Go functions return, often by assigning it to _. Starting goroutines without a way to wait for them or stop them, so work is lost or leaks. Sharing a map between goroutines without a lock, which can crash the program. Building deep class-like hierarchies instead of small interfaces.",
+   "concepts": [
+    "Go"
+   ],
+   "link": "learn/languages.html#pl-go"
+  },
+  {
+   "id": "tech-go-when",
+   "q": "When should I choose Go?",
+   "alts": [
+    "go or python",
+    "go for backend",
+    "should I use golang",
+    "go vs rust"
+   ],
+   "a": "Choose Go when a service must be fast, handle many requests at once, start instantly or ship as one small binary: an API gateway, a high volume pipeline or a command line tool. It is easier to learn than Rust. It has fewer AI and data libraries than Python, so a common split is Python for the model work and Go for the busy service in front.",
+   "concepts": [
+    "Go"
+   ],
+   "link": "learn/languages.html#l-languages-and-sdks"
+  },
+  {
+   "id": "tech-go-ai",
+   "q": "How is Go used with AI?",
+   "alts": [
+    "call an llm from go",
+    "go ai sdk",
+    "golang llm",
+    "go and ai services"
+   ],
+   "a": "Go usually runs the services around a model: gateways that route and log calls, high volume document pipelines and MCP servers. Several providers publish official Go SDKs, and any model API can be called with Go's standard HTTP client because it is plain HTTP and JSON. Training and data science work rarely happens in Go.",
+   "concepts": [
+    "Go",
+    "API"
+   ],
+   "link": "learn/languages.html#l-languages-and-sdks"
+  },
+  {
+   "id": "tech-rust-what-for",
+   "q": "What is Rust good for?",
+   "alts": [
+    "rust use cases",
+    "why learn rust",
+    "what is rust programming",
+    "rust language meaning"
+   ],
+   "a": "Rust is a fast systems language that prevents whole classes of memory bugs before the program runs. It is used where speed and safety both matter: browsers, command line tools, databases and parts of AI tooling such as tokenizers and inference servers. It has no garbage collector, so performance is steady.",
+   "concepts": [
+    "Rust"
+   ],
+   "link": "learn/languages.html#pl-rust"
+  },
+  {
+   "id": "tech-rust-how-runs",
+   "q": "How does Rust run?",
+   "alts": [
+    "is rust compiled",
+    "what is the borrow checker",
+    "rust ownership",
+    "how does rust stay safe"
+   ],
+   "a": "Rust compiles ahead of time to a native binary, like C or C++. Its compiler checks ownership rules, through the borrow checker, so memory is freed exactly once and never used after it is freed. If the rules are broken, the code does not compile, which is why Rust programs avoid many crashes other languages hit at runtime.",
+   "concepts": [
+    "Rust"
+   ],
+   "link": "learn/languages.html#pl-rust"
+  },
+  {
+   "id": "tech-rust-start",
+   "q": "How do I start with Rust?",
+   "alts": [
+    "install rust",
+    "what is cargo",
+    "rustup",
+    "rust getting started"
+   ],
+   "a": "Install Rust with rustup from rust-lang.org, which gives you the compiler and cargo. Run cargo new hello, then cargo run inside the folder to build and run it. Cargo also fetches libraries, called crates, and runs tests. The free Rust Book is the standard place to learn.",
+   "concepts": [
+    "Rust"
+   ],
+   "link": "learn/languages.html#pl-rust"
+  },
+  {
+   "id": "tech-rust-mistakes",
+   "q": "What mistakes do Rust beginners make?",
+   "alts": [
+    "fighting the borrow checker",
+    "rust unwrap panic",
+    "rust gotchas",
+    "rust common errors"
+   ],
+   "a": "Fighting the borrow checker by adding clone() everywhere instead of thinking about who owns the data. Using unwrap() on every Result, so the program crashes on the first bad input. Picking Rust for a quick POC where its learning curve slows the whole team down.",
+   "concepts": [
+    "Rust"
+   ],
+   "link": "learn/languages.html#pl-rust"
+  },
+  {
+   "id": "tech-rust-when",
+   "q": "When should I choose Rust?",
+   "alts": [
+    "rust or go",
+    "is rust overkill",
+    "should I use rust",
+    "rust for a poc"
+   ],
+   "a": "Choose Rust for a hot path that must be very fast, use little memory or run on a small device, and where crashes are costly. It gives the most speed and safety of the common choices but takes longest to learn. For most client POCs it is too slow to write; keep it for the one part that really needs it.",
+   "concepts": [
+    "Rust"
+   ],
+   "link": "learn/languages.html#l-languages-and-sdks"
+  },
+  {
+   "id": "tech-rust-ai",
+   "q": "How is Rust used with AI?",
+   "alts": [
+    "rust llm",
+    "rust tokenizers",
+    "rust inference",
+    "call claude from rust"
+   ],
+   "a": "Rust shows up inside AI tooling more than in client app code: fast tokenizers, inference engines and Python packages with Rust cores. In a solution you might use it for a document pipeline that must process many files quickly. You can call any model API from Rust with an HTTP client, even without an official SDK.",
+   "concepts": [
+    "Rust"
+   ],
+   "link": "learn/languages.html#pl-rust"
+  },
+  {
+   "id": "tech-java-what-for",
+   "q": "What is Java used for?",
+   "alts": [
+    "java use cases",
+    "why learn java",
+    "where is java used",
+    "is java still used"
+   ],
+   "a": "Java runs a large share of enterprise backends, banking systems and ERP integrations. Android apps were long built in it too. On client work you often read, call or extend Java services when you connect AI to existing systems.",
+   "concepts": [
+    "Java"
+   ],
+   "link": "learn/languages.html#pl-java"
+  },
+  {
+   "id": "tech-java-how-runs",
+   "q": "How does Java run?",
+   "alts": [
+    "what is the jvm",
+    "java bytecode",
+    "is java compiled",
+    "jdk vs jre"
+   ],
+   "a": "The javac compiler turns Java source into bytecode, and the Java Virtual Machine (JVM) runs that bytecode, compiling hot parts to native code while it runs. The same bytecode runs on any machine with a JVM. Kotlin and Scala also run on the JVM, so they can use the same libraries.",
+   "concepts": [
+    "Java"
+   ],
+   "link": "learn/languages.html#pl-java"
+  },
+  {
+   "id": "tech-java-start",
+   "q": "How do I start with Java?",
+   "alts": [
+    "install java",
+    "install jdk",
+    "java hello world",
+    "maven or gradle"
+   ],
+   "a": "Install a JDK (Java Development Kit), for example a free OpenJDK build, and check it with java -version. A single file such as Hello.java can be run directly with java Hello.java. Real projects use a build tool, Maven or Gradle, to fetch libraries and build, and an IDE such as IntelliJ IDEA helps a lot.",
+   "concepts": [
+    "Java"
+   ],
+   "link": "learn/languages.html#pl-java"
+  },
+  {
+   "id": "tech-java-mistakes",
+   "q": "What mistakes do Java beginners make?",
+   "alts": [
+    "java gotchas",
+    "nullpointerexception",
+    "comparing strings in java",
+    "java common errors"
+   ],
+   "a": "Comparing strings with == instead of equals(), which compares objects rather than text. Not checking for null, which leads to NullPointerException. Catching an exception and doing nothing with it, which hides the real problem. Fighting the build tool instead of learning the basic Maven or Gradle layout.",
+   "concepts": [
+    "Java"
+   ],
+   "link": "learn/languages.html#pl-java"
+  },
+  {
+   "id": "tech-java-when",
+   "q": "When should I choose Java?",
+   "alts": [
+    "java or python",
+    "should I use java",
+    "java for ai project",
+    "java vs c#"
+   ],
+   "a": "Choose Java when the client's systems and team run on the JVM and they must own and run what you build. It is strong for long lived, large services with mature tooling. For a quick AI POC on a blank page, Python is usually faster to build, then the client's Java team can integrate it over an API.",
+   "concepts": [
+    "Java"
+   ],
+   "link": "learn/languages.html#l-languages-and-sdks"
+  },
+  {
+   "id": "tech-java-ai",
+   "q": "How is Java used with AI?",
+   "alts": [
+    "java llm sdk",
+    "spring ai",
+    "langchain4j",
+    "call an llm from java"
+   ],
+   "a": "Major providers publish Java SDKs, and frameworks such as Spring AI and LangChain4j add a common interface over many models. Java code often hosts the business rules and data access that the AI feature needs, exposed as tools or APIs. Any model API can also be called with Java's HTTP client because it is plain HTTP and JSON.",
+   "concepts": [
+    "Java",
+    "SDK"
+   ],
+   "link": "learn/languages.html#pl-java"
+  },
+  {
+   "id": "tech-csharp-what-for",
+   "q": "What is C# used for?",
+   "alts": [
+    "c sharp use cases",
+    "what is .net",
+    "why learn c#",
+    "where is c# used"
+   ],
+   "a": "C# is Microsoft's main language for .NET, used for backend services, desktop apps, Azure services and games built with Unity. Many enterprise clients run on Microsoft stacks. You meet it when you integrate AI into those systems.",
+   "concepts": [
+    "C#"
+   ],
+   "link": "learn/languages.html#pl-csharp"
+  },
+  {
+   "id": "tech-csharp-how-runs",
+   "q": "How does C# run?",
+   "alts": [
+    "what is the clr",
+    ".net runtime",
+    "is c# compiled",
+    "does c# run on linux"
+   ],
+   "a": "The C# compiler turns code into intermediate language (IL), and the .NET runtime compiles that to native code as it runs. Modern .NET is open source and runs on Windows, Linux and macOS. Ahead of time compilation is also available when fast start up matters.",
+   "concepts": [
+    "C#"
+   ],
+   "link": "learn/languages.html#pl-csharp"
+  },
+  {
+   "id": "tech-csharp-start",
+   "q": "How do I start with C#?",
+   "alts": [
+    "install .net sdk",
+    "dotnet new console",
+    "c# hello world",
+    "c# getting started"
+   ],
+   "a": "Install the .NET SDK from dot.net and check it with dotnet --version. Run dotnet new console -o hello, go into the folder and run dotnet run. Visual Studio, VS Code with the C# extension, or Rider all work as editors.",
+   "concepts": [
+    "C#"
+   ],
+   "link": "learn/languages.html#pl-csharp"
+  },
+  {
+   "id": "tech-csharp-mistakes",
+   "q": "What mistakes do C# beginners make?",
+   "alts": [
+    "c# gotchas",
+    "async void",
+    "nullreferenceexception",
+    "c# common errors"
+   ],
+   "a": "Calling .Result or .Wait() on async code, which can freeze the app; use await all the way up instead. Writing async void methods outside event handlers, so errors are lost. Ignoring nullable warnings until a NullReferenceException appears. Not disposing connections and files, which using statements handle for you.",
+   "concepts": [
+    "C#"
+   ],
+   "link": "learn/languages.html#pl-csharp"
+  },
+  {
+   "id": "tech-csharp-when",
+   "q": "When should I choose C#?",
+   "alts": [
+    "c# or python",
+    "should I use .net",
+    "c# for ai",
+    "c# vs java"
+   ],
+   "a": "Choose C# when the client runs on .NET and Azure and their team will own the code. It is fast, well tooled and has strong Microsoft support. For a blank page AI POC, Python is quicker, and a .NET team can call it as a service later.",
+   "concepts": [
+    "C#"
+   ],
+   "link": "learn/languages.html#l-languages-and-sdks"
+  },
+  {
+   "id": "tech-csharp-ai",
+   "q": "How is C# used with AI?",
+   "alts": [
+    "semantic kernel",
+    "c# llm sdk",
+    "azure openai c#",
+    "call an llm from .net"
+   ],
+   "a": "Microsoft offers Semantic Kernel and Microsoft.Extensions.AI as common layers over model providers, and OpenAI publishes an official .NET library. In Microsoft shops, models are often reached through Azure, so identity and network rules come from the client's Azure setup. Any model API can also be called with HttpClient as plain HTTP and JSON.",
+   "concepts": [
+    "C#",
+    "SDK",
+    "Cloud model platforms"
+   ],
+   "link": "learn/languages.html#pl-csharp"
+  },
+  {
+   "id": "tech-sql-what-for",
+   "q": "What is SQL for?",
+   "alts": [
+    "sql meaning",
+    "why learn sql",
+    "what does sql do",
+    "is sql a programming language"
+   ],
+   "a": "SQL (Structured Query Language) is how you ask questions of a relational database: select rows, filter, join tables and add up totals. Almost every client keeps its business data in SQL databases. You use it to feed, check and measure AI features, whatever other language you build in.",
+   "concepts": [
+    "SQL",
+    "Database"
+   ],
+   "link": "learn/languages.html#pl-sql"
+  },
+  {
+   "id": "tech-sql-how-runs",
+   "q": "How does SQL run?",
+   "alts": [
+    "is sql declarative",
+    "what is a query planner",
+    "where does sql run",
+    "how does a database run my query"
+   ],
+   "a": "SQL is declarative: you describe the result you want, not the steps. The database's query planner picks how to get it, for example which index to use and in what order to join tables. The query runs inside the database server, or inside your program for SQLite, and only the result comes back.",
+   "concepts": [
+    "SQL",
+    "Database"
+   ],
+   "link": "learn/languages.html#pl-sql"
+  },
+  {
+   "id": "tech-sql-start",
+   "q": "How do I start practising SQL?",
+   "alts": [
+    "learn sql free",
+    "install sqlite",
+    "practice sql at home",
+    "sql getting started"
+   ],
+   "a": "SQLite is the easiest start: it is a single file database, often already installed, and you open one with sqlite3 shop.db. Python also includes it through the sqlite3 module. Create a small table, insert a few rows and practise SELECT, WHERE, GROUP BY and JOIN; SQLBolt and CS50 SQL are good free guides.",
+   "concepts": [
+    "SQL"
+   ],
+   "link": "learn/languages.html#pl-sql"
+  },
+  {
+   "id": "tech-sql-mistakes",
+   "q": "What SQL mistakes do beginners make?",
+   "alts": [
+    "sql gotchas",
+    "update without where",
+    "null in sql",
+    "sql common errors"
+   ],
+   "a": "Running UPDATE or DELETE without a WHERE clause, which changes every row. Writing column = NULL instead of column IS NULL, which never matches. Joining tables on the wrong key, so rows multiply and totals come out too big. Building queries by pasting user text into strings, which opens SQL injection; use parameters instead.",
+   "concepts": [
+    "SQL"
+   ],
+   "link": "learn/m03.html#l-data-and-sql"
+  },
+  {
+   "id": "tech-sql-when",
+   "q": "When should I use SQL instead of Python for data?",
+   "alts": [
+    "sql or pandas",
+    "sql vs python",
+    "should I do this in sql",
+    "where should data processing happen"
+   ],
+   "a": "Use SQL when the data lives in a database and the job is filtering, joining or adding up: the database does it close to the data and only sends back the result. Use Python for steps SQL handles badly, such as calling a model, reading PDFs or complex text cleaning. A common pattern is SQL to pull a clean, small slice and Python to do the rest.",
+   "concepts": [
+    "SQL",
+    "Python"
+   ],
+   "link": "learn/m03.html#l-data-and-sql"
+  },
+  {
+   "id": "tech-sql-ai",
+   "q": "How is SQL used with AI?",
+   "alts": [
+    "text to sql",
+    "llm writes sql",
+    "sql for ai features",
+    "pgvector"
+   ],
+   "a": "SQL pulls the real records an AI feature needs, stores its outputs and measures results, such as how many answers were approved. A model can draft SQL from a plain question, but run it with a read-only account and check it, since a wrong join gives a confident wrong number. Some databases, such as PostgreSQL with the pgvector extension, also store embeddings for vector search.",
+   "concepts": [
+    "SQL",
+    "Embedding"
+   ],
+   "link": "learn/m03.html#l-data-and-sql"
+  },
+  {
+   "id": "tech-bash-what-for",
+   "q": "What is Bash for?",
+   "alts": [
+    "bash meaning",
+    "what is a shell script",
+    "why learn bash",
+    "shell vs terminal"
+   ],
+   "a": "Bash is a shell: the text interface where you type commands, and a language for scripting them. You use it to run tools, move files, read logs and drive Git, Docker and cloud command line tools on servers. Short setup and automation scripts are usually written in it.",
+   "concepts": [
+    "Bash and the shell"
+   ],
+   "link": "learn/languages.html#pl-bash"
+  },
+  {
+   "id": "tech-bash-start",
+   "q": "How do I start using Bash?",
+   "alts": [
+    "open a terminal",
+    "bash on windows",
+    "bash on mac",
+    "learn the command line"
+   ],
+   "a": "On Linux, open a terminal and you are usually in Bash. On macOS the default shell is zsh, which runs almost all the same commands, and Bash is also available. On Windows, install WSL (Windows Subsystem for Linux) or use Git Bash. Start with pwd, ls, cd, cat, mkdir and grep.",
+   "concepts": [
+    "Bash and the shell"
+   ],
+   "link": "learn/languages.html#pl-bash"
+  },
+  {
+   "id": "tech-bash-how-runs",
+   "q": "How does a Bash script run?",
+   "alts": [
+    "run a .sh file",
+    "what is a shebang",
+    "chmod +x",
+    "permission denied running script"
+   ],
+   "a": "A script is a text file of commands that the shell runs top to bottom. Start it with a shebang line such as #!/usr/bin/env bash so the system knows which program runs it. Make it executable with chmod +x setup.sh, then run ./setup.sh, or run bash setup.sh without changing permissions.",
+   "concepts": [
+    "Bash and the shell"
+   ],
+   "link": "learn/languages.html#pl-bash"
+  },
+  {
+   "id": "tech-bash-mistakes",
+   "q": "What mistakes do people make in Bash scripts?",
+   "alts": [
+    "bash gotchas",
+    "quote variables bash",
+    "set -euo pipefail",
+    "bash script keeps running after error"
+   ],
+   "a": "Not quoting variables, so a file name with a space splits into two arguments; write \"$file\". Letting the script carry on after a failed command; start scripts with set -euo pipefail. Running rm -rf with a variable that turned out empty. ShellCheck is a free tool that catches most of these.",
+   "concepts": [
+    "Bash and the shell"
+   ],
+   "link": "learn/languages.html#pl-bash"
+  },
+  {
+   "id": "tech-bash-when",
+   "q": "When should I write a Bash script instead of Python?",
+   "alts": [
+    "bash or python",
+    "when to use shell script",
+    "is bash enough",
+    "shell script too long"
+   ],
+   "a": "Use Bash for short glue: running a few commands in order, setting up a project or a CI step. Once a script needs real logic, data parsing or error handling, move it to Python, which is easier to read and test. A rough sign is when you start fighting arrays or string parsing in Bash.",
+   "concepts": [
+    "Bash and the shell",
+    "Python"
+   ],
+   "link": "learn/languages.html#pl-bash"
+  },
+  {
+   "id": "tech-bash-ai",
+   "q": "How is the shell used with AI?",
+   "alts": [
+    "coding agent runs commands",
+    "curl an llm api",
+    "ai in the terminal",
+    "approve commands from ai"
+   ],
+   "a": "You can call a model API straight from the shell with curl to test a key or a prompt. Coding agents such as Claude Code work in the terminal and run shell commands for you, like tests, installs and Git. Read each command before you approve it, especially anything that deletes, pushes or deploys.",
+   "concepts": [
+    "Bash and the shell",
+    "Coding agent"
+   ],
+   "link": "learn/m07.html#l-ai-coding-workflow"
+  },
+  {
+   "id": "tech-compiled-vs-interpreted",
+   "q": "compiled vs interpreted",
+   "alts": [
+    "difference between compiled and interpreted languages",
+    "what does compiled mean",
+    "interpreted language meaning",
+    "why do some languages need a build"
+   ],
+   "a": "A compiled language, like Go or Rust, is turned into machine code before it runs, so it starts fast and runs fast. An interpreted language, like Python or Bash, is read and run by another program at run time, which is quicker to try but usually slower. Java, C# and JavaScript sit in between: they compile to an intermediate form or compile while running.",
+   "concepts": [],
+   "link": "learn/languages.html#l-languages-and-sdks"
+  },
+  {
+   "id": "tech-static-vs-dynamic-typing",
+   "q": "What is the difference between static and dynamic typing?",
+   "alts": [
+    "typed vs untyped language",
+    "static typing meaning",
+    "do types matter",
+    "dynamic typing problems"
+   ],
+   "a": "With static typing, as in TypeScript, Go, Rust, Java and C#, types are checked before the program runs, so many mistakes are caught early. With dynamic typing, as in Python and JavaScript, types are checked only when a line runs. Python can add optional type hints, checked by tools like mypy, to get some of the same safety.",
+   "concepts": [],
+   "link": "learn/languages.html#l-languages-and-sdks"
+  },
+  {
+   "id": "tech-package-managers",
+   "q": "What are pip, npm, cargo and the other package managers?",
+   "alts": [
+    "what is a package manager",
+    "pip vs npm",
+    "dependencies meaning",
+    "lock file meaning"
+   ],
+   "a": "A package manager downloads the libraries your project depends on and records their versions. Python uses pip (or uv), JavaScript and TypeScript use npm, Rust uses cargo, Go uses go modules, Java uses Maven or Gradle, and C# uses NuGet. Commit the lock file so everyone, and the server, installs the same versions.",
+   "concepts": [],
+   "link": "learn/languages.html#l-languages-and-sdks"
+  },
+  {
+   "id": "tech-learn-second-language",
+   "q": "How do I learn a new language fast for a client project?",
+   "alts": [
+    "pick up a new programming language",
+    "learn go quickly",
+    "client uses java and I know python",
+    "refresh an old language"
+   ],
+   "a": "Learn the basics in a day or two: install it, write a small program, and learn its types, errors, packages and test runner. Then read the client's real code and change something small with a test. An AI assistant helps you translate ideas from a language you know, but check its output closely in less common languages.",
+   "concepts": [],
+   "link": "learn/languages.html#l-languages-and-sdks"
+  },
+  {
+   "id": "tech-prompt-structure",
+   "q": "How should I structure a prompt?",
+   "alts": [
+    "prompt template",
+    "parts of a good prompt",
+    "how to write a prompt for an api",
+    "prompt layout"
+   ],
+   "a": "Give the role and task, the context the model needs, the rules, the input, and the exact output format, in roughly that order. Put long documents near the top and the question near the end. Wrap parts in simple tags such as <rules> and <email> so the model does not mix instructions with data.",
+   "concepts": [
+    "Prompt and system prompt"
+   ],
+   "link": "learn/m02.html#l-prompting-fundamentals"
+  },
+  {
+   "id": "tech-prompt-examples",
+   "q": "Should I put examples in my prompt?",
+   "alts": [
+    "few shot prompting",
+    "what is few-shot",
+    "examples in prompt",
+    "one shot vs few shot"
+   ],
+   "a": "Yes, a few short, varied examples of input and correct output often help more than long instructions. This is called few-shot prompting. Make the examples realistic and different from each other, or the model copies one pattern too closely.",
+   "concepts": [
+    "Prompt and system prompt"
+   ],
+   "link": "learn/m02.html#l-prompting-fundamentals"
+  },
+  {
+   "id": "tech-prompt-iterate",
+   "q": "How do I improve a prompt that gives bad answers?",
+   "alts": [
+    "prompt not working",
+    "fix my prompt",
+    "prompt engineering process",
+    "model ignores my instructions"
+   ],
+   "a": "Run it on ten to twenty real cases and read every output. Find the pattern in the failures, change one thing, and run the same cases again. Keep the cases as a small test set, so you can see whether each change helped or broke something else.",
+   "concepts": [
+    "Prompt and system prompt",
+    "Evaluation (eval)"
+   ],
+   "link": "learn/m02.html#l-prompting-fundamentals"
+  },
+  {
+   "id": "tech-prompts-in-code",
+   "q": "Where should prompts live in my code?",
+   "alts": [
+    "store prompts in files",
+    "prompt versioning",
+    "hardcoded prompts",
+    "prompt management"
+   ],
+   "a": "Keep prompts in their own files or constants, under Git, not scattered through the code as long strings. Give each prompt a version and log which version produced each answer. A prompt change is a code change, so run your evaluation set before it ships.",
+   "concepts": [
+    "Prompt and system prompt",
+    "Git and repository"
+   ],
+   "link": "learn/m07.html#l-prompts-in-code"
+  },
+  {
+   "id": "tech-temperature-setting",
+   "q": "What temperature should I use?",
+   "alts": [
+    "temperature 0 or 1",
+    "best temperature for extraction",
+    "set temperature",
+    "temperature for creative writing"
+   ],
+   "a": "Use a low temperature, near 0, for extraction, classification and anything code will read, so answers stay close to the most likely tokens. Use a higher value for brainstorming or varied wording. Even at 0 the output is not always identical between runs, so design checks rather than relying on exact repeats.",
+   "concepts": [
+    "Temperature"
+   ],
+   "link": "learn/m02.html#l-how-llms-work"
+  },
+  {
+   "id": "tech-top-p",
+   "q": "What are top_p and top_k?",
+   "alts": [
+    "top p meaning",
+    "nucleus sampling",
+    "top_k parameter",
+    "sampling settings llm"
+   ],
+   "a": "They are other sampling settings, like temperature, that limit which next tokens the model may pick. top_k keeps only the k most likely tokens; top_p keeps the smallest set whose likelihoods add up to p. Usually change temperature or top_p, not both, and leave the defaults unless testing shows a reason.",
+   "concepts": [
+    "Temperature",
+    "Next-token prediction"
+   ],
+   "link": "learn/m02.html#l-how-llms-work"
+  },
+  {
+   "id": "tech-token-count",
+   "q": "How do I count tokens before I send a request?",
+   "alts": [
+    "count tokens",
+    "how many tokens is my text",
+    "token counter",
+    "estimate tokens from words"
+   ],
+   "a": "Most providers offer a token counting endpoint or a tokenizer library, and the API response reports the exact input and output tokens used. For a quick estimate, English text is often roughly three to four characters per token, but this varies by model and language. Log the real counts from responses, since those are what you are billed for.",
+   "concepts": [
+    "Token"
+   ],
+   "link": "learn/m02.html#l-context-cost-latency"
+  },
+  {
+   "id": "tech-output-tokens-cost",
+   "q": "Why do output tokens cost more than input tokens?",
+   "alts": [
+    "input vs output token price",
+    "why is output expensive",
+    "reduce output cost",
+    "output token pricing"
+   ],
+   "a": "Providers usually price output tokens higher because the model writes them one at a time, while input can be processed in parallel. That also makes long answers slower. Ask for short, structured output when code will read it, and set a sensible max tokens limit.",
+   "concepts": [
+    "Token",
+    "Output limit (max tokens)"
+   ],
+   "link": "learn/m02.html#l-context-cost-latency"
+  },
+  {
+   "id": "tech-reduce-llm-cost",
+   "q": "How do I cut the cost of an LLM feature?",
+   "alts": [
+    "llm too expensive",
+    "reduce token cost",
+    "save money on ai api",
+    "cheaper llm calls"
+   ],
+   "a": "Send less: retrieve only the relevant passages instead of whole documents, and trim old chat history. Use a smaller model for easy steps and keep the large one for hard ones. Turn on prompt caching for long, repeated instructions, and use batch processing for work that does not need an instant answer.",
+   "concepts": [
+    "Token",
+    "Prompt caching",
+    "RAG (retrieval-augmented generation)"
+   ],
+   "link": "learn/m06.html#l-model-choice-cost"
+  },
+  {
+   "id": "tech-context-limit-hit",
+   "q": "What happens when my input is bigger than the context window?",
+   "alts": [
+    "context length exceeded",
+    "prompt too long error",
+    "document too big for model",
+    "context window full"
+   ],
+   "a": "The API rejects the request, or older parts of a chat get dropped, depending on how your code handles it. Split the document into chunks and retrieve only the parts that matter, or summarize in stages. Even when everything fits, very long inputs are slower, cost more and can make the model miss details.",
+   "concepts": [
+    "Context window",
+    "RAG (retrieval-augmented generation)"
+   ],
+   "link": "learn/m02.html#l-context-cost-latency"
+  },
+  {
+   "id": "tech-max-tokens",
+   "q": "What is max tokens, and why did my answer stop halfway?",
+   "alts": [
+    "answer cut off",
+    "max_tokens parameter",
+    "response truncated",
+    "stop reason max tokens"
+   ],
+   "a": "Max tokens is the limit you set on how long the model's answer can be. If the answer hits it, it stops mid sentence and the response says why, for example a stop or finish reason of max tokens. Raise the limit, ask for shorter output, or check the reason in code and handle it.",
+   "concepts": [
+    "Output limit (max tokens)"
+   ],
+   "link": "learn/m07.html#l-prompts-in-code"
+  },
+  {
+   "id": "tech-embeddings-how",
+   "q": "How do embeddings and vector search work?",
+   "alts": [
+    "what is vector search",
+    "semantic search meaning",
+    "cosine similarity",
+    "how do embeddings find similar text"
+   ],
+   "a": "An embedding model turns a piece of text into a list of numbers, a vector, where texts with similar meaning get nearby vectors. You embed every chunk of your documents once and store the vectors. At question time you embed the question and find the closest chunks, often by cosine similarity, then pass them to the LLM.",
+   "concepts": [
+    "Embedding"
+   ],
+   "link": "learn/m07.html#l-rag-in-practice"
+  },
+  {
+   "id": "tech-vector-database",
+   "q": "Do I need a vector database?",
+   "alts": [
+    "what is a vector database",
+    "pgvector vs pinecone",
+    "where to store embeddings",
+    "vector store choice"
+   ],
+   "a": "Not always. For a POC with a few thousand chunks, an in-memory index or a vector extension in an existing database, such as pgvector in PostgreSQL, is often enough. Dedicated vector databases help at large scale or with heavy filtering. Using the client's existing database also keeps data in a place they already secure.",
+   "concepts": [
+    "Embedding",
+    "Database"
+   ],
+   "link": "learn/m07.html#l-rag-in-practice"
+  },
+  {
+   "id": "tech-chunking",
+   "q": "What is chunking in RAG?",
+   "alts": [
+    "how to split documents for rag",
+    "chunk size",
+    "chunk overlap",
+    "document chunking"
+   ],
+   "a": "Chunking means splitting documents into smaller passages before you embed and search them. Split along natural breaks such as headings or paragraphs, keep each chunk long enough to make sense alone, and store its source and page. Bad chunks are a common reason RAG finds the wrong text.",
+   "concepts": [
+    "RAG (retrieval-augmented generation)",
+    "Embedding"
+   ],
+   "link": "learn/m07.html#l-rag-in-practice"
+  },
+  {
+   "id": "tech-finetune-vs-rag",
+   "q": "Fine-tuning vs RAG: which do I need?",
+   "alts": [
+    "should I fine tune or use rag",
+    "rag or fine-tuning",
+    "teach the model our documents",
+    "fine tune on company data"
+   ],
+   "a": "Use RAG when the model needs facts from your documents, especially facts that change; it can also show sources. Fine-tuning changes the model's behaviour or style through more training, and is poor at adding facts you need to update. Start with prompting and RAG, and consider fine-tuning only when evaluation shows a gap they cannot close.",
+   "concepts": [
+    "RAG (retrieval-augmented generation)",
+    "Post-training and fine-tuning"
+   ],
+   "link": "learn/m02.html#l-rag-tools-agents"
+  },
+  {
+   "id": "tech-eval-how-start",
+   "q": "How do I start evaluating an LLM feature?",
+   "alts": [
+    "llm evaluation",
+    "how to test an ai feature",
+    "build an eval",
+    "measure llm quality"
+   ],
+   "a": "Collect real cases from the client, write down the expected answer for each with a domain expert, and run your system on all of them. Score with code where you can, such as exact field matches, and read the failures to find patterns. Run the same set after every prompt or model change.",
+   "concepts": [
+    "Evaluation (eval)"
+   ],
+   "link": "learn/m09.html#l-eval-sets"
+  },
+  {
+   "id": "tech-llm-as-judge",
+   "q": "What is LLM-as-judge?",
+   "alts": [
+    "use a model to grade answers",
+    "llm judge meaning",
+    "automated grading of llm output",
+    "is llm as judge reliable"
+   ],
+   "a": "LLM-as-judge means using a model, with a clear rubric, to grade outputs that code cannot check, such as whether a summary is faithful. It scales grading but can be wrong or biased. Check it against human grades on a sample before trusting it, and keep code checks where they are possible.",
+   "concepts": [
+    "Evaluation (eval)"
+   ],
+   "link": "learn/m09.html#l-measuring-quality"
+  },
+  {
+   "id": "tech-guardrails",
+   "q": "What are guardrails?",
+   "alts": [
+    "llm guardrails meaning",
+    "ai safety checks in code",
+    "output validation llm",
+    "content filters"
+   ],
+   "a": "Guardrails are the checks around a model call that keep it inside safe limits. Examples are validating the output against a schema, blocking actions the user is not allowed to take, filtering sensitive data before it is sent, and routing low confidence or risky cases to a person. They live in your code, not only in the prompt.",
+   "concepts": [
+    "Access control and least privilege",
+    "Evaluation (eval)"
+   ],
+   "link": "learn/m06.html#l-llm-security"
+  },
+  {
+   "id": "tech-prompt-injection-defend",
+   "q": "How do I defend against prompt injection?",
+   "alts": [
+    "stop prompt injection",
+    "prompt injection prevention",
+    "malicious instructions in documents",
+    "indirect prompt injection"
+   ],
+   "a": "Assume any text from outside, such as emails, web pages or uploaded files, may contain instructions aimed at the model. Keep that text clearly separated as data, give the model only the tools and permissions it needs, and require human approval for risky actions like sending or paying. No prompt wording blocks injection completely, so the limits must be in code and permissions.",
+   "concepts": [
+    "Prompt injection",
+    "Access control and least privilege"
+   ],
+   "link": "learn/m06.html#l-llm-security"
+  },
+  {
+   "id": "tech-model-choice",
+   "q": "How do I pick which model to use?",
+   "alts": [
+    "which llm should I use",
+    "choose a model",
+    "best model for my use case",
+    "small vs large model"
+   ],
+   "a": "Start the POC with a strong frontier model to learn what is possible. Then try cheaper or faster models on the same evaluation set and keep the smallest one that meets the bar. Also weigh where the data may go, the client's approved providers, latency and cost per month.",
+   "concepts": [
+    "Frontier model",
+    "Evaluation (eval)",
+    "Model family and version"
+   ],
+   "link": "learn/m06.html#l-model-choice-cost"
+  },
+  {
+   "id": "tech-model-version-pin",
+   "q": "Why should I pin a model version?",
+   "alts": [
+    "model alias vs version",
+    "model changed and broke my app",
+    "pin model id",
+    "model deprecation"
+   ],
+   "a": "A model alias can point to a newer model later, and newer models can answer differently. Pin the exact version in configuration so behaviour only changes when you choose. Watch the provider's deprecation dates and rerun your evaluation set before moving to a new version.",
+   "concepts": [
+    "Model family and version",
+    "Evaluation (eval)"
+   ],
+   "link": "learn/m06.html#l-model-choice-cost"
+  },
+  {
+   "id": "tech-ollama",
+   "q": "How do I run a model locally with Ollama?",
+   "alts": [
+    "what is ollama",
+    "run llm on my laptop",
+    "local llm setup",
+    "ollama getting started"
+   ],
+   "a": "Install Ollama from ollama.com, then run a command such as ollama run llama3.2 to download and chat with an open-weight model. It also serves a local HTTP API, so code and tools like LiteLLM can call it. Local models are free to run and keep data on your machine, but small ones are weaker than frontier models.",
+   "concepts": [
+    "Local model",
+    "Open-weight model"
+   ],
+   "link": "learn/languages.html#l-languages-and-sdks"
+  },
+  {
+   "id": "tech-local-model-when",
+   "q": "When should I use a local model?",
+   "alts": [
+    "local vs cloud model",
+    "should I self host a model",
+    "is a local model good enough",
+    "offline llm"
+   ],
+   "a": "Use a local model to learn and test at no cost, when data must not leave a machine, or when there is no internet access. For client quality, test it on the real evaluation set against a frontier model first. Running models in production yourself also means owning hardware, updates and monitoring.",
+   "concepts": [
+    "Local model",
+    "Self-hosting",
+    "Open-weight model"
+   ],
+   "link": "learn/basics.html#g-open"
+  },
+  {
+   "id": "tech-litellm",
+   "q": "What is LiteLLM?",
+   "alts": [
+    "litellm meaning",
+    "one api for many llms",
+    "switch llm provider easily",
+    "python llm gateway"
+   ],
+   "a": "LiteLLM is a Python library, and optional proxy server, that calls many model providers through one OpenAI-style interface. You change the model by changing a string such as anthropic/... or ollama/llama3.2, not the code. Keep that string in configuration so you can compare providers on the same test cases.",
+   "concepts": [
+    "SDK",
+    "Python"
+   ],
+   "link": "learn/languages.html#l-languages-and-sdks"
+  },
+  {
+   "id": "tech-ai-sdk-vercel",
+   "q": "What is the AI SDK in TypeScript?",
+   "alts": [
+    "vercel ai sdk",
+    "ai sdk meaning",
+    "typescript llm library",
+    "streaming chat in next.js"
+   ],
+   "a": "The AI SDK, made by Vercel, is a TypeScript library that calls many model providers with one interface, the TypeScript counterpart to LiteLLM. It also helps with streaming answers to a web page, tool calls and structured output. It works in Node.js back ends and frameworks such as Next.js.",
+   "concepts": [
+    "SDK",
+    "TypeScript"
+   ],
+   "link": "learn/languages.html#l-languages-and-sdks"
+  },
+  {
+   "id": "tech-provider-sdk-when",
+   "q": "When should I use a provider's own SDK?",
+   "alts": [
+    "anthropic sdk vs litellm",
+    "official sdk or wrapper",
+    "provider specific features",
+    "openai sdk vs common sdk"
+   ],
+   "a": "Use the provider's own SDK when you need a feature the common layer does not cover yet, or covers only partly, such as some caching, file or tool options. It also tends to get new features first. Many teams keep a common layer for most calls and use the provider SDK in one small module where they need it.",
+   "concepts": [
+    "SDK",
+    "Anthropic API (Claude API)"
+   ],
+   "link": "learn/languages.html#l-languages-and-sdks"
+  },
+  {
+   "id": "tech-mcp-server-client",
+   "q": "How do MCP servers and clients fit together?",
+   "alts": [
+    "mcp host client server",
+    "how mcp works",
+    "mcp architecture",
+    "connect an mcp server"
+   ],
+   "a": "An MCP server exposes tools, data and prompts in a standard way. An MCP client, inside an app such as Claude Code, Claude Desktop or your own agent, connects to the server, lists what it offers and lets the model call it. One server written once can then be used by any app that speaks MCP.",
+   "concepts": [
+    "MCP (Model Context Protocol)",
+    "Tool use (function calling)"
+   ],
+   "link": "learn/m07.html#l-mcp"
+  },
+  {
+   "id": "tech-mcp-vs-api",
+   "q": "MCP vs a normal API",
+   "alts": [
+    "difference between mcp and rest api",
+    "why mcp if we have apis",
+    "mcp or function calling",
+    "is mcp an api"
+   ],
+   "a": "An API is built for programs that already know how to call it. MCP wraps tools with names, descriptions and input schemas a model can read, and gives every AI app the same way to discover and call them. MCP servers usually call ordinary APIs underneath; MCP does not replace them.",
+   "concepts": [
+    "MCP (Model Context Protocol)",
+    "API"
+   ],
+   "link": "learn/m07.html#l-mcp"
+  },
+  {
+   "id": "tech-tool-schema",
+   "q": "How does the model know how to call my tool?",
+   "alts": [
+    "tool definition",
+    "function calling schema",
+    "json schema for tools",
+    "tool description"
+   ],
+   "a": "You send each tool's name, a plain description and a JSON Schema of its inputs with the request. The model reads these, decides whether to call a tool, and returns the name and arguments; your code runs the tool and sends the result back. Clear names and descriptions matter as much as the prompt.",
+   "concepts": [
+    "Tool use (function calling)",
+    "JSON"
+   ],
+   "link": "learn/m07.html#l-tool-use"
+  },
+  {
+   "id": "tech-streaming",
+   "q": "What is streaming in LLM APIs?",
+   "alts": [
+    "stream responses",
+    "why stream llm output",
+    "server sent events llm",
+    "show answer while typing"
+   ],
+   "a": "Streaming sends the answer in small pieces as the model writes it, instead of all at once at the end. Users see text start quickly, which makes long answers feel faster. The total time and cost are the same, and your code must join the pieces and handle errors mid stream.",
+   "concepts": [
+    "Latency",
+    "API"
+   ],
+   "link": "learn/m02.html#l-context-cost-latency"
+  },
+  {
+   "id": "tech-rate-limit-retry",
+   "q": "How should my code handle rate limits and errors from a model API?",
+   "alts": [
+    "429 too many requests",
+    "retry llm api",
+    "exponential backoff",
+    "api overloaded error"
+   ],
+   "a": "Retry on rate limit and temporary server errors with exponential backoff: wait a little, then longer each time, with some randomness. Do not retry bad request errors, since they will fail again. Cap the number of retries, log every failure, and make retried actions safe to repeat.",
+   "concepts": [
+    "Rate limit",
+    "API"
+   ],
+   "link": "learn/m07.html#l-tool-use"
+  },
+  {
+   "id": "tech-structured-output",
+   "q": "How do I get JSON I can trust from a model?",
+   "alts": [
+    "structured output",
+    "model returns invalid json",
+    "json mode",
+    "parse llm output"
+   ],
+   "a": "Ask for JSON with an exact example or schema, and use the provider's structured output or tool features when they exist. Then always parse and validate the reply in code, for example with Pydantic in Python or Zod in TypeScript. On failure, retry once with the error message, then send the case to a person.",
+   "concepts": [
+    "JSON",
+    "Prompt and system prompt"
+   ],
+   "link": "learn/m07.html#l-prompts-in-code"
+  },
+  {
+   "id": "tech-ai-latency",
+   "q": "Why is my AI feature slow?",
+   "alts": [
+    "llm latency",
+    "speed up llm response",
+    "time to first token",
+    "slow api calls"
+   ],
+   "a": "Speed depends on input size, output length, model size and how many calls happen in a row. Long answers and chains of calls add up the most. Use smaller models for simple steps, shorter outputs, streaming, prompt caching and running independent calls in parallel.",
+   "concepts": [
+    "Latency",
+    "Token"
+   ],
+   "link": "learn/m02.html#l-context-cost-latency"
+  },
+  {
+   "id": "tech-pii-to-llm",
+   "q": "Can I send customer data to an LLM API?",
+   "alts": [
+    "send pii to openai",
+    "is it safe to send data to claude api",
+    "llm and personal data",
+    "client data in prompts"
+   ],
+   "a": "Only if the client agrees and the provider's terms, data processing agreement and region meet their rules. Send the minimum needed, mask or remove personal data where you can, and check whether the provider keeps or trains on API data under that contract. When in doubt, ask the client's security or privacy team before testing with real data.",
+   "concepts": [
+    "Personal data (PII)",
+    "Data minimization",
+    "DPA and security review"
+   ],
+   "link": "learn/m02.html#l-responsible-use"
+  },
+  {
+   "id": "tech-sql-join",
+   "q": "What's a JOIN?",
+   "alts": [
+    "sql join explained",
+    "how do joins work",
+    "combine two tables sql",
+    "join meaning in sql"
+   ],
+   "a": "A JOIN combines rows from two tables that share a value, such as orders and customers matched on customer_id. You write SELECT ... FROM orders JOIN customers ON orders.customer_id = customers.id. The result has columns from both tables for every matching pair.",
+   "concepts": [
+    "SQL",
+    "Database"
+   ],
+   "link": "learn/m03.html#l-data-and-sql"
+  },
+  {
+   "id": "tech-join-types",
+   "q": "What are the types of SQL joins?",
+   "alts": [
+    "inner vs left vs right join",
+    "full outer join",
+    "which join to use",
+    "sql join types"
+   ],
+   "a": "An INNER JOIN keeps only rows that match in both tables. A LEFT JOIN keeps every row from the left table and fills missing matches with NULL; RIGHT JOIN does the same from the right side. A FULL OUTER JOIN keeps unmatched rows from both sides, though not every database supports it.",
+   "concepts": [
+    "SQL"
+   ],
+   "link": "learn/m03.html#l-data-and-sql"
+  },
+  {
+   "id": "tech-join-duplicates",
+   "q": "Why did my JOIN return too many rows?",
+   "alts": [
+    "join duplicates rows",
+    "totals too high after join",
+    "row explosion sql",
+    "fan out join"
+   ],
+   "a": "If a key appears more than once on either side, every match pairs up, so rows multiply. Totals summed after such a join come out too big. Check that the join key is unique where you expect it, for example with GROUP BY key HAVING COUNT(*) > 1, and aggregate before joining when needed.",
+   "concepts": [
+    "SQL"
+   ],
+   "link": "learn/m03.html#l-data-and-sql"
+  },
+  {
+   "id": "tech-sql-index",
+   "q": "What is a database index?",
+   "alts": [
+    "sql index meaning",
+    "why is my query slow",
+    "create index",
+    "index explained"
+   ],
+   "a": "An index is a sorted lookup structure on one or more columns, like the index of a book, so the database finds rows without reading the whole table. Add indexes on columns you often filter or join on. They make writes a little slower and take space, so do not index every column.",
+   "concepts": [
+    "Database",
+    "SQL"
+   ],
+   "link": "learn/m03.html#l-data-and-sql"
+  },
+  {
+   "id": "tech-slow-query",
+   "q": "How do I find why a SQL query is slow?",
+   "alts": [
+    "explain plan",
+    "sql performance",
+    "query takes forever",
+    "optimize sql query"
+   ],
+   "a": "Run it with EXPLAIN, or EXPLAIN QUERY PLAN in SQLite, to see how the database plans to run it. Look for full table scans on large tables and joins without indexes. Filter early, select only the columns you need, and add an index on the columns used in WHERE and JOIN.",
+   "concepts": [
+    "SQL",
+    "Database"
+   ],
+   "link": "learn/languages.html#pl-sql"
+  },
+  {
+   "id": "tech-json-vs-csv",
+   "q": "JSON vs CSV: which should I use?",
+   "alts": [
+    "difference between json and csv",
+    "csv or json for data",
+    "when to use csv",
+    "flat vs nested data"
+   ],
+   "a": "CSV is a flat table of rows and columns, easy to open in a spreadsheet and compact for large tabular data. JSON holds nested structures with named fields and types such as numbers, lists and objects, which suits APIs and model output. Use CSV for tables people will open and JSON for data programs exchange.",
+   "concepts": [
+    "JSON"
+   ],
+   "link": "learn/m03.html#l-apis-and-json"
+  },
+  {
+   "id": "tech-data-cleaning",
+   "q": "What does data cleaning involve?",
+   "alts": [
+    "clean messy data",
+    "data cleaning steps",
+    "prepare data for ai",
+    "dirty data"
+   ],
+   "a": "Typical steps are fixing types such as dates and numbers stored as text, trimming spaces, standardising names and codes, removing or flagging duplicates, and deciding what to do with missing values. Write each rule in code so it can be repeated and reviewed. Keep the raw data untouched and save the cleaned version separately.",
+   "concepts": [
+    "Python",
+    "SQL"
+   ],
+   "link": "learn/m03.html#l-data-and-sql"
+  },
+  {
+   "id": "tech-missing-values",
+   "q": "How should I handle missing values?",
+   "alts": [
+    "null values in data",
+    "empty cells",
+    "fill missing data",
+    "drop rows with missing values"
+   ],
+   "a": "First find out why values are missing, since a blank can mean zero, unknown or not applicable. Then choose per column: drop the rows, fill a sensible default, or keep a flag that says the value was missing. Write down the choice, because it changes totals and model inputs.",
+   "concepts": [],
+   "link": "learn/m03.html#l-data-and-sql"
+  },
+  {
+   "id": "tech-pandas",
+   "q": "What is pandas?",
+   "alts": [
+    "pandas python meaning",
+    "dataframe meaning",
+    "pandas vs excel",
+    "learn pandas"
+   ],
+   "a": "pandas is a Python library for working with tables, called DataFrames, in code. You can read CSV, Excel, JSON and SQL results, filter, join, group and total, then write the result out. It is the usual tool for cleaning and exploring data before or after an AI step.",
+   "concepts": [
+    "Python"
+   ],
+   "link": "learn/m03.html#l-python-essentials"
+  },
+  {
+   "id": "tech-pandas-start",
+   "q": "How do I load and look at a CSV in pandas?",
+   "alts": [
+    "pandas read csv",
+    "pandas first steps",
+    "inspect dataframe",
+    "pandas head describe"
+   ],
+   "a": "Install it with pip install pandas, then df = pd.read_csv('file.csv') after import pandas as pd. Look with df.head(), df.info() for column types and missing counts, and df.describe() for number summaries. Check types early, since numbers read as text are a common source of wrong totals.",
+   "concepts": [
+    "Python"
+   ],
+   "link": "learn/m03.html#l-python-essentials"
+  },
+  {
+   "id": "tech-etl",
+   "q": "What is ETL?",
+   "alts": [
+    "etl meaning",
+    "extract transform load",
+    "etl vs elt",
+    "data pipeline meaning"
+   ],
+   "a": "ETL stands for extract, transform, load: pull data from source systems, clean and reshape it, then load it where it is used, such as a warehouse. ELT loads raw data first and transforms it inside the warehouse. For an AI feature, the pipeline that feeds it clean, current data often matters as much as the model.",
+   "concepts": [],
+   "link": "learn/m06.html#l-data-integration"
+  },
+  {
+   "id": "tech-batch-vs-stream",
+   "q": "Batch vs real-time data: which do I need?",
+   "alts": [
+    "batch processing vs streaming",
+    "real time pipeline",
+    "how often to sync data",
+    "nightly job vs event driven"
+   ],
+   "a": "Batch moves data on a schedule, such as every night, and is simpler and cheaper. Real-time, or streaming, moves each change as it happens, which costs more to build and run. Ask how fresh the data really needs to be for the business decision; many processes are fine with hourly or daily.",
+   "concepts": [],
+   "link": "learn/m06.html#l-data-integration"
+  },
+  {
+   "id": "tech-data-quality",
+   "q": "How do I check data quality?",
+   "alts": [
+    "data quality checks",
+    "is my data good enough",
+    "data validation rules",
+    "bad data in pipeline"
+   ],
+   "a": "Check completeness (missing values), validity (values in allowed ranges and formats), uniqueness (no duplicate keys), consistency across systems and freshness. Turn these into automated checks that run with the pipeline and stop or flag bad loads. Compare a few totals with a number the business already trusts.",
+   "concepts": [
+    "Evaluation (eval)"
+   ],
+   "link": "learn/m06.html#l-data-integration"
+  },
+  {
+   "id": "tech-data-warehouse",
+   "q": "What is a data warehouse?",
+   "alts": [
+    "warehouse vs database",
+    "data lake meaning",
+    "snowflake bigquery meaning",
+    "analytics database"
+   ],
+   "a": "A data warehouse is a database built for analysis, holding cleaned history from many systems in one place. Operational databases run the day to day app and favour fast small writes; warehouses favour large reads and totals. A data lake stores raw files of any kind more cheaply, and many platforms now combine both.",
+   "concepts": [
+    "Database"
+   ],
+   "link": "learn/m06.html#l-data-integration"
+  },
+  {
+   "id": "tech-primary-foreign-key",
+   "q": "What are primary and foreign keys?",
+   "alts": [
+    "primary key meaning",
+    "foreign key meaning",
+    "table relationships sql",
+    "unique id in table"
+   ],
+   "a": "A primary key is the column, or set of columns, that uniquely identifies each row, such as order_id. A foreign key is a column that points to another table's primary key, such as orders.customer_id pointing to customers.id. Together they define how tables relate and what you join on.",
+   "concepts": [
+    "SQL",
+    "Database"
+   ],
+   "link": "learn/m03.html#l-data-and-sql"
+  },
+  {
+   "id": "tech-group-by",
+   "q": "How does GROUP BY work?",
+   "alts": [
+    "sql group by explained",
+    "sum per category sql",
+    "count per group",
+    "aggregate in sql"
+   ],
+   "a": "GROUP BY puts rows with the same value in one or more columns into a group, then functions such as COUNT, SUM and AVG give one result per group. Every selected column must be grouped or aggregated. Use WHERE to filter rows before grouping and HAVING to filter groups after.",
+   "concepts": [
+    "SQL"
+   ],
+   "link": "learn/m03.html#l-data-and-sql"
+  },
+  {
+   "id": "tech-sql-injection",
+   "q": "What is SQL injection?",
+   "alts": [
+    "sql injection meaning",
+    "prevent sql injection",
+    "parameterized query",
+    "sql injection example"
+   ],
+   "a": "SQL injection happens when user input is pasted into a SQL string, so crafted input changes the query itself. The fix is parameterized queries, where the input is passed separately and never treated as code. This also applies when a model produces values that go into SQL.",
+   "concepts": [
+    "SQL",
+    "Data security"
+   ],
+   "link": "crash-course.html#security"
+  },
+  {
+   "id": "tech-linux-basics",
+   "q": "Which Linux commands should I know first?",
+   "alts": [
+    "basic linux commands",
+    "linux for beginners",
+    "terminal commands list",
+    "navigate linux server"
+   ],
+   "a": "Start with moving around and reading: pwd, ls, cd, cat, less, head, tail and grep. Then files and processes: cp, mv, rm, mkdir, ps, top and kill. Add tail -f to follow a log and ssh to reach a server.",
+   "concepts": [
+    "Linux command line"
+   ],
+   "link": "learn/languages.html#pl-linux"
+  },
+  {
+   "id": "tech-linux-permissions",
+   "q": "How do Linux file permissions work?",
+   "alts": [
+    "chmod explained",
+    "permission denied linux",
+    "rwx meaning",
+    "sudo meaning"
+   ],
+   "a": "Each file has read, write and execute permissions for its owner, its group and everyone else, shown by ls -l as letters like rwxr-xr-x. chmod changes them and chown changes the owner. sudo runs one command as the admin user, so use it only when needed and read the command first.",
+   "concepts": [
+    "Linux command line",
+    "Access control and least privilege"
+   ],
+   "link": "learn/languages.html#pl-linux"
+  },
+  {
+   "id": "tech-read-logs-server",
+   "q": "How do I read logs on a Linux server?",
+   "alts": [
+    "tail log file",
+    "where are logs linux",
+    "journalctl",
+    "grep logs"
+   ],
+   "a": "App logs are often in /var/log or a folder the app chooses; services managed by systemd are read with journalctl -u servicename. tail -f follows a log as new lines arrive, and grep error narrows it down. In containers, use docker logs or kubectl logs instead.",
+   "concepts": [
+    "Linux command line",
+    "Observability (logs, metrics, traces)"
+   ],
+   "link": "learn/languages.html#pl-linux"
+  },
+  {
+   "id": "tech-git-branching",
+   "q": "How should I use Git branches?",
+   "alts": [
+    "git branch workflow",
+    "feature branch",
+    "why use branches",
+    "git branching strategy"
+   ],
+   "a": "Keep the main branch working and do each change on its own short-lived branch, such as feature/invoice-export. Commit small steps with clear messages, then open a pull request to merge it back. Short branches mean fewer conflicts and easier reviews.",
+   "concepts": [
+    "Git and GitHub",
+    "Git and repository"
+   ],
+   "link": "learn/m03.html#l-git-and-github"
+  },
+  {
+   "id": "tech-pull-request",
+   "q": "What is a pull request?",
+   "alts": [
+    "pr meaning",
+    "merge request",
+    "how to open a pull request",
+    "code review on github"
+   ],
+   "a": "A pull request asks to merge one branch into another, usually into main. It shows the changes, lets teammates review and comment, and runs automated checks such as tests before anything merges. GitLab calls the same thing a merge request.",
+   "concepts": [
+    "Git and GitHub",
+    "CI/CD"
+   ],
+   "link": "learn/m03.html#l-git-and-github"
+  },
+  {
+   "id": "tech-merge-conflict",
+   "q": "How do I fix a Git merge conflict?",
+   "alts": [
+    "git conflict",
+    "resolve merge conflict",
+    "conflict markers",
+    "git merge failed"
+   ],
+   "a": "A conflict means two branches changed the same lines. Git marks them in the file between <<<<<<<, ======= and >>>>>>>; edit the file to keep the right version and remove the markers. Then git add the file and finish with git commit, or git rebase --continue if you were rebasing.",
+   "concepts": [
+    "Git and GitHub"
+   ],
+   "link": "learn/m03.html#l-git-and-github"
+  },
+  {
+   "id": "tech-merge-vs-rebase",
+   "q": "git merge vs rebase",
+   "alts": [
+    "difference between merge and rebase",
+    "should I rebase",
+    "rebase meaning",
+    "squash merge"
+   ],
+   "a": "Merge joins two branches with a merge commit and keeps history exactly as it happened. Rebase replays your commits on top of the other branch, giving a straight line of history. Do not rebase commits others already pulled, and follow the team's rule for pull requests.",
+   "concepts": [
+    "Git and GitHub"
+   ],
+   "link": "learn/languages.html#pl-git"
+  },
+  {
+   "id": "tech-gitignore",
+   "q": "What is .gitignore?",
+   "alts": [
+    "gitignore meaning",
+    "stop git tracking files",
+    "ignore .env in git",
+    "what to put in gitignore"
+   ],
+   "a": "A .gitignore file lists files and folders Git should not track, such as .env files with secrets, virtual environments, node_modules, build output and logs. Add it at the start of the project. It does not remove files already committed; those need git rm --cached.",
+   "concepts": [
+    "Git and repository",
+    "Secrets management"
+   ],
+   "link": "learn/m03.html#l-git-and-github"
+  },
+  {
+   "id": "tech-docker-image-vs-container",
+   "q": "What is the difference between a Docker image and a container?",
+   "alts": [
+    "image vs container",
+    "docker image meaning",
+    "docker container meaning",
+    "dockerfile meaning"
+   ],
+   "a": "An image is the packaged, read-only template: your app, its libraries and settings, built from a Dockerfile. A container is a running copy of that image, with its own process and writable layer. One image can run as many containers.",
+   "concepts": [
+    "Docker",
+    "Container (Docker)"
+   ],
+   "link": "learn/languages.html#pl-docker"
+  },
+  {
+   "id": "tech-docker-vs-vm",
+   "q": "docker vs vm",
+   "alts": [
+    "container vs virtual machine",
+    "is docker a virtual machine",
+    "docker or vm",
+    "why containers are lighter"
+   ],
+   "a": "A virtual machine runs a whole guest operating system on virtual hardware, so it is heavy and slow to start. A container shares the host's kernel and isolates only the app and its files, so it is small and starts in seconds. VMs give stronger isolation; containers are lighter and are the usual way to ship apps.",
+   "concepts": [
+    "Docker",
+    "Container (Docker)"
+   ],
+   "link": "learn/languages.html#pl-docker"
+  },
+  {
+   "id": "tech-dockerfile-basics",
+   "q": "How do I write a Dockerfile?",
+   "alts": [
+    "dockerfile example",
+    "containerize python app",
+    "docker build",
+    "docker run"
+   ],
+   "a": "Start FROM a base image such as python:3.12-slim, COPY in your requirements and RUN the install, then COPY the code and set the start command with CMD. Build with docker build -t myapp . and run with docker run -p 8000:8000 myapp. Pass secrets as environment variables at run time, never bake them into the image.",
+   "concepts": [
+    "Docker",
+    "Secrets management"
+   ],
+   "link": "learn/languages.html#pl-docker"
+  },
+  {
+   "id": "tech-docker-compose",
+   "q": "What is Docker Compose?",
+   "alts": [
+    "docker compose meaning",
+    "run multiple containers",
+    "compose yaml",
+    "app and database in docker"
+   ],
+   "a": "Docker Compose runs several containers together from one YAML file, such as your app, a database and a cache. docker compose up starts them all with their networks and volumes. It is ideal for local development and simple single server setups.",
+   "concepts": [
+    "Docker"
+   ],
+   "link": "learn/languages.html#pl-docker"
+  },
+  {
+   "id": "tech-k8s-basics",
+   "q": "What are pods, deployments and services in Kubernetes?",
+   "alts": [
+    "kubernetes concepts",
+    "pod meaning",
+    "k8s deployment",
+    "kubernetes service meaning"
+   ],
+   "a": "A pod is the smallest unit Kubernetes runs: one or more containers together. A deployment keeps a chosen number of pod copies running and rolls out new versions. A service gives those pods one stable network name, since pods come and go.",
+   "concepts": [
+    "Kubernetes"
+   ],
+   "link": "learn/languages.html#pl-kubernetes"
+  },
+  {
+   "id": "tech-k8s-when",
+   "q": "Do I need Kubernetes?",
+   "alts": [
+    "kubernetes or not",
+    "is kubernetes overkill",
+    "k8s vs docker",
+    "when to use kubernetes"
+   ],
+   "a": "Usually not for a POC. Kubernetes helps when you run many containers across many machines and need scaling and self-healing. If the client already runs it, deploy there; otherwise a serverless platform or a single container service is simpler.",
+   "concepts": [
+    "Kubernetes",
+    "Serverless"
+   ],
+   "link": "learn/languages.html#pl-kubernetes"
+  },
+  {
+   "id": "tech-kubectl",
+   "q": "How do I see what is happening in Kubernetes?",
+   "alts": [
+    "kubectl commands",
+    "pod crashing",
+    "crashloopbackoff",
+    "kubectl logs"
+   ],
+   "a": "kubectl get pods lists pods and their status, and kubectl describe pod NAME shows events such as failed image pulls. kubectl logs NAME shows the app's output. A CrashLoopBackOff status means the container keeps starting and crashing, so read its logs first.",
+   "concepts": [
+    "Kubernetes",
+    "Observability (logs, metrics, traces)"
+   ],
+   "link": "learn/languages.html#pl-kubernetes"
+  },
+  {
+   "id": "tech-cicd-pipeline",
+   "q": "What does a CI/CD pipeline do, step by step?",
+   "alts": [
+    "ci cd stages",
+    "build test deploy pipeline",
+    "continuous integration meaning",
+    "continuous delivery vs deployment"
+   ],
+   "a": "On each push, CI fetches the code, installs dependencies, runs linters and tests, and builds an artifact such as a container image. CD then deploys that artifact to an environment, often test first, then production after checks or an approval. If any step fails, the change stops there.",
+   "concepts": [
+    "CI/CD",
+    "CI/CD with GitHub Actions"
+   ],
+   "link": "learn/m09.html#l-cicd-secrets"
+  },
+  {
+   "id": "tech-github-actions",
+   "q": "How do I set up GitHub Actions?",
+   "alts": [
+    "github actions workflow",
+    "github actions yaml",
+    "run tests on push",
+    "github ci setup"
+   ],
+   "a": "Add a YAML file under .github/workflows/ that says when to run, such as on push, and the steps, such as check out code, set up Python and run pytest. GitHub runs it on its own machines and shows the result on each commit and pull request. Store keys in the repository's secrets, never in the YAML.",
+   "concepts": [
+    "CI/CD with GitHub Actions",
+    "Secrets management"
+   ],
+   "link": "learn/languages.html#pl-cicd"
+  },
+  {
+   "id": "tech-evals-in-ci",
+   "q": "Should evaluations run in CI?",
+   "alts": [
+    "run evals in pipeline",
+    "prompt regression test",
+    "llm tests in ci",
+    "block deploy on eval failure"
+   ],
+   "a": "Yes, run at least a small, fast evaluation set on every change to prompts, models or retrieval. Fail the build if the score drops below the agreed bar. Run the full set less often, since it costs model calls.",
+   "concepts": [
+    "Evaluation (eval)",
+    "CI/CD"
+   ],
+   "link": "learn/m09.html#l-cicd-secrets"
+  },
+  {
+   "id": "tech-terraform-how",
+   "q": "How does Terraform work?",
+   "alts": [
+    "terraform plan apply",
+    "terraform state",
+    "terraform basics",
+    "infrastructure as code example"
+   ],
+   "a": "You describe resources such as networks, databases and functions in .tf files. terraform plan shows what will change, and terraform apply makes it so. Terraform keeps a state file of what it created, which is usually stored remotely and locked so two people do not change it at once.",
+   "concepts": [
+    "Terraform (infrastructure as code)"
+   ],
+   "link": "learn/languages.html#pl-terraform"
+  },
+  {
+   "id": "tech-terraform-vs-console",
+   "q": "Why use Terraform instead of clicking in the cloud console?",
+   "alts": [
+    "infrastructure as code benefits",
+    "terraform vs manual",
+    "why iac",
+    "console vs code"
+   ],
+   "a": "Code can be reviewed in a pull request, repeated exactly for test and production, and rebuilt after a mistake. Clicking leaves no record of why something exists and drifts between environments. Many clients only allow changes through code for those reasons.",
+   "concepts": [
+    "Terraform (infrastructure as code)",
+    "Environment"
+   ],
+   "link": "learn/languages.html#pl-terraform"
+  },
+  {
+   "id": "tech-env-config",
+   "q": "How should config differ between dev, test and production?",
+   "alts": [
+    "environment variables",
+    "config per environment",
+    "12 factor config",
+    ".env file"
+   ],
+   "a": "Keep one codebase and put anything that differs, such as URLs, model names, feature flags and keys, in configuration, usually environment variables. Each environment gets its own values and its own secrets. Production should use separate accounts or projects so a test mistake cannot touch real data.",
+   "concepts": [
+    "Environment",
+    "Secrets management"
+   ],
+   "link": "learn/m09.html#l-cicd-secrets"
+  },
+  {
+   "id": "tech-serverless-limits",
+   "q": "What are the limits of serverless?",
+   "alts": [
+    "serverless cold start",
+    "lambda timeout",
+    "serverless downsides",
+    "when not to use serverless"
+   ],
+   "a": "Functions have time limits per call, memory limits, and cold starts, a delay when a new copy starts up. Long running jobs, big files and steady heavy traffic can fit poorly or cost more. For those, a container service or a queue with workers is usually better.",
+   "concepts": [
+    "Serverless"
+   ],
+   "link": "learn/m09.html#l-deployment-options"
+  },
+  {
+   "id": "tech-logs-metrics-traces",
+   "q": "What is the difference between logs, metrics and traces?",
+   "alts": [
+    "logs vs metrics vs traces",
+    "three pillars of observability",
+    "what is a trace",
+    "metrics meaning"
+   ],
+   "a": "Logs are timestamped records of events, such as an error with its details. Metrics are numbers over time, such as requests per minute, error rate or cost per day. Traces follow one request across every service and model call it touches, with the time each step took.",
+   "concepts": [
+    "Observability (logs, metrics, traces)"
+   ],
+   "link": "learn/m09.html#l-observability"
+  },
+  {
+   "id": "tech-what-to-log-llm",
+   "q": "What should I log for an LLM feature?",
+   "alts": [
+    "llm observability",
+    "log prompts and responses",
+    "monitor ai in production",
+    "llm tracing"
+   ],
+   "a": "Log the prompt version, model, input and output token counts, latency, cost, tool calls, errors and the final outcome, such as approved or edited by a person. Mask or leave out personal data the client does not allow you to keep. Alert on error rate, latency and daily cost.",
+   "concepts": [
+    "Observability (logs, metrics, traces)",
+    "Token",
+    "Audit log"
+   ],
+   "link": "learn/m09.html#l-observability"
+  },
+  {
+   "id": "tech-opentelemetry",
+   "q": "What is OpenTelemetry?",
+   "alts": [
+    "otel meaning",
+    "opentelemetry explained",
+    "vendor neutral tracing",
+    "instrument my app"
+   ],
+   "a": "OpenTelemetry is an open standard and set of libraries for producing logs, metrics and traces from your code. You instrument once and send the data to any compatible tool, such as Grafana, Datadog or a cloud provider's monitoring. It avoids locking your code to one monitoring vendor.",
+   "concepts": [
+    "Observability (logs, metrics, traces)"
+   ],
+   "link": "learn/languages.html#pl-observability"
+  },
+  {
+   "id": "tech-availability-zones",
+   "q": "What is the difference between a region and an availability zone?",
+   "alts": [
+    "availability zone meaning",
+    "az vs region",
+    "multi az",
+    "cloud zones"
+   ],
+   "a": "A region is a geographic area, such as one country or city, where a cloud provider runs data centres. An availability zone is one or more separate data centres inside a region, with their own power and network. Spreading across zones survives a data centre failure; the region decides where data lives.",
+   "concepts": [
+    "Region",
+    "Cloud"
+   ],
+   "link": "learn/basics.html#g-network"
+  },
+  {
+   "id": "tech-cloud-cost-control",
+   "q": "How do I keep cloud costs under control?",
+   "alts": [
+    "cloud bill too high",
+    "cloud budget alerts",
+    "reduce aws cost",
+    "tag resources for cost"
+   ],
+   "a": "Set budgets and alerts from day one, and tag every resource with the project and owner. Turn off or scale down test environments when unused, and delete what you no longer need. For AI features, also track model spend per day, since token costs can grow faster than servers.",
+   "concepts": [
+    "Cloud fundamentals",
+    "Cloud"
+   ],
+   "link": "learn/languages.html#pl-cloud"
+  },
+  {
+   "id": "tech-iaas-paas-saas",
+   "q": "What are IaaS, PaaS and SaaS?",
+   "alts": [
+    "iaas vs paas vs saas",
+    "cloud service models",
+    "platform as a service meaning",
+    "software as a service meaning"
+   ],
+   "a": "IaaS rents raw building blocks such as virtual machines and storage, and you manage the rest. PaaS runs your code on a managed platform, so you skip servers and patching. SaaS is finished software you just use, such as email or a CRM.",
+   "concepts": [
+    "Cloud",
+    "Cloud fundamentals"
+   ],
+   "link": "crash-course.html#cloud"
+  },
+  {
+   "id": "tech-blue-green-rollback",
+   "q": "How do I deploy safely and roll back?",
+   "alts": [
+    "rollback deploy",
+    "blue green deployment",
+    "canary release",
+    "safe deployment"
+   ],
+   "a": "Deploy versioned artifacts so you can redeploy the previous one in minutes. Blue-green runs the new version beside the old and switches traffic over; a canary sends a small share of traffic first. Use feature flags to turn a new AI feature off without a new deploy.",
+   "concepts": [
+    "Deployment",
+    "CI/CD"
+   ],
+   "link": "learn/m09.html#l-deployment-options"
+  },
+  {
+   "id": "tech-queues",
+   "q": "What is a message queue and when do I need one?",
+   "alts": [
+    "queue meaning",
+    "sqs kafka rabbitmq",
+    "async processing",
+    "background jobs"
+   ],
+   "a": "A queue holds tasks so one part of a system can hand off work and move on while workers process it later. It smooths bursts, allows retries and keeps slow steps, such as model calls on many documents, from blocking users. Make workers safe to run a task twice, since retries happen.",
+   "concepts": [
+    "Backend"
+   ],
+   "link": "learn/m06.html#l-data-integration"
+  },
+  {
+   "id": "tech-tcp-ip",
+   "q": "What is TCP/IP?",
+   "alts": [
+    "tcp ip explained",
+    "how data travels on the internet",
+    "tcp vs udp",
+    "ip protocol meaning"
+   ],
+   "a": "TCP/IP is the family of rules the internet runs on. IP gives every machine an address and moves packets toward it; TCP on top makes sure the packets arrive complete and in order. UDP is a lighter option without those guarantees, used where speed matters more, such as video calls.",
+   "concepts": [
+    "IP address",
+    "Network",
+    "Internet"
+   ],
+   "link": "learn/m03.html#l-how-the-web-works"
+  },
+  {
+   "id": "tech-common-ports",
+   "q": "Which ports should I know?",
+   "alts": [
+    "common port numbers",
+    "port 443 meaning",
+    "port 22",
+    "what port does postgres use"
+   ],
+   "a": "Common defaults are 22 for SSH, 80 for HTTP, 443 for HTTPS, 5432 for PostgreSQL, 3306 for MySQL and 6379 for Redis. Dev servers often use 3000, 5000 or 8000. A firewall decides which ports are open, so check it when a connection times out.",
+   "concepts": [
+    "Port",
+    "Firewall"
+   ],
+   "link": "learn/basics.html#g-network"
+  },
+  {
+   "id": "tech-tls",
+   "q": "What is TLS?",
+   "alts": [
+    "tls meaning",
+    "ssl vs tls",
+    "https certificate",
+    "how does https encrypt"
+   ],
+   "a": "TLS (Transport Layer Security) encrypts data between two machines and proves the server is who it says it is, using a certificate. HTTPS is HTTP over TLS. SSL is its older, retired predecessor, though people still say SSL certificate.",
+   "concepts": [
+    "HTTP and HTTPS",
+    "Encryption in transit and at rest"
+   ],
+   "link": "learn/basics.html#g-network"
+  },
+  {
+   "id": "tech-cert-errors",
+   "q": "Why do I get certificate errors when calling an API?",
+   "alts": [
+    "ssl certificate verify failed",
+    "self signed certificate",
+    "certificate error corporate network",
+    "tls error python"
+   ],
+   "a": "The certificate may be expired, for another host name, or signed by an authority your machine does not trust. On client networks, a security proxy often re-signs traffic with the company's own certificate, which you must add to your trust store. Do not switch verification off to make it go away.",
+   "concepts": [
+    "HTTP and HTTPS",
+    "Network"
+   ],
+   "link": "crash-course.html#systems"
+  },
+  {
+   "id": "tech-oauth",
+   "q": "What is OAuth?",
+   "alts": [
+    "oauth explained",
+    "oauth 2.0 meaning",
+    "access token meaning",
+    "sign in with google how it works"
+   ],
+   "a": "OAuth is a standard that lets an app act on a user's behalf in another service without getting their password. The user approves access, and the app receives a limited, expiring access token for the scopes allowed. OpenID Connect adds a standard way to tell the app who the user is.",
+   "concepts": [
+    "Access control and least privilege"
+   ],
+   "link": "crash-course.html#security"
+  },
+  {
+   "id": "tech-sso",
+   "q": "What is SSO?",
+   "alts": [
+    "single sign on meaning",
+    "sso vs oauth",
+    "saml meaning",
+    "okta entra login"
+   ],
+   "a": "Single sign-on lets people log in once with their company account and reach many apps, through an identity provider such as Microsoft Entra ID or Okta. It uses standards like SAML or OpenID Connect. Clients usually require tools you build to use their SSO, so access follows their own joiner and leaver process.",
+   "concepts": [
+    "Access control and least privilege"
+   ],
+   "link": "crash-course.html#security"
+  },
+  {
+   "id": "tech-api-auth-methods",
+   "q": "How do APIs authenticate callers?",
+   "alts": [
+    "api key vs oauth",
+    "bearer token",
+    "api authentication methods",
+    "jwt meaning"
+   ],
+   "a": "Common methods are API keys sent in a header, OAuth access tokens sent as a Bearer token, and signed tokens such as JWTs that carry claims about the caller. Inside a cloud, services often use managed identities or roles instead of keys. Whatever the method, send it only over HTTPS and never in the URL.",
+   "concepts": [
+    "API key",
+    "API",
+    "HTTP and HTTPS"
+   ],
+   "link": "learn/m03.html#l-apis-and-json"
+  },
+  {
+   "id": "tech-authn-vs-authz",
+   "q": "authentication vs authorization",
+   "alts": [
+    "authn vs authz",
+    "difference between authentication and authorization",
+    "who you are vs what you can do",
+    "permissions meaning"
+   ],
+   "a": "Authentication checks who you are, for example with a password and second factor. Authorization decides what you may do once known, such as read but not edit. An AI feature must apply the user's own authorization, so it never shows or changes data the user could not reach directly.",
+   "concepts": [
+    "Access control and least privilege"
+   ],
+   "link": "learn/basics.html#g-data"
+  },
+  {
+   "id": "tech-symmetric-asymmetric",
+   "q": "What is the difference between symmetric and asymmetric encryption?",
+   "alts": [
+    "public key encryption",
+    "symmetric key meaning",
+    "private key vs public key",
+    "encryption types"
+   ],
+   "a": "Symmetric encryption uses one shared key to lock and unlock, and is fast, as with AES. Asymmetric encryption uses a key pair: what the public key locks, only the private key opens, as with RSA or elliptic curve keys. TLS uses asymmetric keys to agree a shared key, then symmetric encryption for the data.",
+   "concepts": [
+    "Encryption in transit and at rest"
+   ],
+   "link": "crash-course.html#security"
+  },
+  {
+   "id": "tech-hashing",
+   "q": "Is hashing the same as encryption?",
+   "alts": [
+    "hashing vs encryption",
+    "how passwords are stored",
+    "hash meaning",
+    "bcrypt"
+   ],
+   "a": "No. Encryption can be reversed with the key; hashing is one way and gives a fixed length fingerprint. Passwords should be stored with a slow password hashing function such as bcrypt or Argon2, never encrypted or in plain text. Hashes also help check that a file has not changed.",
+   "concepts": [
+    "Data security"
+   ],
+   "link": "crash-course.html#security"
+  },
+  {
+   "id": "tech-least-privilege-ai",
+   "q": "How do I apply least privilege to an AI agent?",
+   "alts": [
+    "agent permissions",
+    "scope tool access",
+    "read only database user for ai",
+    "limit what ai can do"
+   ],
+   "a": "Give the agent its own identity with only the permissions its tools need, such as read-only access to one table. Split risky actions, like sending, paying or deleting, into separate tools that need human approval. Log every tool call so you can see what it did.",
+   "concepts": [
+    "Access control and least privilege",
+    "Agent",
+    "Audit log"
+   ],
+   "link": "learn/m06.html#l-llm-security"
+  },
+  {
+   "id": "tech-secrets-store",
+   "q": "Where should secrets live?",
+   "alts": [
+    "secret manager",
+    "store api keys safely",
+    "env vars for secrets",
+    "vault aws secrets manager"
+   ],
+   "a": "Locally, keep them in a .env file that is listed in .gitignore. On servers and in CI, use a secrets manager such as AWS Secrets Manager, Azure Key Vault, Google Secret Manager or the CI's secret store, and inject them at run time. Rotate any key that leaks, and give each environment its own keys.",
+   "concepts": [
+    "Secrets management",
+    "API key"
+   ],
+   "link": "learn/m09.html#l-cicd-secrets"
+  },
+  {
+   "id": "tech-owasp-top10",
+   "q": "What is the OWASP Top 10?",
+   "alts": [
+    "owasp meaning",
+    "common web vulnerabilities",
+    "owasp llm top 10",
+    "web security risks"
+   ],
+   "a": "OWASP is a non-profit that publishes lists of the most common security risks, such as broken access control, injection and security misconfiguration for web apps. It also has a Top 10 for LLM applications covering risks such as prompt injection, sensitive information disclosure and excessive agency. Use these lists as a checklist when reviewing a design.",
+   "concepts": [
+    "Prompt injection",
+    "Data security"
+   ],
+   "link": "learn/m06.html#l-llm-security"
+  },
+  {
+   "id": "tech-xss-csrf",
+   "q": "What are XSS and CSRF?",
+   "alts": [
+    "cross site scripting",
+    "cross site request forgery",
+    "xss meaning",
+    "csrf token"
+   ],
+   "a": "XSS (cross-site scripting) is when attacker-supplied text runs as script in another user's browser, usually because output was not escaped. CSRF (cross-site request forgery) tricks a logged-in user's browser into sending a request they did not intend. Escape output, use the framework's CSRF protection and secure cookie settings; this includes showing model output on a page.",
+   "concepts": [
+    "Frontend",
+    "Data security"
+   ],
+   "link": "crash-course.html#security"
+  },
+  {
+   "id": "tech-gdpr-basics",
+   "q": "What do I need to know about GDPR as an engineer?",
+   "alts": [
+    "gdpr basics",
+    "gdpr for developers",
+    "lawful basis",
+    "right to be forgotten"
+   ],
+   "a": "GDPR is the EU law for personal data. Personal data needs a lawful basis and a clear purpose, should be the minimum needed, kept no longer than needed and protected. People can ask to see or delete their data, and transfers outside the EU need safeguards. Ask the client's privacy team which rules apply before using real personal data.",
+   "concepts": [
+    "GDPR and similar laws",
+    "Personal data (PII)",
+    "Data minimization"
+   ],
+   "link": "learn/basics.html#g-data"
+  },
+  {
+   "id": "tech-privacy-by-design",
+   "q": "What is privacy by design?",
+   "alts": [
+    "privacy by default",
+    "design for privacy",
+    "privacy first architecture",
+    "build privacy in"
+   ],
+   "a": "It means building privacy into the system from the start instead of adding it later. In practice: collect only what is needed, mask or pseudonymize where you can, limit who can see what, set retention periods and log access. It is cheaper than retrofitting and easier to explain in a security review.",
+   "concepts": [
+    "Data privacy",
+    "Data minimization",
+    "Masking, anonymization and pseudonymization"
+   ],
+   "link": "learn/basics.html#g-data"
+  },
+  {
+   "id": "tech-mfa",
+   "q": "What is MFA?",
+   "alts": [
+    "multi factor authentication",
+    "2fa meaning",
+    "why use mfa",
+    "authenticator app"
+   ],
+   "a": "Multi-factor authentication asks for a second proof besides the password, such as a code from an app, a security key or a push approval. A stolen password alone then is not enough to get in. Turn it on for GitHub, cloud consoles and any account with client access.",
+   "concepts": [
+    "Access control and least privilege"
+   ],
+   "link": "crash-course.html#security"
+  },
+  {
+   "id": "tech-cors",
+   "q": "What is CORS and why does my browser block my API call?",
+   "alts": [
+    "cors error",
+    "access-control-allow-origin",
+    "cors meaning",
+    "fetch blocked by cors"
+   ],
+   "a": "CORS (cross-origin resource sharing) is a browser rule that stops a page from reading responses from another domain unless that server allows it. You fix it on the server by allowing the right origin, not in the browser. It only affects browsers, which is why the same call works from curl or Python.",
+   "concepts": [
+    "Frontend",
+    "HTTP and HTTPS"
+   ],
+   "link": "learn/m03.html#l-how-the-web-works"
+  },
+  {
+   "id": "tech-ssh-keys",
+   "q": "What are SSH keys?",
+   "alts": [
+    "ssh key meaning",
+    "ssh-keygen",
+    "github ssh key",
+    "connect to server with ssh"
+   ],
+   "a": "SSH keys are a key pair used to log in to servers or Git hosts without a password. You create them with ssh-keygen, keep the private key on your machine and add the public key to the server or GitHub. Protect the private key with a passphrase and never share it.",
+   "concepts": [
+    "Linux command line",
+    "Git and GitHub"
+   ],
+   "link": "learn/languages.html#pl-linux"
+  },
+  {
+   "id": "tech-security-review-prep",
+   "q": "How do I prepare for a client security review?",
+   "alts": [
+    "security questionnaire",
+    "pass security review",
+    "infosec review ai",
+    "vendor risk assessment"
+   ],
+   "a": "Have a simple diagram of where data flows, which systems and providers see it, and in which region. List how you handle access, secrets, encryption, logging and data retention, and which model provider terms apply. Bring it early, since reviews often take longer than the build.",
+   "concepts": [
+    "DPA and security review",
+    "Data residency",
+    "Encryption in transit and at rest"
+   ],
+   "link": "learn/basics.html#g-data"
+  }
+ ]
+}

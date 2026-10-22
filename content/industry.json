@@ -1,0 +1,2402 @@
+{
+  "entries": [
+    {
+      "id": "ind-device-lifecycle",
+      "q": "What does the life of a medical device look like, from idea to the field?",
+      "alts": [
+        "total product lifecycle",
+        "device lifecycle stages",
+        "TPLC meaning",
+        "medtech value chain"
+      ],
+      "a": "People call it the total product lifecycle: design and development, regulatory submission, manufacturing, supply chain, distribution, then postmarket work such as complaints and CAPA. Each step leaves a regulated record in its own system: PLM for design, MES for production, ERP for suppliers and stock, the QMS for complaints and CAPA. Field data feeds back into design and the risk file, so the loop keeps running as long as the device is sold.",
+      "concepts": [
+        "Medical device",
+        "QMS"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-medtech-systems",
+      "q": "Which systems hold which records at a device maker?",
+      "alts": [
+        "PLM vs QMS vs ERP vs MES",
+        "medtech systems of record",
+        "where is the device data",
+        "what is PLM"
+      ],
+      "a": "PLM holds parts, bills of materials, drawings, specifications and engineering change orders. The QMS holds complaints, nonconformances, CAPAs, audits, training and controlled documents. ERP holds suppliers, orders, inventory and costs, and the MES or paper travelers hold the device history record. The same product carries a different key in each one, part number, material number, lot number, product code, so mapping them is a big share of any AI project.",
+      "concepts": [
+        "QMS",
+        "Device history record (DHR)"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-design-control-steps",
+      "q": "Can you walk me through design controls step by step?",
+      "alts": [
+        "design control elements",
+        "design controls in order",
+        "steps from user need to production",
+        "what goes into design controls"
+      ],
+      "a": "Planning sets stages, roles and reviews. User needs become design inputs, the design team produces outputs such as drawings, specs, code and labelling, and planned design reviews check readiness to move on. Verification shows outputs meet inputs, validation shows the device meets user needs, transfer turns the design into production specs, and design changes are reviewed and approved. The design file holds or points to the evidence for all of it, and real projects loop back many times.",
+      "concepts": [
+        "Design controls and DHF"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-dhf-vs-dhr",
+      "q": "What is the difference between the DHF and the DHR?",
+      "alts": [
+        "design history file vs device history record",
+        "DHR vs DHF",
+        "is the DHF one file",
+        "design and development file"
+      ],
+      "a": "The DHF (ISO 13485 calls it the design and development file) is about the design: evidence that the device was designed under control. The device history record (DHR) is about production: for each device or batch, what was built, with which parts, how it was tested and who released it. The DHF is rarely one file; it is linked records across PLM, document control and shared folders. A new DHR is made for every lot or serial number, often in the MES.",
+      "concepts": [
+        "Design controls and DHF",
+        "Device history record (DHR)"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-verif-vs-valid",
+      "q": "What is the difference between verification and validation?",
+      "alts": [
+        "V and V",
+        "verification vs validation",
+        "built it right vs built the right thing",
+        "design verification or design validation"
+      ],
+      "a": "Verification asks whether the device was built right: do the design outputs meet the design inputs, shown by tests, inspections and analyses. Validation asks whether the right device was built: does the finished device meet user needs and its intended use, in real or simulated use, on units made the way production will make them. A device can pass every bench test and still fail validation, for example when patients cannot read the display outdoors.",
+      "concepts": [
+        "Design controls and DHF"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-good-design-input",
+      "q": "How do I write a good design input?",
+      "alts": [
+        "testable requirement",
+        "writing design inputs",
+        "why is easy to use a bad requirement",
+        "requirement quality"
+      ],
+      "a": "Give it an ID, link it to the user need or risk control it came from, and make it testable with a number or a clear pass condition. 'Each actuation is counted within 1 second' can be verified; 'easy to use' or 'fast' cannot. Inputs must also be complete and must not contradict each other.",
+      "concepts": [
+        "Design controls and DHF"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-trace-matrix",
+      "q": "What is a traceability matrix and why do auditors care?",
+      "alts": [
+        "trace matrix",
+        "requirements traceability",
+        "trace gaps",
+        "orphan tests"
+      ],
+      "a": "It is a table or tool that links IDs: user needs to design inputs, inputs to outputs, and outputs to verification and validation tests. Read it forwards to see every requirement is tested, and backwards to see every test exists for a reason. An input with no test means no evidence it is met, which is one of the first gaps a reviewer looks for, so keep the links current as you work instead of building them at the end.",
+      "concepts": [
+        "Design controls and DHF"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-design-review",
+      "q": "Who should attend a design review?",
+      "alts": [
+        "design review attendees",
+        "independent reviewer",
+        "design review record",
+        "phase gate review"
+      ],
+      "a": "Include the functions that will live with the result, such as quality, manufacturing, service and regulatory, plus someone not directly responsible for the stage being reviewed. The review produces a record of who attended, what was reviewed, the decisions and the actions. Actions opened in a review and never closed are a classic audit finding.",
+      "concepts": [
+        "Design controls and DHF"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-design-transfer",
+      "q": "What is design transfer?",
+      "alts": [
+        "design transfer meaning",
+        "moving a design into manufacturing",
+        "transfer to production"
+      ],
+      "a": "Design transfer makes sure the design is correctly turned into production specifications and processes. It is where drawings, specs and instructions become what the factory actually uses, and it links to process validation. If transfer is weak, the device made on the line may not match the device that was verified.",
+      "concepts": [
+        "Design controls and DHF"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-late-design-change",
+      "q": "We changed the design after verification. What now?",
+      "alts": [
+        "design change after testing",
+        "late firmware change",
+        "change after V and V",
+        "do I need to retest"
+      ],
+      "a": "Treat it as a design change: identify it, review it, decide which verification or validation must be repeated or justified, and approve it before it is used. Check whether the changed requirement is tagged as a risk control, because then a safety measure may be affected. A quick code change announced only in a chat message is the kind of thing auditors find.",
+      "concepts": [
+        "Design controls and DHF",
+        "ISO 14971"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-hazard-terms",
+      "q": "Hazard, hazardous situation, harm, risk: what is the difference?",
+      "alts": [
+        "hazard vs harm",
+        "ISO 14971 terms",
+        "what is a hazardous situation",
+        "risk definition medical device"
+      ],
+      "a": "A hazard is a potential source of harm, such as a wrong glucose reading. A hazardous situation is when someone is exposed to it, such as a patient choosing an insulin dose from that reading. Harm is the injury itself, such as severe low blood sugar, and risk combines the probability of that harm with its severity. Every risk belongs to a specific harm, and mixing these words up is the most common mistake in risk files.",
+      "concepts": [
+        "ISO 14971"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-iso14971-steps",
+      "q": "What are the steps of ISO 14971 risk management?",
+      "alts": [
+        "risk management process",
+        "14971 process steps",
+        "how device risk management works",
+        "risk management plan"
+      ],
+      "a": "Plan, analyse, evaluate, control, judge residual risk against benefit, review and report before release, then collect production and post-production information. The plan sets scope, roles and the criteria for acceptable risk. Analysis covers intended use, foreseeable misuse and hazards, and control reduces unacceptable risks and verifies each control works. It is a loop for the life of the device, not a one-off document.",
+      "concepts": [
+        "ISO 14971"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-risk-control-order",
+      "q": "In what order should risk controls be chosen?",
+      "alts": [
+        "risk control hierarchy",
+        "can we just add a warning",
+        "order of preference risk control",
+        "inherent safety by design"
+      ],
+      "a": "First inherent safety by design and manufacture, then protective measures such as alarms or interlocks, then information for safety such as warnings and training. A warning depends on someone reading and following it, while a design change works every time. Each control becomes a design input with its own verification test, which keeps the risk file and design file linked.",
+      "concepts": [
+        "ISO 14971",
+        "Design controls and DHF"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-fmea-vs-14971",
+      "q": "Is an FMEA the same as ISO 14971?",
+      "alts": [
+        "is FMEA enough",
+        "FMEA risk management",
+        "dFMEA vs risk file",
+        "fault tree vs FMEA"
+      ],
+      "a": "No. FMEA is a useful analysis tool inside the process, along with fault tree analysis and preliminary hazard analysis. ISO 14971 also covers the plan, acceptability criteria, benefit-risk, the review before release and post-production monitoring. Keep any FMEA linked to the risk file rather than treating it as the whole file.",
+      "concepts": [
+        "ISO 14971"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-risk-file-living",
+      "q": "Is the risk file ever finished?",
+      "alts": [
+        "when to update the risk file",
+        "risk file after launch",
+        "living risk file",
+        "post-production information"
+      ],
+      "a": "No. Complaints, service data, literature and information on similar devices must feed back into it for as long as the device is on the market. A complaint trend can show a hazard is more likely than estimated, which sends the team back to analysis and control. A risk file written once and never updated is a common weakness.",
+      "concepts": [
+        "ISO 14971",
+        "Complaint and medical device reporting"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-14971-certified",
+      "q": "Can a product be ISO 14971 certified?",
+      "alts": [
+        "14971 certificate",
+        "certified to ISO 14971",
+        "product sheet says 14971 certified"
+      ],
+      "a": "Not in the usual sense. ISO 14971 is a process applied to each product, and conformity is checked through audits and regulatory reviews of the risk file. What gets certified is the management system, for example against ISO 13485.",
+      "concepts": [
+        "ISO 14971",
+        "QMSR and ISO 13485"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-is-it-samd",
+      "q": "When is software a medical device?",
+      "alts": [
+        "is my app a medical device",
+        "SaMD meaning",
+        "software as a medical device",
+        "does this software need FDA"
+      ],
+      "a": "It depends on intended use, meaning what the maker says it is for, not the technology inside it. The IMDRF defines SaMD as software intended for one or more medical purposes that performs them without being part of a hardware device. Words like 'diagnoses', 'detects', 'recommends a dose' or 'alerts the clinician' often signal a device function. The regulatory team makes the call; your job is to describe clearly what the software does, who uses it and what decision it informs.",
+      "concepts": [
+        "Medical device",
+        "IEC 62304"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-samd-vs-simd",
+      "q": "SaMD vs software in a medical device?",
+      "alts": [
+        "firmware vs SaMD",
+        "SiMD",
+        "software inside a device",
+        "standalone medical software"
+      ],
+      "a": "Software in a medical device runs inside hardware, like the firmware that runs an infusion pump. SaMD stands on its own, such as an app that analyses heart rhythm data to flag a condition. Both follow IEC 62304 for the software lifecycle and ISO 14971 for risk.",
+      "concepts": [
+        "Medical device",
+        "IEC 62304",
+        "ISO 14971"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-62304-classes",
+      "q": "What are the IEC 62304 safety classes?",
+      "alts": [
+        "class A B C software",
+        "62304 class",
+        "software safety class",
+        "how to pick the software class"
+      ],
+      "a": "Class A: no injury or damage to health is possible. Class B: non-serious injury is possible. Class C: death or serious injury is possible. The class is based on the worst harm a software failure could contribute to, after risk controls outside the software, and it sets how much process and documentation is needed.",
+      "concepts": [
+        "IEC 62304"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-62304-segregation",
+      "q": "Does one high-risk module make the whole software class C?",
+      "alts": [
+        "segregation in 62304",
+        "split architecture by class",
+        "lower the software class",
+        "class C everywhere"
+      ],
+      "a": "Not if the architecture segregates it. Teams often split the system so only the parts that can cause serious harm carry class C, while a reporting dashboard, for example, stays class A. That keeps the rest lighter to maintain, but the segregation must be designed and documented.",
+      "concepts": [
+        "IEC 62304"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-soup",
+      "q": "SOUP?",
+      "alts": [
+        "software of unknown provenance",
+        "third-party library in device software",
+        "open source in a medical device",
+        "is an LLM SOUP"
+      ],
+      "a": "SOUP is software of unknown provenance: third-party or legacy software not developed under the IEC 62304 process, such as an open source library or a database. You state what you need from it, review its known issues, and pin and control its version. A hosted large language model in a device is close to SOUP, so the same approach applies: specify, test for your use, pin the version.",
+      "concepts": [
+        "IEC 62304"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-ai-in-device",
+      "q": "What changes when a medical device contains AI?",
+      "alts": [
+        "AI-enabled device",
+        "machine learning medical device",
+        "GMLP",
+        "good machine learning practice"
+      ],
+      "a": "IEC 62304 still covers the software around the model, but regulators also expect work on data, performance and change. Training and test data must represent the intended patients and settings and stay independent; performance is reported on relevant subgroups, not one overall number; the human and model are tested together; and performance is watched after release for drift. FDA, Health Canada and the UK MHRA published ten guiding principles for good machine learning practice.",
+      "concepts": [
+        "IEC 62304",
+        "Medical device"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-pccp",
+      "q": "What is a PCCP?",
+      "alts": [
+        "predetermined change control plan",
+        "retraining an AI device",
+        "planned model updates device",
+        "can we update the model after clearance"
+      ],
+      "a": "A predetermined change control plan lets a device maker describe, in its marketing submission, the model changes it plans, how they will be developed and validated, and how their impact will be assessed. Changes made within that authorised plan can then go ahead under it. It is how an AI device can be retrained on new data in a controlled way.",
+      "concepts": [
+        "IEC 62304",
+        "510(k), De Novo and PMA"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-510k-vs-pma",
+      "q": "510(k) vs PMA in plain words?",
+      "alts": [
+        "510k or PMA",
+        "what is a 510(k)",
+        "premarket approval",
+        "what is De Novo"
+      ],
+      "a": "A 510(k) shows a device is substantially equivalent to one already legally on the US market. De Novo is the route for new low to moderate risk devices with no such match. PMA (premarket approval) is for most high risk devices and needs the strongest evidence of safety and effectiveness. All three pull heavily from the design and risk files, so messy records slow submissions.",
+      "concepts": [
+        "510(k), De Novo and PMA",
+        "Device class"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-device-class",
+      "q": "How does the device class change the work?",
+      "alts": [
+        "Class I II III",
+        "device risk class",
+        "EU class IIa IIb",
+        "what class is my device"
+      ],
+      "a": "The class sets how much evidence the regulator needs and how strict the processes around the product are. In the US, Class I is lowest risk and Class III highest; the EU MDR uses Classes I, IIa, IIb and III. A higher class means more documentation, more review and usually a harder route to market.",
+      "concepts": [
+        "Device class",
+        "EU MDR and notified body"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-eu-mdr",
+      "q": "What is the EU MDR in simple terms?",
+      "alts": [
+        "Medical Device Regulation",
+        "Regulation (EU) 2017/745",
+        "what is a notified body",
+        "CE mark for devices"
+      ],
+      "a": "The EU Medical Device Regulation, Regulation (EU) 2017/745, sets the rules for selling devices in the EU. The maker keeps technical documentation and a clinical evaluation, and for most classes an independent notified body reviews them before the CE mark. It also asks for an active postmarket surveillance plan, so field data must be collected and reviewed, which is steady document-heavy work.",
+      "concepts": [
+        "EU MDR and notified body"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-ai-tool-510k",
+      "q": "Will our quality AI tool need its own 510(k)?",
+      "alts": [
+        "does an internal AI tool need FDA clearance",
+        "is my QMS tool a device",
+        "quality tool vs device software",
+        "AI for the quality team regulated"
+      ],
+      "a": "Usually not, but write the intended use down with regulatory affairs first. A tool that only drafts text for the quality team, with a qualified person deciding, is quality system software validated under the client's QMS. If it ever ends up inside the product or making a clinical decision, device rules apply, and that conversation should happen early.",
+      "concepts": [
+        "Medical device",
+        "CSA and validation"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-complaint-def",
+      "q": "What counts as a complaint for a device maker?",
+      "alts": [
+        "complaint definition",
+        "is this a complaint",
+        "device complaint meaning"
+      ],
+      "a": "Any written, electronic or spoken communication that alleges a problem with a released device's identity, quality, durability, reliability, safety, effectiveness or performance. ISO 13485 and the FDA QMSR require documented complaint handling. Each complaint is evaluated for whether it must be reported to the FDA and whether an investigation or CAPA is needed.",
+      "concepts": [
+        "Complaint and medical device reporting"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-part-803",
+      "q": "What is medical device reporting under Part 803?",
+      "alts": [
+        "FDA MDR report",
+        "reportable event",
+        "reportability decision",
+        "Part 803"
+      ],
+      "a": "21 CFR Part 803 requires manufacturers to report certain deaths, serious injuries and malfunctions to the FDA within set deadlines. In this US sense MDR means medical device reporting, not the EU regulation. Every complaint is evaluated for reportability and the decision should be recorded with a reason. AI can draft the assessment with the evidence laid out, but a qualified regulatory specialist makes and signs the decision.",
+      "concepts": [
+        "Complaint and medical device reporting"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-complaint-flow",
+      "q": "How does a complaint move through the QMS?",
+      "alts": [
+        "complaint handling process",
+        "complaint to CAPA",
+        "complaint workflow",
+        "what happens after a complaint"
+      ],
+      "a": "A trained person logs it in the complaint system, the team checks the risk file to judge possible harm and reportability, and an investigator pulls production, supplier and design records. If the cause is real, a CAPA opens, and the fix usually becomes a change under change control with revised documents and training. The complaint trend and CAPA status then show up in management review.",
+      "concepts": [
+        "Complaint and medical device reporting",
+        "CAPA"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-nc-vs-capa",
+      "q": "Nonconformance vs CAPA?",
+      "alts": [
+        "NC or CAPA",
+        "when does an NC become a CAPA",
+        "nonconformance meaning"
+      ],
+      "a": "A nonconformance records that a product, part or process did not meet a requirement, such as a part out of tolerance found on the line. It is dispositioned on its own, for example by rework or scrap. A CAPA is raised when the problem needs a root cause investigation and a fix that stops it coming back, often because NCs repeat or trend.",
+      "concepts": [
+        "Nonconformance (NC)",
+        "CAPA"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-capa-steps",
+      "q": "What are the steps of a CAPA from start to close?",
+      "alts": [
+        "CAPA lifecycle",
+        "how to close a CAPA",
+        "CAPA workflow",
+        "CAPA triage"
+      ],
+      "a": "Problems arrive from complaints, nonconformances, deviations and audit findings, and are triaged to decide whether a CAPA is needed. The team investigates to the root cause, plans corrective action for the cause and preventive action against recurrence elsewhere, and makes changes through change control. After an agreed period an effectiveness check confirms the fix worked, and only then is the CAPA closed.",
+      "concepts": [
+        "CAPA",
+        "Change control"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-correction-vs-ca",
+      "q": "Correction vs corrective action vs preventive action?",
+      "alts": [
+        "correction vs CAPA",
+        "corrective or preventive",
+        "difference between correction and corrective action"
+      ],
+      "a": "A correction fixes the immediate problem, such as rejecting affected tablets and repairing a faulty sensor. A corrective action removes the cause so this event does not happen again, such as adding a sensor check to the start-up checklist. A preventive action stops it or something similar happening elsewhere, such as reviewing the same sensor type on other machines.",
+      "concepts": [
+        "CAPA",
+        "Deviation"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-capa-effectiveness",
+      "q": "What is a CAPA effectiveness check?",
+      "alts": [
+        "verify CAPA effectiveness",
+        "did the CAPA work",
+        "effectiveness verification",
+        "CAPA keeps failing"
+      ],
+      "a": "It is a planned check, after an agreed period, that the problem has not come back and the fix did what it was meant to. Without it, actions close on paper while the same problem returns. The rate of repeat events with the same root cause is a good measure of whether CAPAs are working.",
+      "concepts": [
+        "CAPA"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-postmarket",
+      "q": "What is postmarket surveillance?",
+      "alts": [
+        "PMS for devices",
+        "post-market monitoring",
+        "field data device",
+        "postmarket"
+      ],
+      "a": "It is the ongoing collection and review of information about a device once it is on the market: complaints, service records, adverse event reports, literature and data on similar devices. The EU MDR asks for an active plan, and in the US Part 803 reporting is part of the picture. Findings feed back into the risk file and into CAPA.",
+      "concepts": [
+        "EU MDR and notified body",
+        "Complaint and medical device reporting",
+        "ISO 14971"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-literature-screening",
+      "q": "Can AI screen literature for a clinical evaluation?",
+      "alts": [
+        "AI literature review",
+        "clinical evaluation report AI",
+        "abstract screening",
+        "literature search device"
+      ],
+      "a": "It can apply the search protocol's inclusion and exclusion criteria to each abstract and draft include, exclude or unsure with the criterion that decided it. The clinical specialist makes and records every final decision, and the AI suggestion is stored apart from that decision. Score it mainly on relevant papers it missed, since a missed paper matters more than an extra one to read.",
+      "concepts": [
+        "EU MDR and notified body",
+        "Evaluation (eval)"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-medtech-ai-helps",
+      "q": "Where does AI help in MedTech quality work?",
+      "alts": [
+        "AI use cases medical device",
+        "good first AI project for a device maker",
+        "where to use AI in medtech",
+        "medtech AI ideas"
+      ],
+      "a": "Look for high volume, unstructured input such as emails or PDFs, and a decision a qualified person can check quickly once the evidence is laid out. Complaint intake, gathering investigation evidence across QMS, MES, ERP and PLM, engineering change impact lists, label and IFU comparison, DHR review by exception and trace gap checks often fit. Root cause and reportability decisions stay with people, though AI can draft them for review.",
+      "concepts": [
+        "Complaint and medical device reporting",
+        "CAPA",
+        "Device history record (DHR)"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-medtech-person-decides",
+      "q": "Which MedTech decisions must a person make?",
+      "alts": [
+        "what AI cannot decide in medtech",
+        "human in the loop device maker",
+        "who signs device records"
+      ],
+      "a": "Complaint reportability, root cause, approving a CAPA plan, releasing a document or device record, approving an engineering change, and risk judgements on probability, severity and acceptability. At each point a qualified person reviews the AI draft, can edit it and signs in the validated QMS or PLM. In GxP work 'AI drafts, a qualified person approves' is the usual ceiling.",
+      "concepts": [
+        "21 CFR Part 11",
+        "CAPA"
+      ],
+      "link": "learn/m09.html#l-human-review-audit"
+    },
+    {
+      "id": "ind-dhr-by-exception",
+      "q": "How does review by exception work for device history records?",
+      "alts": [
+        "DHR review AI",
+        "faster device release review",
+        "review by exception medtech"
+      ],
+      "a": "Rules flag structured exceptions such as out-of-spec values, missing checks and entries made long after the step, and an LLM can flag free-text operator comments that may need quality attention. The reviewer sees flags first, each linked to its source entry, then reviews the record as the procedure requires and signs release in the MES. Test it on planted exceptions: all must be caught, then look at the false flag rate.",
+      "concepts": [
+        "Device history record (DHR)"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-eco-impact",
+      "q": "How can AI help with engineering changes?",
+      "alts": [
+        "ECO impact assessment",
+        "engineering change order AI",
+        "change impact on documents",
+        "which documents does this change affect"
+      ],
+      "a": "An ECO in PLM can touch drawings, the BOM in ERP, work instructions in MES, labels and sometimes the regulatory file. An assistant can read these systems and list the documents likely affected, with a reason for each, in a marked field on the ECO. The change owner ticks or removes each item and signs, the change board still meets, and if the service is down the manual checklist still works.",
+      "concepts": [
+        "Design controls and DHF",
+        "Change control"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-label-ifu",
+      "q": "Can AI check label and IFU changes?",
+      "alts": [
+        "label comparison",
+        "IFU change check",
+        "instructions for use AI",
+        "labeling review"
+      ],
+      "a": "It can list every difference between old and new versions and label each one as intended by the change request, unintended, or unclear, with the matching request line. It can also report documents the change request names where the edit is missing. A labeling specialist reviews every flag, and regulatory affairs approves the labels through document control with electronic signatures.",
+      "concepts": [
+        "EU MDR and notified body",
+        "21 CFR Part 11"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-validate-ai-medtech",
+      "q": "How do I validate an AI tool at a device maker?",
+      "alts": [
+        "validate an LLM tool medtech",
+        "AI validation protocol",
+        "evaluation as validation",
+        "CSA for AI"
+      ],
+      "a": "Write the intended use and risk first, then turn your evaluation set into a test protocol approved before the run: real past cases with confirmed outcomes, pinned model and prompt versions, and numbered acceptance criteria. Record failures instead of removing hard cases, and have QA sign the report. Keep scripted tests for the controls around the AI, such as signatures, audit trail, roles and fallback to manual.",
+      "concepts": [
+        "CSA and validation",
+        "Evaluation (eval)"
+      ],
+      "link": "learn/m09.html#l-eval-sets"
+    },
+    {
+      "id": "ind-acceptance-criteria",
+      "q": "How should acceptance criteria be set for an AI tool?",
+      "alts": [
+        "pass criteria for AI",
+        "acceptance threshold validation",
+        "what accuracy is good enough"
+      ],
+      "a": "Set them by risk and agree them before the run. For a high-consequence output, focus on the misses that matter, for example every reportable case must be flagged for specialist review. Lower-risk fields such as a suggested category can use an accuracy bar with a sample size. The right numbers come from the client's risk assessment, never from looking at results first.",
+      "concepts": [
+        "CSA and validation",
+        "Evaluation (eval)"
+      ],
+      "link": "learn/m09.html#l-eval-sets"
+    },
+    {
+      "id": "ind-gxp-design-medtech",
+      "q": "What has to be designed in for an AI tool to pass QA at a device maker?",
+      "alts": [
+        "validation-ready AI design",
+        "GxP design medtech",
+        "what will QA ask",
+        "design for audit"
+      ],
+      "a": "Five things: a written intended use and risk level, clear human approval points, a complete audit trail, proper electronic records and signatures, and data integrity across every step the AI touches. In practice that means pinned model and prompt versions, AI drafts in a marked field, read-only access to MES, ERP and PLM, least privilege, data kept inside the client's boundary, and a manual fallback. The test: can you open any record and show the draft, versions, edits and signature in under a minute.",
+      "concepts": [
+        "21 CFR Part 11",
+        "ALCOA+",
+        "CSA and validation"
+      ],
+      "link": "learn/m09.html#l-human-review-audit"
+    },
+    {
+      "id": "ind-gmp-software",
+      "q": "Does GMP apply to the software I build?",
+      "alts": [
+        "is my tool GMP",
+        "GMP software",
+        "does GMP cover AI tools",
+        "computerized system GMP"
+      ],
+      "a": "If the tool is used in manufacturing, testing, quality decisions or release, yes. It becomes a computerized system under GMP and needs a defined intended use, validation sized to risk, access control, audit trails and change control. Tools used only for non-GMP work do not carry that load.",
+      "concepts": [
+        "GMP and CGMP",
+        "CSV, CSA and GAMP 5"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-gmp-gcp-glp",
+      "q": "GMP vs GCP vs GLP?",
+      "alts": [
+        "GLP meaning",
+        "GCP meaning",
+        "which GxP applies",
+        "good laboratory practice"
+      ],
+      "a": "They are members of the GxP family. GMP covers making medicines, GCP covers running clinical trials, and GLP covers non-clinical lab studies. Each one decides which records are regulated and who must sign them.",
+      "concepts": [
+        "GxP",
+        "GCP and IMP"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-cfr-210-211",
+      "q": "What are 21 CFR 210 and 211?",
+      "alts": [
+        "Part 211",
+        "CGMP regulations",
+        "211 subparts",
+        "US drug GMP rules"
+      ],
+      "a": "They are the US CGMP regulations for finished drugs. Part 211 has subparts for areas such as personnel, facilities, equipment, production and process controls, laboratory controls and records. Sections you will hear often are 211.22 for the quality control unit, 211.100 for written procedures and deviations, and 211.192 for production record review and investigations.",
+      "concepts": [
+        "GMP and CGMP"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-ich-q7",
+      "q": "What is ICH Q7?",
+      "alts": [
+        "API GMP",
+        "active pharmaceutical ingredient GMP",
+        "GMP for API makers"
+      ],
+      "a": "ICH Q7 is the main GMP guide for active pharmaceutical ingredients (APIs). API makers follow it rather than the finished-drug rules in 21 CFR 211. The core ideas are the same: controlled procedures, records, investigations and an independent quality unit.",
+      "concepts": [
+        "GMP and CGMP"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-ich-q9-q10",
+      "q": "What are ICH Q9 and ICH Q10?",
+      "alts": [
+        "quality risk management",
+        "pharmaceutical quality system",
+        "ICH Q10 elements",
+        "PQS"
+      ],
+      "a": "ICH Q9 describes quality risk management: the effort, formality and documentation of a risk activity should match the level of risk to the patient. ICH Q10 describes a pharmaceutical quality system across the product lifecycle with four elements: process performance and product quality monitoring, CAPA, change management, and management review. Its two enablers are knowledge management and quality risk management.",
+      "concepts": [
+        "QMS and eQMS"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-quality-unit",
+      "q": "Why does the quality unit have the final say?",
+      "alts": [
+        "211.22",
+        "who releases a batch",
+        "quality control unit authority",
+        "can software release a batch"
+      ],
+      "a": "21 CFR 211.22 says the site must have a quality control unit with authority to approve or reject components, materials and finished product, and to review production records. That responsibility cannot pass to a tool. So AI can draft and check, but release and other GMP decisions are signed by authorised people.",
+      "concepts": [
+        "GMP and CGMP"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-deviation-flow",
+      "q": "What happens when a deviation is raised?",
+      "alts": [
+        "deviation process",
+        "deviation lifecycle",
+        "how deviations work",
+        "deviation investigation steps"
+      ],
+      "a": "The person who sees it records it as the SOP requires, often as an MES event, and quality opens a deviation in the eQMS linked to the batch. The investigation is sized to risk and pulls data from LIMS, MES and the historian, while the batch may be held in ERP. The investigator writes root cause, batch impact and CAPA, and QA approves before the batch can be released.",
+      "concepts": [
+        "Deviation",
+        "QMS and eQMS",
+        "Batch record, MES and EBR"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-deviation-vs-oos",
+      "q": "Deviation vs OOS vs OOT?",
+      "alts": [
+        "OOS meaning",
+        "out of specification",
+        "out of trend",
+        "OOT meaning"
+      ],
+      "a": "A deviation is any departure from an approved procedure, specification or instruction. An OOS is a test result outside the approved limits, recorded in LIMS and investigated under the lab's procedure. OOT, out of trend, is a result that is unusual against the expected pattern, which also needs a look. A lab result problem can lead to or link with a deviation.",
+      "concepts": [
+        "Deviation",
+        "LIMS and OOS"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-oos-investigation",
+      "q": "How is an OOS result investigated?",
+      "alts": [
+        "OOS investigation steps",
+        "lab investigation OOS",
+        "FDA OOS guidance"
+      ],
+      "a": "The lab follows its OOS procedure, in line with FDA guidance on OOS results. The first check looks for a lab cause, such as a sample preparation or instrument error. If no lab cause is proven, the investigation widens to manufacturing, and other batches that may be affected are considered. Retesting or averaging to make a result go away is not acceptable without a documented, justified reason.",
+      "concepts": [
+        "LIMS and OOS",
+        "Deviation"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-human-error",
+      "q": "Can 'human error' be a root cause?",
+      "alts": [
+        "human error root cause",
+        "retraining as CAPA",
+        "weak root cause",
+        "why not just retrain"
+      ],
+      "a": "On its own it is a weak answer, and inspectors know it. Ask why the error was possible: an unclear SOP, a confusing screen, a missing check, a shift change. Closing with 'human error' and retraining only usually leads to repeat deviations.",
+      "concepts": [
+        "Deviation",
+        "CAPA"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-thorough-investigation",
+      "q": "What does a thorough investigation mean?",
+      "alts": [
+        "211.192",
+        "investigate other batches",
+        "investigation scope",
+        "how deep should an investigation go"
+      ],
+      "a": "21 CFR 211.192 says unexplained discrepancies must be thoroughly investigated, including other batches that may be affected, with a written record of the conclusion and follow-up. So an investigation looks beyond the one batch and reaches a real root cause. Depth is sized to risk, but the reasoning must always be written down.",
+      "concepts": [
+        "Deviation"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-change-control-steps",
+      "q": "How does change control work, step by step?",
+      "alts": [
+        "change request steps",
+        "impact assessment",
+        "change control process pharma",
+        "what is a change request"
+      ],
+      "a": "Someone proposes the change, then it is assessed for impact on product, process, validation, training and regulatory filings. It is approved, implemented, verified and recorded, and affected SOPs are revised with people trained on the new version. Some changes to a filed process must be notified to or approved by the regulator, which regulatory affairs judges.",
+      "concepts": [
+        "Change control"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-small-change",
+      "q": "Does a small change really need change control?",
+      "alts": [
+        "minor change",
+        "is this a change",
+        "small SOP edit",
+        "can I skip change control"
+      ],
+      "a": "If it touches a GMP process, document, system or equipment, yes; the size decides how much assessment it gets, not whether it is controlled. A change that looks small, like a form field or a prompt edit, can still affect product or records. Skipping change control because a change looked small is a common finding.",
+      "concepts": [
+        "Change control"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-ai-config-items",
+      "q": "Which parts of an AI tool go under change control?",
+      "alts": [
+        "AI configuration items",
+        "model upgrade change control",
+        "what counts as a change for AI",
+        "retrieval source change"
+      ],
+      "a": "Everything that shapes the output: the model version, the prompt text, retrieval sources and their index, settings such as temperature, and acceptance thresholds. A change to any of them gets a change request, an impact assessment and a rerun of the evaluation protocol. Keep the eval set runnable in one command so this stays routine, and plan for at least one forced model change when a vendor retires a model.",
+      "concepts": [
+        "Change control",
+        "CSV, CSA and GAMP 5",
+        "Evaluation (eval)"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-pin-model",
+      "q": "Why pin the model version?",
+      "alts": [
+        "model alias latest",
+        "vendor model update",
+        "model drift",
+        "fixed model version"
+      ],
+      "a": "A provider can update a model behind the same name, and outputs shift. In a validated process that is an uncontrolled change, so use a fixed model version, ask how updates are announced, and treat moving to a new version as a planned change with a regression run. A 'latest' alias lets the validated behaviour change underneath you.",
+      "concepts": [
+        "Change control",
+        "CSV, CSA and GAMP 5"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-batch-record",
+      "q": "What is a batch record?",
+      "alts": [
+        "EBR",
+        "executed batch record",
+        "master batch record",
+        "electronic batch record"
+      ],
+      "a": "It is the full record of how one batch was made: materials, steps, set points, recorded values, operator entries, signatures and in-process checks. The master batch record is the approved template; the executed record is filled in for each batch, often as an electronic batch record (EBR) in the MES. QA reviews it before release.",
+      "concepts": [
+        "Batch record, MES and EBR"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-batch-review-bottleneck",
+      "q": "Why is batch record review a bottleneck?",
+      "alts": [
+        "slow batch release",
+        "batch record review delay",
+        "review by exception pharma",
+        "speed up release"
+      ],
+      "a": "QA reviews every page of every batch record before release, and with paper records this is often the biggest single release delay. Review by exception helps: rules flag structured exceptions such as values outside limits or missing second-person checks, and an LLM can flag free-text comments. Many MES vendors offer a review-by-exception module, so check what the client already owns. The reviewer still reviews as the SOP requires and signs in the MES.",
+      "concepts": [
+        "Batch record, MES and EBR"
+      ],
+      "link": "learn/m04.html#l-build-buy-configure"
+    },
+    {
+      "id": "ind-measure-waits",
+      "q": "Our release is slow. Is report writing the problem?",
+      "alts": [
+        "release cycle time",
+        "where is the bottleneck",
+        "time from manufacture to release"
+      ],
+      "a": "Often not. Pull dates for a sample of released batches and see where they wait: in many sites batches with no deviation still sit in batch record review, and deviations wait on lab data more than on writing. Fix the real queue first, such as review by exception or a faster LIMS to eQMS link. Look at the slowest cases too, not only the average.",
+      "concepts": [
+        "Batch record, MES and EBR",
+        "Deviation"
+      ],
+      "link": "learn/m04.html#l-business-case"
+    },
+    {
+      "id": "ind-cqv",
+      "q": "What is CQV?",
+      "alts": [
+        "commissioning qualification verification",
+        "C and Q",
+        "commissioning vs qualification"
+      ],
+      "a": "Commissioning, qualification and verification. Commissioning is good engineering practice work to install, start up, check and adjust a system. Qualification is documented proof it is fit for its GMP purpose, and verification is the broader risk-based word for confirming, with evidence, that a requirement is met.",
+      "concepts": [
+        "Qualification and validation (IQ, OQ, PQ)"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-iq-oq-pq",
+      "q": "IQ OQ PQ",
+      "alts": [
+        "installation operational performance qualification",
+        "IQ vs OQ vs PQ",
+        "what is PQ",
+        "qualification stages"
+      ],
+      "a": "IQ proves the equipment is installed as designed: drawings, materials of construction, utilities connected, instruments calibrated, manuals recorded. OQ proves it operates as intended across its operating ranges, including alarms and interlocks. PQ proves it performs consistently under real or simulated production conditions. Each one traces back to the URS.",
+      "concepts": [
+        "Qualification and validation (IQ, OQ, PQ)"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-urs-to-pq",
+      "q": "What comes before IQ?",
+      "alts": [
+        "URS DQ FAT SAT",
+        "qualification sequence",
+        "FAT vs SAT",
+        "what is a URS"
+      ],
+      "a": "The usual chain is URS, DQ, FAT, SAT and commissioning, then IQ, OQ and PQ, ending with a summary report that quality approves. The URS lists what users need in testable lines, DQ checks the design meets it, FAT tests at the vendor's site and SAT tests after installation. Where a documented risk assessment justifies it, some FAT tests need not be repeated on site.",
+      "concepts": [
+        "Qualification and validation (IQ, OQ, PQ)"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-risk-based-qual",
+      "q": "Does every part of a system need full qualification?",
+      "alts": [
+        "risk-based qualification",
+        "critical aspects",
+        "what must be qualified",
+        "Annex 15 risk"
+      ],
+      "a": "No. A risk-based approach finds the critical aspects that can affect product quality, such as a dryer's temperature controller, and gives those formal qualification with quality approval. Non-critical parts, like the paint on a cabinet, are commissioned under good engineering practice with less formality. EU GMP Annex 15 and ICH Q9 both support scaling effort to risk.",
+      "concepts": [
+        "Qualification and validation (IQ, OQ, PQ)"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-process-validation",
+      "q": "What is process validation?",
+      "alts": [
+        "PPQ",
+        "three stages of process validation",
+        "process qualification",
+        "process validation lifecycle"
+      ],
+      "a": "It shows a manufacturing process reliably makes product that meets its quality attributes. FDA guidance describes a lifecycle in three stages: process design, process qualification, and continued process verification. Equipment and utility qualification sits inside stage 2, so a process cannot be qualified on unqualified equipment.",
+      "concepts": [
+        "Qualification and validation (IQ, OQ, PQ)"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-cpv",
+      "q": "CPV?",
+      "alts": [
+        "continued process verification",
+        "stage 3 process validation",
+        "process trending",
+        "CPV report"
+      ],
+      "a": "Continued process verification is ongoing monitoring of a commercial process to show it stays in control. Engineers trend data such as assay, dissolution and key process parameters from LIMS, MES and historians, often with control charts. When trends are built by hand in spreadsheets each quarter, signals are found late, which makes CPV a good place for automation with a process engineer reviewing.",
+      "concepts": [
+        "LIMS and OOS",
+        "Batch record, MES and EBR"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-cqa-cpp",
+      "q": "CQA vs CPP?",
+      "alts": [
+        "critical quality attribute",
+        "critical process parameter",
+        "QTPP",
+        "quality by design"
+      ],
+      "a": "A CQA is a product property that must stay within limits to give the right quality, such as assay, impurities or dissolution. A CPP is a process setting whose variability affects a CQA, such as drying temperature or compression force, so it must be monitored or controlled. Both come from quality by design work under ICH Q8(R2), starting from the QTPP, the profile of quality the product should have.",
+      "concepts": [
+        "GMP and CGMP"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-control-strategy",
+      "q": "What is a control strategy?",
+      "alts": [
+        "control strategy meaning",
+        "design space",
+        "in-process controls"
+      ],
+      "a": "It is the planned set of controls, from material specifications and in-process controls to final testing, that assures the process performs and the product meets its quality. It is how rules like 21 CFR 211.100 and 211.110 are met in practice. A design space, if one is approved, is the combination of inputs and parameters shown to give acceptable quality.",
+      "concepts": [
+        "GMP and CGMP"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-csv-vs-csa",
+      "q": "CSV vs CSA?",
+      "alts": [
+        "computer system validation vs computer software assurance",
+        "what is CSA in pharma",
+        "risk-based testing",
+        "scripted vs unscripted testing"
+      ],
+      "a": "Computer system validation (CSV) is proving software is fit for its intended use, often done with heavy scripted testing of every function. Computer software assurance (CSA) is FDA's risk-based approach: focus testing where failure would harm patients or product quality, and use lighter, unscripted testing for low-risk features. The CSA guidance is written for device makers, but its idea is widely discussed in pharma, so agree with the client's QA which approach their procedures follow.",
+      "concepts": [
+        "CSV, CSA and GAMP 5"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-gamp-categories",
+      "q": "What are the GAMP 5 software categories?",
+      "alts": [
+        "GAMP category 4",
+        "GAMP categories 1 3 4 5",
+        "GAMP 5 plain words",
+        "is this category 5"
+      ],
+      "a": "Category 1 is infrastructure software such as operating systems. Category 3 is standard software used as supplied, category 4 is configured products such as most eQMS and LIMS setups, and category 5 is custom software. Effort rises from 3 to 5, because the more you configure or write, the more you must specify and test yourself.",
+      "concepts": [
+        "CSV, CSA and GAMP 5"
+      ],
+      "link": "learn/m04.html#l-build-buy-configure"
+    },
+    {
+      "id": "ind-gamp-5",
+      "q": "What is GAMP 5?",
+      "alts": [
+        "ISPE GAMP",
+        "GAMP guide",
+        "GAMP second edition"
+      ],
+      "a": "GAMP 5, published by ISPE, is the industry guide to a risk-based approach to validating computerized systems in GxP work. The second edition, from 2022, encourages critical thinking over producing paper for its own sake. ISPE has also published a GAMP guide on artificial intelligence.",
+      "concepts": [
+        "CSV, CSA and GAMP 5"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-validate-ai-pharma",
+      "q": "How do I validate an AI tool in pharma?",
+      "alts": [
+        "AI validation GMP",
+        "validate an LLM pharma",
+        "eval set as test evidence",
+        "AI validation plan"
+      ],
+      "a": "Start with a one-paragraph intended use and a risk assessment with QA, then a short, testable URS. The evaluation set becomes the protocol: real closed records with expected outcomes set by qualified people, acceptance criteria written before the run, pinned model and prompts, and every input, output and version recorded. QA signs the report, and monitoring plus change control keep the validated state.",
+      "concepts": [
+        "CSV, CSA and GAMP 5",
+        "Evaluation (eval)"
+      ],
+      "link": "learn/m09.html#l-eval-sets"
+    },
+    {
+      "id": "ind-protocol-fails",
+      "q": "What if my AI fails a validation run?",
+      "alts": [
+        "protocol failure",
+        "failed acceptance criteria",
+        "AI test failed what now"
+      ],
+      "a": "Record each failure, investigate it and agree with QA what to do; do not quietly tune until it passes. Fixes such as adding a missing data source or changing a prompt go through change control. Then rerun the full protocol, not only the failed cases, since a fix can break others, and the report records both runs.",
+      "concepts": [
+        "CSV, CSA and GAMP 5",
+        "Evaluation (eval)"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-ai-monitoring",
+      "q": "How is an AI tool kept valid after go-live?",
+      "alts": [
+        "periodic review AI",
+        "AI drift GMP",
+        "monitoring after go-live",
+        "keep validated state"
+      ],
+      "a": "Annex 11 expects computerized systems to be periodically evaluated. For AI, watch how often reviewers heavily edit or reject drafts, have a qualified person score a small random sample of live outputs each month with the validation rubric, and watch for new products or event types the test set never covered. Agree thresholds in advance; crossing one opens a deviation or investigation like any other GMP system.",
+      "concepts": [
+        "CSV, CSA and GAMP 5",
+        "21 CFR Part 11 and EU Annex 11"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-ai-data-integrity",
+      "q": "How can an AI tool break data integrity?",
+      "alts": [
+        "AI and ALCOA+",
+        "is AI output attributable",
+        "data integrity risks of AI",
+        "AI under my login"
+      ],
+      "a": "The risky letters are attributable and original. If the AI runs under a person's login, the audit trail says the person wrote what the AI wrote; if it keeps its own copies, records are no longer original. Give the AI its own service identity, store its draft as a separate entry with model version and time, read from the system of record, and keep drafts for the retention period of the record they support.",
+      "concepts": [
+        "ALCOA+ (data integrity)",
+        "21 CFR Part 11 and EU Annex 11",
+        "Audit log"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-di-red-flags",
+      "q": "What data integrity red flags should I look for?",
+      "alts": [
+        "data integrity gaps",
+        "DI findings",
+        "audit trail never reviewed",
+        "shared logins lab"
+      ],
+      "a": "Shared logins on instruments or systems, audit trails switched off or never reviewed, results written on scrap paper and typed in later, test injections or reprocessing with no explanation, uncontrolled spreadsheets doing GMP calculations, and records that cannot be retrieved for the full retention period. FDA's data integrity guidance and the MHRA GxP data integrity guidance set out the expectations.",
+      "concepts": [
+        "ALCOA+ (data integrity)"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-audit-trail-review",
+      "q": "Why review audit trails if they are already on?",
+      "alts": [
+        "audit trail review",
+        "audit trail on but not reviewed",
+        "periodic audit trail review"
+      ],
+      "a": "An audit trail that nobody reads cannot catch anything. Periodic review of the audit trails for the data that matters is part of data integrity controls, and an enabled but unreviewed audit trail is a common gap. Add the review to the SOP so it is done and recorded.",
+      "concepts": [
+        "ALCOA+ (data integrity)",
+        "21 CFR Part 11 and EU Annex 11"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-part11-signature",
+      "q": "What must an electronic signature show under Part 11?",
+      "alts": [
+        "Part 11 e-signature",
+        "signature meaning",
+        "11.50",
+        "electronic signature rules"
+      ],
+      "a": "Section 11.50 requires a signed record to show the signer's printed name, the date and time, and the meaning of the signature, such as review, approval or authorship. Signatures must be linked to their records and unique to one person. Use the signature function of the validated eQMS, MES or PLM rather than building your own.",
+      "concepts": [
+        "21 CFR Part 11 and EU Annex 11",
+        "21 CFR Part 11"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-part11-vs-annex11",
+      "q": "Part 11 vs Annex 11?",
+      "alts": [
+        "difference between Part 11 and Annex 11",
+        "EU computerised systems annex",
+        "US vs EU electronic records"
+      ],
+      "a": "21 CFR Part 11 is the US rule for electronic records and electronic signatures. EU GMP Annex 11 covers computerised systems used in GMP work and asks for risk management across the system lifecycle. Both expect validation, access control and audit trails, and many sites must meet both because they ship to the US and the EU.",
+      "concepts": [
+        "21 CFR Part 11 and EU Annex 11"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-pharma-systems",
+      "q": "What do LIMS, MES, eQMS and ERP each do?",
+      "alts": [
+        "pharma systems of record",
+        "LIMS vs MES",
+        "where is the GMP record",
+        "role of ERP in pharma"
+      ],
+      "a": "The eQMS holds deviations, CAPA, change control, complaints, audits and SOPs. LIMS holds samples, methods, results, specifications, stability and OOS investigations. The MES with EBR guides operators and captures batch execution, and ERP such as SAP holds materials, inventory, purchasing and batch status, which often controls whether stock can ship. The validated system is the record, not the spreadsheet tracker beside it.",
+      "concepts": [
+        "QMS and eQMS",
+        "LIMS and OOS",
+        "Batch record, MES and EBR"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-erp-gxp",
+      "q": "Is SAP or ERP a GxP system?",
+      "alts": [
+        "validate ERP",
+        "SAP GMP",
+        "ERP validation pharma",
+        "ERP implementation regulated"
+      ],
+      "a": "Parts of it usually are: functions that affect GMP decisions, such as batch and material status, are GxP-relevant and must be validated. ERP projects in pharma run requirements and gap analysis, solution design, configuration, integration with MES, LIMS and QMS, data migration, then testing and validation of the GxP-relevant functions before a controlled go-live. Ask the client's validation team which functions they class as GxP.",
+      "concepts": [
+        "CSV, CSA and GAMP 5"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-tech-transfer",
+      "q": "What is tech transfer?",
+      "alts": [
+        "technology transfer",
+        "site transfer",
+        "moving a product to a CDMO",
+        "method transfer"
+      ],
+      "a": "Technology transfer moves product and process knowledge, methods and controls to a receiving site in a controlled way. It covers a site capability and gap assessment, a transfer plan, analytical method transfer, engineering and exhibit batches, and a check the site is ready for process performance qualification. ICH Q10 treats it as a lifecycle stage, and knowledge left only in people's heads is what gets lost.",
+      "concepts": [
+        "Change control"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-483-vs-wl",
+      "q": "483 vs warning letter?",
+      "alts": [
+        "Form 483",
+        "FDA warning letter",
+        "inspection observations",
+        "what is a 483"
+      ],
+      "a": "A Form FDA 483 lists observations an investigator makes at the end of an inspection. A warning letter is a formal, public notice of significant violations, which can follow when issues are serious or not resolved. Warning letters are published on the FDA website, so reading a few in your client's product area shows quickly what inspectors care about.",
+      "concepts": [
+        "FDA Form 483 and warning letter"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-483-response",
+      "q": "How do I respond to a 483?",
+      "alts": [
+        "483 response plan",
+        "remediation after inspection",
+        "warning letter response",
+        "inspection findings response"
+      ],
+      "a": "Treat each observation as a stated gap. The response shows the root cause, the fix, how the company checked for the same problem elsewhere and how it will prove the fix works, all run through CAPA. FDA generally considers responses received within 15 business days, so planning starts at once. AI can help map observations to evidence and track actions, but commitments to FDA are made by people.",
+      "concepts": [
+        "FDA Form 483 and warning letter",
+        "CAPA"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-cdmo-oversight",
+      "q": "Why does a sponsor oversee its CDMO so closely?",
+      "alts": [
+        "CDMO oversight",
+        "sponsor responsibility",
+        "outsourced manufacturing quality"
+      ],
+      "a": "The legal owner of a product stays responsible for its quality even when someone else makes it, and FDA guidance on quality agreements says so plainly. So sponsors qualify and audit CDMOs, agree a quality agreement, and review batch documentation, deviations, CAPAs, stability data and certificates of analysis. Treating a CDMO like an ordinary vendor is a common mistake.",
+      "concepts": [
+        "CDMO and quality agreement"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-quality-agreement",
+      "q": "What is a quality agreement?",
+      "alts": [
+        "quality agreement CDMO",
+        "QAG",
+        "who is responsible for what"
+      ],
+      "a": "It is a written agreement that sets out which party is responsible for which quality activity, such as testing, release, deviations, change control and audits. It is used between a product owner and a CDMO or other contract partner. It makes the split of work clear but does not move the owner's responsibility for quality.",
+      "concepts": [
+        "CDMO and quality agreement"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-imp-release",
+      "q": "How does a sponsor review a CDMO batch before IMP release?",
+      "alts": [
+        "investigational product release",
+        "CDMO batch package review",
+        "clinical batch release",
+        "CoA review AI"
+      ],
+      "a": "The sponsor's quality team checks each batch package, such as the batch record summary, certificate of analysis, deviations and shipping temperature data, against specifications and the quality agreement. A tool can extract CoA results, compare them to specs and flag open deviations, missing documents or temperature excursions, each linked to its source page. The sponsor's qualified reviewer makes and signs the release decision.",
+      "concepts": [
+        "GCP and IMP",
+        "CDMO and quality agreement"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-gcp-basics",
+      "q": "What is GCP in plain words?",
+      "alts": [
+        "good clinical practice",
+        "ICH E6",
+        "clinical trial quality",
+        "GCP basics"
+      ],
+      "a": "Good clinical practice is the standard for running clinical trials, set out in ICH E6. It covers how trials are designed, run, recorded and reported so participants are protected and the data can be trusted. Clinical quality teams audit CROs, CDMOs and clinical sites against it and review trial documents such as protocols and investigator's brochures.",
+      "concepts": [
+        "GCP and IMP",
+        "GxP"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-sponsor-cro-cdmo",
+      "q": "Sponsor, CRO, CDMO: who does what?",
+      "alts": [
+        "what is a CRO",
+        "sponsor meaning clinical",
+        "CRO vs CDMO",
+        "who owns the IND"
+      ],
+      "a": "The sponsor runs the clinical trial and owns the IND or the marketing application. A CRO (contract research organization) does trial work for the sponsor, and a CDMO develops or makes the product. The sponsor outsources the work but keeps the responsibility, which is why it audits partners and reviews so many of their documents.",
+      "concepts": [
+        "GCP and IMP",
+        "CDMO and quality agreement"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-503b",
+      "q": "What is a 503B outsourcing facility?",
+      "alts": [
+        "503A vs 503B",
+        "compounding GMP",
+        "outsourcing facility CGMP"
+      ],
+      "a": "Under section 503B of the FD&C Act, an outsourcing facility registers with FDA and can compound with or without patient-specific prescriptions, for example to supply hospitals. It is exempt from some requirements, such as FDA approval of each drug, but not from CGMP under 21 CFR 210 and 211. A 503A pharmacy compounds for identified patients on prescription and is overseen mainly by state boards of pharmacy.",
+      "concepts": [
+        "GMP and CGMP"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-temp-mapping",
+      "q": "What is temperature mapping?",
+      "alts": [
+        "warehouse mapping",
+        "chamber mapping",
+        "shipping qualification",
+        "temperature excursion"
+      ],
+      "a": "It is a study that places data loggers around a storage area, chamber, fridge, freezer or shipper to find hot and cold spots and show temperature stays in range. Results drive probe placement and qualification, with seasonal mapping and requalification over time. AI can help analyse large volumes of logger data, but a person decides what an excursion means for product.",
+      "concepts": [
+        "Qualification and validation (IQ, OQ, PQ)"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-sop-change-ai",
+      "q": "Does adding an AI tool change our SOPs?",
+      "alts": [
+        "SOP for an AI tool",
+        "training for AI tool",
+        "procedure update AI"
+      ],
+      "a": "Usually yes. If the tool changes how people do a task, the SOP must say how it is used, where the person reviews and signs, and what to do when the tool is down. People are then trained on the new version, and the training is recorded.",
+      "concepts": [
+        "SOP"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-ai-vendor-qual",
+      "q": "Does the client need to qualify our AI vendor?",
+      "alts": [
+        "supplier qualification LLM",
+        "vendor questions AI",
+        "SaaS AI GMP",
+        "AI supplier assessment"
+      ],
+      "a": "Yes, if an external model or SaaS tool is used in GMP work, the client's quality team assesses the supplier. Typical questions: where data is processed and whether it trains the vendor's models, whether Part 11 controls are supported, what validation documentation the vendor provides and whether it can be audited, how updates are released and whether a version can be held, and what happens to records on exit.",
+      "concepts": [
+        "CSV, CSA and GAMP 5",
+        "21 CFR Part 11 and EU Annex 11"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-pharma-ai-helps",
+      "q": "Where does AI help in pharma quality and operations?",
+      "alts": [
+        "pharma AI use cases",
+        "good first AI project GMP",
+        "AI ideas for a drug plant"
+      ],
+      "a": "Lower-risk starts are searching SOPs and past deviations, routing records and extracting data from certificates of analysis. Next come drafts a person approves: deviation summaries and candidate root causes, CAPA plans, IQ and OQ steps from a URS, change impact lists, and review-by-exception flags on batch records. CPV trending and pre-reading partner documents for sponsors are also good fits.",
+      "concepts": [
+        "Deviation",
+        "CAPA",
+        "Batch record, MES and EBR"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-pharma-person-decides",
+      "q": "Which pharma decisions stay with people?",
+      "alts": [
+        "what AI must not decide GMP",
+        "human approval pharma",
+        "who signs in GMP"
+      ],
+      "a": "Classifying risk, accepting a root cause, approving or closing a CAPA or deviation, approving protocols, reports and documents, deciding on an excursion, and releasing a batch. These are made and signed by trained, authorised people with their own e-signature in the validated system. AI drafts and checks, and must never appear to make a quality decision.",
+      "concepts": [
+        "GMP and CGMP",
+        "21 CFR Part 11 and EU Annex 11"
+      ],
+      "link": "learn/m09.html#l-human-review-audit"
+    },
+    {
+      "id": "ind-automation-levels-gmp",
+      "q": "How much should AI automate in GMP work?",
+      "alts": [
+        "automation level GMP",
+        "assistive vs automated",
+        "semi-automated AI",
+        "can AI act on its own"
+      ],
+      "a": "Think in three levels: assistive, where AI searches or suggests and the person acts; semi-automated, where AI drafts and a qualified person approves; and automated, where AI acts within strict limits and people review exceptions. For GMP records semi-automated is the usual default. Full automation is kept for low-risk steps such as routing or data extraction that a later human check will catch.",
+      "concepts": [
+        "GxP"
+      ],
+      "link": "learn/m06.html#l-automation-levels"
+    },
+    {
+      "id": "ind-deviation-assistant",
+      "q": "What would a good deviation AI assistant do?",
+      "alts": [
+        "deviation AI",
+        "AI deviation investigation",
+        "similar past deviations search"
+      ],
+      "a": "When a deviation opens, it gathers the MES event, related LIMS results and historian trend, finds the most similar past deviations, and drafts a summary and candidate root cause categories into a separate, attributed field. The investigator writes the final text and signs, and QA approves in the eQMS. Clean the root cause categories first, or the tool learns the mess.",
+      "concepts": [
+        "Deviation",
+        "QMS and eQMS"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-qms-pyramid",
+      "q": "What is the QMS documentation pyramid?",
+      "alts": [
+        "quality manual SOP work instruction",
+        "document hierarchy",
+        "levels of quality documents"
+      ],
+      "a": "At the top are the quality policy and quality manual. Below them are procedures (SOPs) that say who does what, then work instructions and forms for specific tasks. At the bottom are records, the filled-in forms, results and signatures that prove the work happened.",
+      "concepts": [
+        "QMS",
+        "SOP"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-doc-vs-record",
+      "q": "Document vs record?",
+      "alts": [
+        "difference between a document and a record",
+        "is a test result a document",
+        "records in a QMS"
+      ],
+      "a": "A document says what should happen, such as a procedure, and can be revised under control. A record proves what did happen, such as a signed test result. Once made, a record must not be changed without a trace.",
+      "concepts": [
+        "QMS",
+        "ALCOA+"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-doc-control",
+      "q": "What is document control?",
+      "alts": [
+        "controlled documents",
+        "document lifecycle",
+        "versioning SOPs",
+        "effective date"
+      ],
+      "a": "Every procedure has an owner, a version, an approval and an effective date, and only the current version is in use. Documents move through draft, review, approval, effective, superseded and retired. People must be trained on the current version before they do the work.",
+      "concepts": [
+        "SOP",
+        "QMS"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-fix-record",
+      "q": "How do I fix a wrong value in a record?",
+      "alts": [
+        "correct a record",
+        "overwrite a mistake",
+        "typo in lab result",
+        "good documentation practice correction"
+      ],
+      "a": "Correct it in a traceable way: keep the original value, add the new value, and record who changed it and why. Never overwrite it quietly or delete and re-enter it. In electronic systems the audit trail should capture this without hiding the earlier value.",
+      "concepts": [
+        "ALCOA+",
+        "21 CFR Part 11"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-core-processes",
+      "q": "What are the core QMS processes?",
+      "alts": [
+        "QMS building blocks",
+        "main quality processes",
+        "what does a QMS include"
+      ],
+      "a": "Document control, training, CAPA, change control, internal audit and management review, with complaints, deviations and nonconformances feeding CAPA. Devices and pharma use different words, but the core is the same: control documents, train people, fix problems at the root, control change, check yourself, and have leadership look at the data.",
+      "concepts": [
+        "QMS",
+        "CAPA",
+        "Change control"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-qms-not-software",
+      "q": "Is the QMS just the eQMS software?",
+      "alts": [
+        "eQMS vs QMS",
+        "is MasterControl the QMS",
+        "QMS software"
+      ],
+      "a": "No. The QMS is the procedures, the trained people and the evidence. The eQMS software, such as MasterControl, TrackWise or Veeva QMS, holds the records and runs the workflows. Thinking the QMS is a software product is a common mistake.",
+      "concepts": [
+        "QMS and eQMS"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-risk-based-thinking",
+      "q": "What does risk-based thinking mean in a QMS?",
+      "alts": [
+        "risk based approach quality",
+        "how much testing is enough",
+        "match effort to risk"
+      ],
+      "a": "Effort matches the risk a process carries for the patient and the product. A label that tells a nurse the dose gets more review than the colour of a box, and a spreadsheet that calculates batch results needs more checking than one for planning a team lunch. For any new tool, the first question is what could go wrong for a patient or product if it is wrong.",
+      "concepts": [
+        "QMS"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-internal-audit",
+      "q": "What is an internal audit?",
+      "alts": [
+        "self-inspection",
+        "internal GMP audit",
+        "how internal audits run",
+        "audit programme"
+      ],
+      "a": "It is the company checking itself against its own procedures and the rules it must follow. A risk-based programme plans which areas to audit and how often; auditors sample records, interview people and write findings. Findings are graded and answered through CAPA.",
+      "concepts": [
+        "QMS",
+        "CAPA"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-audit-parties",
+      "q": "First, second and third party audits?",
+      "alts": [
+        "types of audit",
+        "supplier audit",
+        "what is a third party audit"
+      ],
+      "a": "A first party audit is an internal audit. A second party audit is a customer auditing its supplier, such as a sponsor auditing its CDMO. A third party audit is done by an independent body, such as a certification body auditing for an ISO certificate.",
+      "concepts": [
+        "QMS",
+        "CDMO and quality agreement"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-mgmt-review",
+      "q": "What is management review?",
+      "alts": [
+        "management review inputs",
+        "quality metrics for leadership",
+        "management review meeting"
+      ],
+      "a": "Senior leaders regularly look at quality data and decide what to fix or fund. Typical inputs are complaint and deviation trends, open and overdue CAPAs, repeat events, audit results and process performance. ICH Q10 names it as an element of the pharmaceutical quality system, and device QMS standards require it too.",
+      "concepts": [
+        "QMS"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-quality-metrics",
+      "q": "Which quality metrics do leaders watch?",
+      "alts": [
+        "quality KPIs",
+        "CAPA age",
+        "right first time",
+        "what to measure in quality"
+      ],
+      "a": "Common ones are cycle times such as deviation open to close or end of manufacture to release, right first time, repeat deviations, reviewer hours, overdue CAPAs and change controls, and median CAPA age. When you size the value of a tool, use the client's own measures from management review, because leadership already watches them.",
+      "concepts": [
+        "CAPA"
+      ],
+      "link": "learn/m04.html#l-business-case"
+    },
+    {
+      "id": "ind-9001-vs-13485",
+      "q": "ISO 9001 vs ISO 13485?",
+      "alts": [
+        "difference between 9001 and 13485",
+        "do device makers need 9001",
+        "13485 vs 9001 clauses"
+      ],
+      "a": "ISO 9001 is quality management for any industry, focused on customer requirements, risk-based thinking and continual improvement. ISO 13485 is for medical devices and puts more weight on regulatory requirements, documented procedures and keeping products safe and effective. ISO 13485:2016 uses the older ISO 9001 layout, so clause numbers do not line up one to one; use a cross-reference table.",
+      "concepts": [
+        "QMSR and ISO 13485"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-qmsr-change",
+      "q": "What changed for device makers with the QMSR?",
+      "alts": [
+        "QMSR effective date",
+        "Part 820 amended",
+        "QSR to QMSR",
+        "FDA and ISO 13485"
+      ],
+      "a": "The FDA amended 21 CFR Part 820 into the Quality Management System Regulation, which incorporates ISO 13485:2016 by reference. It took effect on 2 February 2026. A device maker selling in the US now builds its QMS around ISO 13485 plus the extra FDA requirements kept in the rule.",
+      "concepts": [
+        "QMSR and ISO 13485"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-certification",
+      "q": "How does ISO certification work?",
+      "alts": [
+        "stage 1 stage 2 audit",
+        "surveillance audit",
+        "recertification",
+        "how long is an ISO certificate valid"
+      ],
+      "a": "An independent certification body runs a stage 1 audit to check the system is documented and ready, then a stage 2 audit to check it works in practice. Once findings are closed a certificate is issued, typically for three years, with surveillance audits in between and a recertification audit at the end. ISO writes standards but does not certify anyone.",
+      "concepts": [
+        "QMS"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-check-certificate",
+      "q": "How do I check a supplier's ISO certificate?",
+      "alts": [
+        "is this certificate valid",
+        "accredited certification body",
+        "certificate scope"
+      ],
+      "a": "Check that the certification body is accredited by a national accreditation body, and that the certificate scope covers the sites and activities you care about. A certificate from an unaccredited body carries less weight. A logo on the paper proves nothing on its own.",
+      "concepts": [
+        "QMS"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-shall-should",
+      "q": "Shall vs should in a standard?",
+      "alts": [
+        "requirement language",
+        "shall should may",
+        "is should mandatory"
+      ],
+      "a": "'Shall' is a requirement an auditor will check. 'Should' is a recommendation, so you may do it another way if you can justify it. 'May' gives permission, and 'can' describes a possibility.",
+      "concepts": [],
+      "link": null
+    },
+    {
+      "id": "ind-iso-mandatory",
+      "q": "Is an ISO standard mandatory?",
+      "alts": [
+        "are standards law",
+        "voluntary standard",
+        "do we have to follow ISO"
+      ],
+      "a": "On its own a standard is voluntary. It becomes binding when a law points to it, a regulator recognises it, or a customer writes it into a contract. In medical devices regulators rely heavily on standards, so in practice they are close to mandatory.",
+      "concepts": [],
+      "link": null
+    },
+    {
+      "id": "ind-four-standards",
+      "q": "Which ISO standards matter in MedTech and pharma work?",
+      "alts": [
+        "main ISO standards",
+        "ISO 9001 13485 14971 27001",
+        "which standard applies"
+      ],
+      "a": "Four come up most: ISO 9001 for general quality, ISO 13485 for device quality management, ISO 14971 for device risk management, and ISO/IEC 27001 for information security. Device software also brings IEC 62304, a separate IEC standard. On the pharma side the GMP rules and ICH guidelines such as Q7, Q9 and Q10 do most of the work.",
+      "concepts": [
+        "QMSR and ISO 13485",
+        "ISO 14971",
+        "IEC 62304"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-iso-27001",
+      "q": "Why does ISO/IEC 27001 come up on these projects?",
+      "alts": [
+        "information security standard",
+        "27001 meaning",
+        "do we need 27001"
+      ],
+      "a": "It is the information security management standard: assess risks to information, choose controls to treat them, and run the system so it keeps working. Device makers and pharma clients often ask suppliers that handle health or regulated data to hold it or align with it. Like ISO 9001 and ISO 13485, it can be certified.",
+      "concepts": [
+        "Data security"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-gap-assessment",
+      "q": "How do I run a gap assessment?",
+      "alts": [
+        "GMP gap assessment",
+        "compliance gap analysis",
+        "gap analysis steps"
+      ],
+      "a": "Set the scope and the requirements, turn each requirement into a plain checklist statement, then collect evidence from SOPs, sampled real records, system configuration and interviews. Mark each statement met, partly met or not met with evidence, and rate gaps by risk to patient and product first, then compliance and delay. Agree actions, owners and the ranking with the process owner and QA before anyone builds.",
+      "concepts": [
+        "QMS"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-ready-for-ai",
+      "q": "How do I know a process is ready for AI?",
+      "alts": [
+        "AI readiness",
+        "before automating a process",
+        "is our data good enough"
+      ],
+      "a": "Check three things: the process is stable and documented, the data is good enough when you profile a sample for missing fields, inconsistent categories and thin free text, and the systems are ready with APIs, validation and a named owner of change control. Do not build on a process with open data integrity gaps, because the tool inherits the weakness. Some gaps are better fixed by a form change or training than by AI.",
+      "concepts": [
+        "ALCOA+ (data integrity)"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-inspection-readiness",
+      "q": "What is inspection readiness?",
+      "alts": [
+        "mock inspection",
+        "front room back room",
+        "PAI readiness",
+        "preparing for FDA"
+      ],
+      "a": "It is being able to show inspectors the right records quickly and answer accurately. Sites run internal audits and mock inspections, prepare for pre-approval inspections (PAI), and set up front room and back room roles during an inspection. AI can help find records fast, but answers to inspectors come from people.",
+      "concepts": [
+        "FDA Form 483 and warning letter"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-training-records",
+      "q": "Why do training records matter so much?",
+      "alts": [
+        "GMP training",
+        "211.25",
+        "training on SOP versions"
+      ],
+      "a": "They prove each person was trained on the current version of the procedures for their role before doing the work, which 21 CFR 211.25 expects for pharma staff. Auditors check the records rather than watching every task. When an SOP changes, training must be linked to the new version.",
+      "concepts": [
+        "SOP"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-six-sigma",
+      "q": "What is Six Sigma?",
+      "alts": [
+        "six sigma meaning",
+        "what is lean six sigma",
+        "six sigma method"
+      ],
+      "a": "Six Sigma is a method for improving a process by reducing variation and defects, using data rather than opinion. It grew out of manufacturing work at Motorola in the 1980s. The idea is simple: if results vary, some fall outside what the customer accepts, so reduce the variation and you reduce the defects.",
+      "concepts": [],
+      "link": null
+    },
+    {
+      "id": "ind-dmaic",
+      "q": "DMAIC?",
+      "alts": [
+        "DMAIC steps",
+        "define measure analyze improve control",
+        "DMAIC phases",
+        "DMAIC road map"
+      ],
+      "a": "Define the problem, customer and goal in a one-page charter with a SIPOC map. Measure: check the measurement system can be trusted, collect data and set a baseline. Analyze: find and prove root causes with data. Improve: pilot solutions and confirm the gain with data; Control: lock it in with procedures, training, control charts and a named owner.",
+      "concepts": [],
+      "link": null
+    },
+    {
+      "id": "ind-tollgate",
+      "q": "What is a tollgate in DMAIC?",
+      "alts": [
+        "DMAIC tollgate",
+        "phase review six sigma",
+        "tollgate review"
+      ],
+      "a": "It is a short review at the end of each phase where the Champion checks the work before the team moves on. Each tollgate expects specific outputs, such as a signed charter at Define or proven root causes at Analyze. Bring the charter to every tollgate to check the project has not drifted.",
+      "concepts": [],
+      "link": null
+    },
+    {
+      "id": "ind-belts",
+      "q": "What do the Six Sigma belts mean?",
+      "alts": [
+        "green belt vs black belt",
+        "what is a champion",
+        "belt roles",
+        "six sigma roles"
+      ],
+      "a": "A Champion is the manager who sponsors the project, removes blockers and owns the result. A Black Belt leads larger projects and coaches others, often full time. A Green Belt leads smaller projects or works on a Black Belt's team alongside a normal job, and team members are the people who do the work every day. Bodies such as ASQ publish a body of knowledge for each belt and run certification exams.",
+      "concepts": [],
+      "link": null
+    },
+    {
+      "id": "ind-gb-or-bb",
+      "q": "Should I do Green Belt or Black Belt first?",
+      "alts": [
+        "which belt first",
+        "is black belt worth it",
+        "green belt enough"
+      ],
+      "a": "Green Belt gives a working grasp of DMAIC, basic statistics and process capability, enough to take part in or lead smaller projects. Black Belt is for leading cross-functional projects with advanced statistics such as ANOVA, regression and designed experiments. Start with Green Belt unless you already know that material well.",
+      "concepts": [],
+      "link": null
+    },
+    {
+      "id": "ind-dpmo",
+      "q": "How do I calculate DPMO?",
+      "alts": [
+        "defects per million opportunities",
+        "DPMO formula",
+        "what is an opportunity"
+      ],
+      "a": "Divide defects by total opportunities, then multiply by one million. Example: 500 labels with 4 opportunities each is 2,000 opportunities, and 18 defects gives 18 / 2,000 x 1,000,000 = 9,000 DPMO. An opportunity is each place a defect could happen, so one label with a wrong expiry date is one defect even if its other fields are right.",
+      "concepts": [],
+      "link": null
+    },
+    {
+      "id": "ind-sigma-level",
+      "q": "What does 'six sigma' mean as a number?",
+      "alts": [
+        "3.4 defects per million",
+        "sigma level",
+        "what is sigma"
+      ],
+      "a": "Sigma is the symbol statisticians use for standard deviation, a measure of how spread out results are. A process at six sigma is so consistent that its specification limits sit far from the average, and the figure usually quoted is 3.4 defects per million opportunities. That figure includes an allowance for the process average drifting over time.",
+      "concepts": [],
+      "link": null
+    },
+    {
+      "id": "ind-dmadv",
+      "q": "DMAIC vs DMADV?",
+      "alts": [
+        "design for six sigma",
+        "DFSS",
+        "DMADV meaning"
+      ],
+      "a": "DMAIC improves a process that already exists. DMADV (define, measure, analyze, design, verify) is for new products or processes and is often grouped under Design for Six Sigma.",
+      "concepts": [],
+      "link": null
+    },
+    {
+      "id": "ind-sipoc",
+      "q": "What is a SIPOC?",
+      "alts": [
+        "SIPOC diagram",
+        "high-level process map",
+        "suppliers inputs process outputs customers"
+      ],
+      "a": "It is a high-level map that lists Suppliers, Inputs, Process steps, Outputs and Customers. Teams draw it in Define to agree where the process starts and ends. It keeps the scope clear before anyone collects data.",
+      "concepts": [],
+      "link": null
+    },
+    {
+      "id": "ind-charter",
+      "q": "What goes in a project charter?",
+      "alts": [
+        "six sigma charter",
+        "problem statement",
+        "goal statement",
+        "black belt charter"
+      ],
+      "a": "A problem statement saying what, where, since when and how big, with no cause or solution named; a measurable goal with a date; the scope and what is out of it; the business case with the basis for each estimate; the team and roles; and tollgate dates. It fits on one page and the Champion signs it.",
+      "concepts": [],
+      "link": null
+    },
+    {
+      "id": "ind-msa",
+      "q": "Why check the measurement system before collecting data?",
+      "alts": [
+        "gage R and R",
+        "MSA",
+        "attribute agreement analysis",
+        "measurement system analysis"
+      ],
+      "a": "If two inspectors judge the same item differently, your baseline is noise. Measurement system analysis checks this: gage R and R for continuous data and attribute agreement for pass and fail data. Only then is the data worth analysing.",
+      "concepts": [],
+      "link": null
+    },
+    {
+      "id": "ind-five-whys",
+      "q": "How do I use the 5 whys?",
+      "alts": [
+        "5 whys example",
+        "five whys root cause",
+        "root cause analysis simple"
+      ],
+      "a": "Start from the problem and ask why it happened, then ask why again of each answer, often about five times, until you reach a cause you can fix in the process. For example, a lot number was wrong because it was typed by hand at shift change, and it was typed because the label system did not pull it from the work order. Stop at a process cause, not at a person, and check the chain with data.",
+      "concepts": [
+        "CAPA"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-fishbone",
+      "q": "What is a fishbone diagram?",
+      "alts": [
+        "Ishikawa diagram",
+        "cause and effect diagram",
+        "fishbone categories"
+      ],
+      "a": "It is a cause and effect diagram with the problem at the head and possible causes grouped on the bones, often under headings such as people, methods, machines, materials, measurement and environment. It helps a team list causes broadly before narrowing down. The causes on it stay ideas until data proves them.",
+      "concepts": [
+        "CAPA"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-pareto",
+      "q": "What is a Pareto chart for?",
+      "alts": [
+        "Pareto analysis",
+        "vital few",
+        "80 20 chart"
+      ],
+      "a": "It sorts defect types or causes by how often they occur, largest first, so the team can focus on the vital few. In a label defect project, for example, a Pareto chart showed most defects were wrong lot numbers. It points to where to dig, not to the root cause itself.",
+      "concepts": [],
+      "link": null
+    },
+    {
+      "id": "ind-control-chart",
+      "q": "What is a control chart?",
+      "alts": [
+        "SPC",
+        "statistical process control",
+        "control limits",
+        "out of control signal"
+      ],
+      "a": "It is a time-ordered chart of a process measure with a centre line and control limits calculated from the process's own data, commonly three standard deviations either side of the mean. Points outside the limits or non-random patterns signal that something changed and should be looked at. It is a core tool in the Control phase and in pharma CPV trending.",
+      "concepts": [],
+      "link": null
+    },
+    {
+      "id": "ind-spec-vs-control",
+      "q": "Specification limits vs control limits?",
+      "alts": [
+        "spec limits vs control limits",
+        "USL LSL",
+        "in control but out of spec"
+      ],
+      "a": "Specification limits come from the customer or product requirements: what is acceptable. Control limits come from the process data: what the process normally does. A process can be stable and in control yet still make out-of-spec product if its normal spread is wider than the specification.",
+      "concepts": [],
+      "link": null
+    },
+    {
+      "id": "ind-cp-cpk",
+      "q": "Cp vs Cpk?",
+      "alts": [
+        "process capability",
+        "capability index",
+        "what is Cpk",
+        "Cpk meaning"
+      ],
+      "a": "Both compare process spread with the specification, for a stable process. Cp looks only at spread: the specification width divided by six standard deviations. Cpk also accounts for centring, using the distance from the mean to the nearer specification limit divided by three standard deviations, so Cpk is never higher than Cp. An off-centre process can have a good Cp and a poor Cpk.",
+      "concepts": [],
+      "link": null
+    },
+    {
+      "id": "ind-six-sigma-regulated",
+      "q": "How does Six Sigma fit with CAPA and change control?",
+      "alts": [
+        "six sigma in GMP",
+        "DMAIC and CAPA",
+        "improvement project validated process"
+      ],
+      "a": "In a regulated company it runs inside the quality system. A project started from a recurring complaint or deviation trend is often linked to a CAPA record, any Improve-phase change to a validated process, procedure or equipment goes through change control and may need revalidation, and Control ends with approved procedures and training records. Name the quality, validation and regulatory owners in the charter.",
+      "concepts": [
+        "CAPA",
+        "Change control"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-poka-yoke",
+      "q": "What is mistake proofing?",
+      "alts": [
+        "poka-yoke",
+        "error proofing",
+        "prevent human error"
+      ],
+      "a": "Poka-yoke means designing the process so the error cannot happen or is caught at once. In a label project, scanning the lot number from the ERP work order replaced typing it by hand. It is usually stronger than retraining, because it works every time.",
+      "concepts": [],
+      "link": null
+    },
+    {
+      "id": "ind-doe",
+      "q": "Why use design of experiments instead of one factor at a time?",
+      "alts": [
+        "DoE",
+        "factorial design",
+        "design of experiments meaning"
+      ],
+      "a": "DoE changes several factors at once in a planned way, so you see each factor's effect and how factors interact, with fewer runs. Changing one factor at a time misses interactions. For example, a two-level full factorial on three factors is eight runs, plus centre points.",
+      "concepts": [],
+      "link": null
+    },
+    {
+      "id": "ind-bb-project",
+      "q": "What makes a good Black Belt project?",
+      "alts": [
+        "choosing a six sigma project",
+        "project selection",
+        "bad six sigma project"
+      ],
+      "a": "A clear, recurring problem with a measurable output, data you can get within weeks, a Champion who will act on the result, and a link to what leadership already cares about, such as complaints, yield or right-first-time batches. If the solution is already decided, it is an implementation task. If the scope is 'all of manufacturing', it is a programme, not a project.",
+      "concepts": [],
+      "link": null
+    },
+    {
+      "id": "ind-ai-six-sigma",
+      "q": "Where can AI help in a Six Sigma project?",
+      "alts": [
+        "AI in DMAIC",
+        "AI for root cause analysis",
+        "LLM for improvement projects"
+      ],
+      "a": "It can categorise free text such as deviation descriptions, pull data from several systems, build control charts and draft charters, tollgate packs and reports. Agree with quality that AI output is an input to the team's judgement, not the record. Root causes still have to be proven with data.",
+      "concepts": [
+        "Deviation"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-validation-engineer",
+      "q": "What does a validation engineer do?",
+      "alts": [
+        "validation engineer role",
+        "C and Q engineer",
+        "what does validation do"
+      ],
+      "a": "They prove facilities, utilities, equipment, processes and computer systems are fit for GMP use. That means writing and executing protocols such as IQ, OQ and PQ from the URS, keeping traceability from requirements to tests, handling deviations found during testing, and writing summary reports for QA approval. They also run periodic review and requalification.",
+      "concepts": [
+        "Qualification and validation (IQ, OQ, PQ)"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-validation-ai",
+      "q": "How does AI change a validation engineer's work?",
+      "alts": [
+        "AI for validation",
+        "AI drafting IQ OQ protocols",
+        "validation automation"
+      ],
+      "a": "AI can draft test steps from a URS in the client's template, build and check the traceability matrix, compare vendor documents with the URS, and flag missing signatures or calibration certificates. The engineer still decides what is critical, judges results and owns the protocol, reviewing AI drafts as if written by a new team member. Validating AI tools themselves is also becoming part of the job.",
+      "concepts": [
+        "Qualification and validation (IQ, OQ, PQ)",
+        "CSV, CSA and GAMP 5"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-quality-engineer",
+      "q": "What does a quality engineer do?",
+      "alts": [
+        "quality engineer role",
+        "QE in medtech",
+        "what does QA do"
+      ],
+      "a": "At a device maker a quality engineer typically works on nonconformances, CAPAs, complaint trending, supplier quality and risk management, and supports design and process validation. They push problems to root cause and make sure fixes go through change control. In pharma much of the same work sits with quality assurance and investigation roles.",
+      "concepts": [
+        "Nonconformance (NC)",
+        "CAPA",
+        "Complaint and medical device reporting"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-quality-ai",
+      "q": "How does AI change quality engineering?",
+      "alts": [
+        "AI for quality engineers",
+        "AI in CAPA work",
+        "quality engineer future"
+      ],
+      "a": "AI can trend complaints and NCs, find similar past events, gather evidence across QMS, MES, ERP and PLM, and draft investigation summaries. The engineer spends less time searching and more on judgement: confirming root causes, approving actions and checking effectiveness. They also become reviewers of AI drafts, so they need to know where the tool is weak.",
+      "concepts": [
+        "CAPA",
+        "Nonconformance (NC)"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-ra-specialist",
+      "q": "What does a regulatory affairs specialist do?",
+      "alts": [
+        "RA role",
+        "regulatory affairs job",
+        "what does regulatory do"
+      ],
+      "a": "They own submissions such as a 510(k), PMA or EU technical documentation, labelling content and reporting decisions. They judge whether a complaint is reportable and whether a change must be notified to an authority. On AI projects they help decide whether a tool is a device and approve anything that touches submissions or reportability.",
+      "concepts": [
+        "510(k), De Novo and PMA",
+        "Complaint and medical device reporting",
+        "EU MDR and notified body"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-ra-ai",
+      "q": "How does AI change regulatory affairs work?",
+      "alts": [
+        "AI for regulatory affairs",
+        "AI reportability",
+        "AI submissions"
+      ],
+      "a": "AI can draft reportability assessments with the evidence laid out, compare label and IFU versions, check consistency across submission documents, and screen literature. The specialist still makes and signs reportability and submission decisions. The work shifts toward reviewing drafts and keeping each tool's intended use clear.",
+      "concepts": [
+        "Complaint and medical device reporting"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-design-engineer",
+      "q": "What does a design engineer do at a device maker?",
+      "alts": [
+        "design engineer role",
+        "R and D engineer medtech",
+        "device development engineer"
+      ],
+      "a": "They turn user needs into design inputs and outputs: requirements, drawings, specifications and code. They link each output to the input it meets and each test to the requirement it verifies, take part in design reviews, and help find hazards and propose risk controls. Any change after verification goes through design change control.",
+      "concepts": [
+        "Design controls and DHF",
+        "ISO 14971"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-design-ai",
+      "q": "How does AI help design engineers?",
+      "alts": [
+        "AI for requirements",
+        "AI test case drafting",
+        "AI trace gaps"
+      ],
+      "a": "It can flag vague or untestable requirements with a suggested rewrite, find trace gaps such as orphan tests or inputs with no verification, and draft hazard lists or test cases. All of it is a draft: the engineer reviews, links and approves, and the tool may need validating for that use. Risk judgements stay with the qualified team.",
+      "concepts": [
+        "Design controls and DHF",
+        "ISO 14971"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-pi-lead",
+      "q": "What does a process improvement lead do?",
+      "alts": [
+        "continuous improvement lead",
+        "operational excellence role",
+        "black belt job"
+      ],
+      "a": "They run improvement projects, often with Six Sigma or lean methods: choose and charter problems with a sponsor, measure baselines, prove root causes, pilot fixes and hand a stable process back to its owner. In regulated sites they link projects to CAPA and change control and bring quality, validation and regulatory owners in early.",
+      "concepts": [
+        "CAPA",
+        "Change control"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-pi-ai",
+      "q": "How does AI change process improvement work?",
+      "alts": [
+        "AI for operational excellence",
+        "AI continuous improvement",
+        "AI in lean projects"
+      ],
+      "a": "AI speeds the slow parts: categorising free-text events, pulling data from several systems, building control charts and drafting tollgate packs. It does not replace proving causes with data, and its output is input to the team's judgement, not the record. Measure the waits before choosing a tool; often the bottleneck is waiting for data, not writing.",
+      "concepts": [],
+      "link": null
+    },
+    {
+      "id": "ind-csv-specialist",
+      "q": "What does a CSV specialist do?",
+      "alts": [
+        "computer system validation role",
+        "CSV lead",
+        "what does the CSV team do"
+      ],
+      "a": "They decide how much evidence a computerized system needs and make sure it is produced: intended use, risk assessment, requirements, test plans and protocols, traceability, summary reports and periodic review. They apply GAMP 5, Part 11 and Annex 11, and CSA thinking where the client's procedures allow. Bringing them in early can save months.",
+      "concepts": [
+        "CSV, CSA and GAMP 5",
+        "21 CFR Part 11 and EU Annex 11"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-csv-ai",
+      "q": "How does AI change CSV work?",
+      "alts": [
+        "validating AI as CSV",
+        "how to script tests for AI",
+        "CSV for LLM tools"
+      ],
+      "a": "They now validate AI components whose output varies, where one-step scripted tests do not fit. A workable approach: keep scripted tests for the controls, such as signatures, audit trail, roles and fallback, and treat the AI output as a dataset test where each case has an expected result and the protocol sets the pass rate. They also own change control for prompts and model versions.",
+      "concepts": [
+        "CSV, CSA and GAMP 5",
+        "Evaluation (eval)"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-head-of-quality",
+      "q": "Why is the head of quality so important on an AI project?",
+      "alts": [
+        "QA approval AI",
+        "who decides if the tool is used",
+        "selling to quality"
+      ],
+      "a": "They own the QMS and can stop any tool that touches a regulated record, so they are often the real decision maker. Bring them in during week one; if QA only hears about a project at validation time, expect a restart. They need evidence the tool will not create findings.",
+      "concepts": [
+        "QMS"
+      ],
+      "link": "learn/m05.html#l-stakeholders-raci"
+    },
+    {
+      "id": "ind-process-owner",
+      "q": "Who is the process owner, and why name one early?",
+      "alts": [
+        "process owner meaning",
+        "who owns the process",
+        "pilot has no owner"
+      ],
+      "a": "The process owner runs a process such as complaint handling, CAPA or deviations, and agrees changes to it. Pilots without a named owner and system of record tend to stall. Name the owner in week one, along with the qualified person who will approve the AI output.",
+      "concepts": [],
+      "link": "learn/m05.html#l-stakeholders-raci"
+    },
+    {
+      "id": "ind-clinical-quality",
+      "q": "What does clinical quality do?",
+      "alts": [
+        "clinical QA role",
+        "GCP auditor",
+        "clinical quality assurance"
+      ],
+      "a": "Clinical quality oversees GCP for trials: auditing CROs, CDMOs and clinical sites, supporting IMP release, and reviewing quality sections of IND and ANDA documents, protocols and investigator's brochures. Much of the work is reading and comparing documents from many partners, which suits AI pre-reading with a qualified reviewer deciding.",
+      "concepts": [
+        "GCP and IMP"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-mfg-engineer",
+      "q": "What does a manufacturing or process engineer do?",
+      "alts": [
+        "process engineer pharma",
+        "manufacturing engineer medtech",
+        "tech ops engineer"
+      ],
+      "a": "In pharma, process engineers own the process day to day: troubleshooting, CPV trending, yield and cycle time, supporting deviation investigations and tech transfer, and assessing changes under change control. In MedTech, manufacturing engineers typically own the MES, device history records and nonconformances on the line.",
+      "concepts": [
+        "Batch record, MES and EBR",
+        "Device history record (DHR)",
+        "Nonconformance (NC)"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-fde-regulated",
+      "q": "What does an FDE do differently in MedTech or pharma?",
+      "alts": [
+        "FDE in regulated industry",
+        "forward deployed engineer pharma",
+        "FDE medtech"
+      ],
+      "a": "The loop is the same, but the solution must be validation-ready from the first sketch: written intended use, risk with QA, human approval points, audit trail and pinned versions. The FDE pairs with quality and regulatory people, who own the GMP or QMS decisions, while the FDE owns the build. Plan the path to production, the data work and the validation evidence in week one.",
+      "concepts": [
+        "GxP",
+        "CSA and validation"
+      ],
+      "link": null
+    },
+    {
+      "id": "ind-jobs-shift",
+      "q": "Will AI replace quality and validation jobs?",
+      "alts": [
+        "AI taking quality jobs",
+        "future of validation roles",
+        "is my role at risk"
+      ],
+      "a": "In GMP and QMS work a qualified person still owns and signs each regulated decision, so AI is used to draft and check rather than decide. The saving is usually in preparation time, such as searching, gathering and drafting, not in the review itself. Roles shift toward reviewing AI drafts, owning the evidence and helping validate the tools.",
+      "concepts": [
+        "GxP"
+      ],
+      "link": null
+    }
+  ]
+}

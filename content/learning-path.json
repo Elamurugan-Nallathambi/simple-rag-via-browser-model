@@ -1,0 +1,94 @@
+{
+ "entries": [
+  {
+   "id": "lp-model-app-api",
+   "q": "What is the difference between a model, an app and an API?",
+   "alts": [
+    "model vs app vs api",
+    "difference between model app and api",
+    "model app api difference",
+    "is chatgpt a model or an app"
+   ],
+   "a": "A model is the product of training: a large set of numbers that turns an input into an output. A chat app, such as the Claude app or ChatGPT, is a finished product for people where you type and it answers. An API is an agreed way for one program to ask another for data or actions, so your own code can call the model without a person typing. Apps are for people; APIs are how you build automated processes on a model.",
+   "concepts": [
+    "Model",
+    "Chat app",
+    "API"
+   ],
+   "link": "learn/basics.html#g-products"
+  },
+  {
+   "id": "lp-context-meaning",
+   "q": "What does context mean for a model?",
+   "alts": [
+    "what is context for an llm",
+    "context meaning in ai",
+    "what does the model see",
+    "context vs context window"
+   ],
+   "a": "Context is everything the model can see for one request: the system prompt, the conversation history, documents, tool results and your latest message. If a fact is not in its training and not in the context, the model can only guess, so your job is to put the right facts in front of it. The context window is the maximum amount of text, in tokens, it can take in one request, including its answer.",
+   "concepts": [
+    "Context",
+    "Context window"
+   ],
+   "link": "learn/basics.html#g-context"
+  },
+  {
+   "id": "lp-privacy-vs-security",
+   "q": "How is privacy different from security?",
+   "alts": [
+    "privacy vs security",
+    "data privacy vs data security",
+    "difference between privacy and security",
+    "is privacy the same as security"
+   ],
+   "a": "Data privacy is about the rules for personal data: what may be collected, for what purpose, who may see it and how long it is kept. It answers: are we allowed to use this data in this way? Data security is about protecting data from unauthorized access, change or loss, through encryption, access control and monitoring. It answers: can anyone who should not see this data get to it? You need both, and good security alone does not make a use of personal data allowed.",
+   "concepts": [
+    "Data privacy",
+    "Data security"
+   ],
+   "link": "learn/basics.html#g-data"
+  },
+  {
+   "id": "lp-intro-ai-courses",
+   "q": "Which courses should I take to learn AI basics?",
+   "alts": [
+    "best intro ai course",
+    "free ai courses for beginners",
+    "recommended ai intro courses",
+    "learn ai basics from scratch",
+    "which ai course should i start with",
+    "where should i start learning ai"
+   ],
+   "a": "Start with the short resources in learning path step A: the 3Blue1Brown and IBM videos on how large language models work, the 3 minute API video, IBM's page on the context window and the Cloud Security Alliance page on privacy versus security. To go further, step A lists four optional courses: Generative AI for Everyone (DeepLearning.AI), Introduction to Generative AI (Google Skills), Introduction to generative AI and agents (Microsoft Learn) and Elements of AI (University of Helsinki). Then read the basics page and move on to module 01.",
+   "concepts": [],
+   "link": "tldr.html#step-basics"
+  },
+  {
+   "id": "lp-step-a",
+   "q": "What do I do in step A, the basics?",
+   "alts": [
+    "step a basics",
+    "learning path step a",
+    "how long is step a, the basics",
+    "what is in the basics step"
+   ],
+   "a": "Step A takes about an hour. Watch the three short videos and read the short pages listed for the step; each of its three questions has a matching resource. Then answer in your own words: the difference between a model, an app and an API, what context means for a model, and how privacy is different from security. The four courses marked optional go further and do not count toward the step's time.",
+   "concepts": [],
+   "link": "tldr.html#step-basics"
+  },
+  {
+   "id": "lp-optional-resources",
+   "q": "What does optional mean next to a resource in a learning path step?",
+   "alts": [
+    "optional resource meaning",
+    "go further resources",
+    "do i have to do the optional courses",
+    "optional courses in a step"
+   ],
+   "a": "Optional resources are there to go further when you have time. They are listed with the step but do not count toward the time the step expects before you save your evidence. The required resources are the short videos and pages that match the step's questions.",
+   "concepts": [],
+   "link": "tldr.html"
+  }
+ ]
+}
